@@ -1,0 +1,31 @@
+body {
+    background-color: #3f3f3f;
+    color: #ffffff;
+    font-family: Nunito;
+    font-weight: 100;
+}
+h1 {
+    text-align: center;
+}
+th {
+    background-color: #3d9ff0;
+    color: #ffffff
+}
+td {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    border-style: solid;
+    border-color: #3f3f3f;
+    border-width: 5px;
+}
+.picture {
+    width: 223;
+    height: 223;
+}
+a {
+    color: #3f3f3f;
+
+}
+table {
+    box-align: center;
+}

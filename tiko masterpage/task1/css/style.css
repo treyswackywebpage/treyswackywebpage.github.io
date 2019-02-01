@@ -1,0 +1,29 @@
+body {
+    font-family: Nunito;
+    color: #ffffff;
+    background-color: #393949;
+    font-weight: 100;
+    font-size: 20px;
+}
+table {
+    color: #626268;
+    font-size: 30;
+    
+}
+td {
+    background-color:#ffffff;
+    width: 2in;
+    height: 1in;
+    text-align: center;
+    border-style: groove;
+    border-color: #000;
+}
+th {
+    color: #ffffff;
+    background-color: #4696c4;
+    border-style: groove;
+    border-color: #000;
+}
+h1 {
+    text-align: center;
+}

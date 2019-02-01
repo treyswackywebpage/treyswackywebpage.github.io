@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <!--Tiko Bauer-->
+	<!--Task 3-->
+	<!--31 Jan 2018-->
+<html>
+    <head>
+            <link href='css/style.css' type='text/css' rel='stylesheet'>
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+            <link rel="shortcut icon" href="images/favicon.jfif">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <title>oh hi</title>
+    </head>
+    <body>
+        <h1>Henlo</h1>
+        <p><a href="../index.html">Go back</a></p>
+        <table>
+        <form action="thankyoupage/index.html" method="get">
+            <tr>
+                <td>
+                    <p class="center">Your name<span class="required">*</span></p>
+                </td>
+                <td>
+                    <p class="center">Your birthday<span class="required">*</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="name" placeholder="Your name" required></td>
+                <td><input type="date" name="date" placeholder="oof" required></td>
+            </tr>
+            <tr>
+                <td><h2>Which animal do you prefer</h2></td>
+                <table>
+                    <tr>
+                        <td>
+                            <p class="center">Cats<span class="required">*</span></p>
+                        </td>
+                        <td>
+                            <input type="radio" name="off" placeholder="how" required checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="center">Dogs<span class="required">*</span></p>
+                        </td>
+                        <td>
+                            <input type="radio" name="off" placeholder="how" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="center">Lizards<span class="required">*</span></p>
+                        </td>
+                        <td>
+                            <input type="radio" name="off" placeholder="how" required>
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+            <h3>Please input your credit card number so we can buy one for you.</h3>
+            <p class="center">Credit Card Number<span class="required">*</span></p>
+            <div class="slidercontainer">
+                <input type="range" name="creditcard" placeholder="oofen" min="0" max="9999999999999999" value="0" class="slider" id="slider" required>
+            </div>
+            <p id="output">0</p>
+            <br>
+            <h3>How do you feel about our website?</h3>
+            <textarea required type="text" name="oof" placeholder="Are you actually putting in work to change this?">You have the best website</textarea>
+            <input type="submit">
+            <p class="required">* required field</p>
+        </form>
+    </table>
+    </body>
+    <script src="js/main.js" type="text/javascript"></script>
+</html>

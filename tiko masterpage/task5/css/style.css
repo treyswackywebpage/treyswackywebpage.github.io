@@ -1,0 +1,31 @@
+body {
+    font-family: comfortaa;
+    background-color: #ffbbfc
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slidercontainer {
+    width: 100%; 
+}
+.center {
+    text-align: center;
+}
+.required {
+    color: red;
+}
+p {
+    margin-bottom: 0px;
+}
+a {
+    font-size: 20px;
+}

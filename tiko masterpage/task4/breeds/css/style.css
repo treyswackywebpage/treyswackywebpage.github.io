@@ -1,0 +1,22 @@
+/*
+    Tiko Bauer
+    Jan 28 2019
+    task 4
+*/
+body {
+    font-family: Comfortaa;
+    background-color: #ff761b;
+}
+h1 {
+    text-align: center;
+}
+.turkish-van {
+    text-align: right;
+}
+a {
+    color: #fff;
+
+}
+.title {
+    text-align: center;
+}

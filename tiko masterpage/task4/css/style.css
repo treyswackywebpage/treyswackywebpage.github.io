@@ -1,0 +1,28 @@
+/*
+    Tiko Bauer
+    Jan 28 2019
+    task 4
+*/
+body {
+    font-family: Comfortaa;
+    background-color: #348fda;
+    font-weight: 400;
+}
+a {
+    color: #fff;
+}
+.breeds {
+    text-align: right;
+}
+.cats_main {
+    text-align: left;
+}
+h1 {
+    text-align: center;
+    text-shadow: #fff 2px 2px;
+    letter-spacing: 10px;
+    text-decoration: black underline overline;
+}
+.middle {
+    text-align: center;
+}

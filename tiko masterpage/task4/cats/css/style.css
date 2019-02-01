@@ -1,0 +1,19 @@
+/*
+    Tiko Bauer
+    Jan 28 2019
+    task 4
+*/
+body {
+    font-family: comfortaa;
+    font-weight: 300;
+}
+.header {
+    text-align: center;
+}
+.nice-cats {
+    width: 30%;
+}
+img {
+    width: 300px;
+    height: auto;
+}
