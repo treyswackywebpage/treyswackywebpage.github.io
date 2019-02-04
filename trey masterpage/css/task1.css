@@ -1,0 +1,27 @@
+body {
+  color: black;
+  background: #a3a4a3;
+}
+
+/*
+Task One
+*/
+h1{
+  text-align: center;
+}
+
+.completelyunneededtable{
+    text-align: center;
+}
+th{
+    border-style: solid;
+}
+td{
+    border-style: solid;
+}
+.head{
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+    color: black;
+}

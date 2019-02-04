@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+}
+
+body{
+    text-align: center;
+}
+
+th{
+    border-style: solid;
+    border-width: thick;
+}
+td{
+    border-style: solid;
+    border-width: thick;
+}
+.head{
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+    color: black;
+}
