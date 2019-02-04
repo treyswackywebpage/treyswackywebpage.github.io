@@ -1,0 +1,35 @@
+h1{
+  text-align: center;
+}
+
+body{
+    background: lightpink;
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px skyblue;
+    letter-spacing: -2px;
+    color: black;
+    word-spacing: 1px;
+}
+
+a{
+    color: green;
+}
+
+a:hover{
+    color: lime;
+}
+.head{
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+    color: black;
+}

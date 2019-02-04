@@ -1,0 +1,32 @@
+h1{
+  text-align: center;
+}
+
+.head{
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+    color: black;
+}
+
+body{
+    text-align: center;
+    background: rgba(208, 90, 244, 0.74);
+}
+
+th{
+    border-style: solid;
+    border-width: thick;
+    font-family: "Times New Roman", Times,serif;
+    font-variant: small-caps;
+    background: darkgray;
+}
+td{
+    border-style: solid;
+    border-width: thick;
+    background: lightgray;
+    font-family: "Arial";
+}
+.left{
+    text-align: left;
+}

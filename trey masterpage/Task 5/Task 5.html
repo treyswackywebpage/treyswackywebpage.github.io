@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Trey DeaBueno
+Task 5
+January 29, 2019
+-->
+
+<html>
+	<head>
+		<title>Task 5</title>
+		<link rel="stylesheet" href="../css/task5.css">
+		<link rel="shortcut icon" href="../images/favicon.png">
+	</head>
+	<body>
+		<header>
+			<center><table><tr><td class="head"><a href="../masterpage.html"><img src="../images/favicon.png" height="50" width="50"></a></td>
+			<td class="head"><h1>Trey's UwU Website Task 5</h1></td></table></center>
+		</header>
+
+		<h2>Please get your free vbucks</h2>
+		<form action = "input.html" method="get">
+			<center><table>
+				<center><tr>
+					<td><center><p>First Name</p></td>
+					<td><center><p>Last Name</p></td>
+				</tr>
+				<center><tr>
+					<td><center><input type = "text" name = "firstname" placeholder="First Name" required></td>
+					<td><center><input type = "text" name = "lastname" placeholder="Last Name" required></td>
+				</tr>
+				<tr>
+					<td><br></td>
+				</tr>
+
+				<center><tr>
+					<td><center><p>Account Name</p>
+					<td><center><p>Your Email</p>
+					<td><center><p>Your Password</p>
+				</tr>
+				<center><tr>
+					<td><center><input type = "text" name = "accountname" placeholder="Fortnite Account Name" required>   </td>
+					<td><center><input type = "email" name = "email" placeholder="Email" required>
+					<td><center><input type = "password" name = "password" placeholder="Your Password" required>
+				</tr>
+				<tr>
+					<td><br></td>
+				</tr>
+				<center><tr>
+					<td><center><p>Social Security Number</p>
+					<td><center><p>Credit Card Number</p>
+					<td><center><p>Expiration Date</p>
+					<td><center><p>Three Numbers on the Back</p>
+				</tr>
+				<center><tr>
+					<td><center><input type = "text" name = "socialsecurity" placeholder="Social Security Number" maxlength="9" required>
+					<td><center><input type = "text" name = "creditcardnumber" placeholder="Credit Card Number" maxlength="16" required>
+					<td><center><input type = "date" name = "creditcardexpiration" min="2019-1-29" max="2026-01-01" required>
+					<td><center><input type = "text" name = "creditcardpin" placeholder="Credit Card Pin" maxlength="3" required>
+				</tr>
+				<tr>
+					<td><br></td>
+				</tr>
+				<center><tr>
+					<center><td><p>Your Birthday</p>
+					<center><td><p>Your Gender</p>
+				</tr>
+				<center><tr>
+					<td><input type = "date" name = "birthday" min = "1900-1-1" max="2019-01-29" required>
+					<td><input type = "radio" name = "gender" value = "male" checked required>Male<br>
+					<input type = "radio" name = "gender" value = "female" required>Female<br>
+					<input type = "radio" name = "gender" value = "other" required>Other<br>
+				</tr>
+				<tr>
+					<td><br></td>
+				</tr>
+			</table></center>
+			<center><p>Why You Want the Free Vbucks?</p>
+			<center><textarea name = "message" rows = "10" cols="60" required>I want -change me- vbucks and I want them because: </textarea><br>
+			<input type = "submit" name = "submit" value = "Submit">
+		</form>
+	</body>
+</html>

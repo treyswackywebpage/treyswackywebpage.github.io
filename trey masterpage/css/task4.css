@@ -1,0 +1,41 @@
+h1{
+  text-align: center;
+}
+
+body{
+    text-align: center;
+    background: lightpink;
+}
+
+.Detriment{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px lime;
+    letter-spacing: -2px;
+    word-spacing: -1px;
+    font-size: 60px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px skyblue;
+    letter-spacing: -2px;
+    color: black;
+    word-spacing: 1px;
+}
+
+a{
+    color: green;
+}
+
+a:hover{
+    color: lime;
+}
+
+.head{
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+    color: black;
+}
