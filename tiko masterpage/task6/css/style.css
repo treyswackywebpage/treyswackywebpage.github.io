@@ -2,7 +2,7 @@ body {
     font-family: comfortaa;
     background-color: #eeeeee;
 }
-.centered {
+h1.centered {
     text-align: center;
 }
 .margin-left {
@@ -41,7 +41,7 @@ p {
     width: 310px;
     height: 163px;
 }
-.caption {
+p.caption {
     position: absolute;
     bottom: 5px;
     left: 2%;
@@ -60,7 +60,7 @@ p {
     background-color: rgba(34, 34, 34, 0.9);
     z-index: 1;
 }
-.menu-button {
+td.menu-button {
     color: #fff;
     background-color: #000000;
     border: none;
@@ -73,10 +73,10 @@ p {
     cursor: pointer;
     border-radius: 5px;
 }
-.menu-button:hover {
+td.menu-button:hover {
     opacity: 1;
 }
-a {
+a.white {
     color: #fff;
 }
 .caption-2 {
