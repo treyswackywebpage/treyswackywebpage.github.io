@@ -1,29 +1,49 @@
 body {
     font-family: comfortaa;
+    background-image: url("../images/terraira-backdrop.png")
 }
 .menu-bar {
     height: 0%;
-    width: 100%;
+    width: 99%;
     background-color: #4dc6ff;
     color: #fff;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: auto;
+    top: 0%;
     display: inline-block;
 }
-td {
+td.menu-button {
     position: relative;
     bottom: 5px;
-    width: 10%;
-    height: 30px;
+    width: 5%;
+    height: 200%;
     box-shadow: #0000005e 0px 0px 2px 2px;
     border-radius: 5px;
     padding-top: 1%;
-    padding-bottom: -.5%;
+    padding-bottom: 0%;
     margin: 10px;
     background-color: #4dc6ff;
+    transition: .5s;
+    opacity: .7;
+}
+td.menu-button:hover {
+    opacity: 1;
 }
 table {
-    text-align: center;
-    text-align: 
+    text-align: center; 
+}
+.main-box {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    padding: 1%;
+    height: 1-%;
+    width: 20%;
+    background-color: rgb(85, 85, 85);
+    box-shadow: #0000005e 0px 0px 2px 2px;
+    border-radius: 5px;
+}
+a.menu-button-link {
+    text-decoration: none;
+    color: #fff;
 }
