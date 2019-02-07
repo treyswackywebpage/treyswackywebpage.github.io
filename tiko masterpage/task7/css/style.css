@@ -2,7 +2,7 @@ body {
     font-family: comfortaa;
 }
 .menu-bar {
-    height: 10%;
+    height: 0%;
     width: 100%;
     background-color: #4dc6ff;
     color: #fff;
@@ -12,7 +12,7 @@ body {
     display: inline-block;
 }
 td {
-    position: absolute;
+    position: relative;
     bottom: 5px;
     width: 10%;
     height: 30px;
@@ -20,7 +20,8 @@ td {
     border-radius: 5px;
     padding-top: 1%;
     padding-bottom: -.5%;
-    margin: 3px;
+    margin: 10px;
+    background-color: #4dc6ff;
 }
 table {
     text-align: center;
