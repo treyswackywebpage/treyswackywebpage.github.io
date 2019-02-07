@@ -22,12 +22,16 @@ td.menu-button {
     height: 200%;
     box-shadow: #0000005e 0px 0px 2px 2px;
     border-radius: 5px;
-    padding-top: 1%;
+    padding-top: 2%;
     padding-bottom: 0%;
     margin: 10px;
     background-color: #4dc6ff;
     transition: .5s;
     opacity: .7;
+    animation-name: slide-button;
+    animation-duration: .5s;
+    cursor: pointer;
+    font-size: 100%
 }
 td.menu-button:hover {
     opacity: 1;
@@ -53,4 +57,8 @@ a.menu-button-link {
 }
 a {
     color: #fff;
+}
+@keyframes slide-button {
+    0% {bottom: 40px;}
+    100% {bottom: 5px;}
 }
