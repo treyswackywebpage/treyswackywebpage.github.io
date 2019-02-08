@@ -7,6 +7,7 @@ html {
 body {
     font-family: comfortaa;
     background-image: url("../images/terraira-backdrop.png");
+    background-attachment: fixed;
     font-size: 20px;
 }
 .menu-bar {
@@ -82,4 +83,14 @@ img.links {
 }
 .centered {
     text-align: center;
+}
+.bottom-info {
+    opacity: .7;
+    color: white;
+    font-size: 8px;
+}
+div.bottom-info {
+    position: absolute;
+    top: 150%;
+    left: 29%
 }
