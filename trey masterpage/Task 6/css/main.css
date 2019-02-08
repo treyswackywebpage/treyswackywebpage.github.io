@@ -1,3 +1,8 @@
+/*
+Trey DeaBueno
+Task 6
+February 8, 2019
+*/
 body{
     background: rgba(46, 134, 193, 0.42);
     text-align: center;
@@ -13,10 +18,29 @@ p{
 a:hover{
     color: green;
 }
-.head{
+h2.color{
+    color: rgb(83, 58, 9);
+}
+td.head{
+    text-shadow: red 1px -1px;
+    text-decoration: underline;
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+}
+h1.header{
     text-shadow: green 1px -1px;
     text-decoration: underline;
     text-align: center;
     border-style: none;
     background-color: transparent;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+p.big{
+    font-size: 20px;
 }
