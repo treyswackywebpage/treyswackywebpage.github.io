@@ -2,13 +2,15 @@
 <!--Task 7-->
 /* <!--6 Feb 2018-->*/
 html {
-    scroll-behavior: smooth;
-}
-body {
     font-family: comfortaa;
-    background-image: url("../images/terraira-backdrop.png");
+    scroll-behavior: smooth;
     background-attachment: fixed;
     font-size: 20px;
+}
+body.normal {
+    
+    background-image: url("../images/terraira-backdrop.png");
+    
 }
 .menu-bar {
     height: 0%;
@@ -92,5 +94,51 @@ img.links {
 div.bottom-info {
     position: absolute;
     top: 150%;
-    left: 29%
+    left: 29%;
+}
+.moonlord-back {
+    position: absolute;
+    left: 45%;
+    top: 0%;
+    height: auto;
+    width: 50%;
+
+}
+.fishron-back {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    height: auto;
+    width: 50%;
+}
+.plantera-back {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    height: auto;
+    width: 50%;
+}
+.golem-back {
+    position: absolute;
+    left: 45%;
+    top: 75%;
+    height: auto;
+    width: 50%;
+}
+.queen-bee-back {
+    position: absolute;
+    left: 45%;
+    top: 100%;
+    height: auto;
+    width: 50%;
+}
+img.bosses {
+    height: auto;
+    width: 100%;
+}
+body.no-back {
+    background-color: black;
+}
+.secrect-link {
+    
 }
