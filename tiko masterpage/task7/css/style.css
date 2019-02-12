@@ -4,13 +4,18 @@
 html {
     font-family: comfortaa;
     scroll-behavior: smooth;
-    background-attachment: fixed;
+    
     font-size: 20px;
 }
 body.normal {
     
     background-image: url("../images/terraira-backdrop.png");
-    
+    background-attachment: fixed;
+}
+h1:hover {
+    opacity: 0;
+    transition: 5s;
+    cursor: not-allowed;
 }
 .menu-bar {
     height: 0%;
@@ -44,14 +49,13 @@ td.menu-button:hover {
     opacity: 1;
 }
 table {
-    text-align: center; 
+    text-align: center;
 }
 .main-box {
     position: absolute;
     left: 30%;
     top: 30%;
     padding: 1%;
-    height: 1-%;
     width: 25%;
     background-color: rgb(85, 85, 85);
     box-shadow: #0000005e 0px 0px 2px 2px;
@@ -61,6 +65,10 @@ table {
 a.menu-button-link {
     text-decoration: none;
     color: #fff;
+}
+a.menu-button-link:visited {
+    color: #ffffff0e;
+    text-decoration: none;
 }
 a {
     color: #fff;
@@ -139,6 +147,12 @@ img.bosses {
 body.no-back {
     background-color: black;
 }
-.secrect-link {
-    
+.secret-link {
+    text-decoration: none;
+}
+ul {
+    list-style: square;
+}
+a.turnsred:visited {
+    color: red;
 }

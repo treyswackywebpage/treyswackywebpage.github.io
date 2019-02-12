@@ -7,24 +7,25 @@
         <link href='css/style.css' type='text/css' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <title>Terraria info</title>
     </head>
     <body class="normal">
         <div class="menu-bar">
             <table>
                     <tr>
-                        <td class="menu-button" onclick="location.href='../index.html'"><a href="../index.html" class="menu-button-link">Return to main page</a></td>
-                        <td class="menu-button" onclick="location.href='index.html'"><a href="index.html" class="menu-button-link">Home page</a></td>
-                        <td class="menu-button" onclick="location.href='wherebuy/wherebuy.html'"><a href="wherebuy/wherebuy.html" class="menu-button-link">Where to buy</a></td>
-                        <td class="menu-button" onclick="location.href='about-terraria/about.html'"><a href="about-terraria/about.html" class="menu-button-link">What Terraria is about</a></td>
-                        <td class="menu-button" onclick="location.href='bosses/bosses.html'"><a href="bosses/bosses.html" class="menu-button-link">Bosses</a></td>
-                        <td class="menu-button" onclick="location.href='https://terraria.org'"><a href="https://terraria.org" class="menu-button-link">Terraria website</a></td>
+                        <td class="menu-button" onclick="location.href='../index.html'" id="turn-links-grey"><a href="../index.html" class="menu-button-link">Return to main page</a></td>
+                        <td class="menu-button" onclick="location.href='index.html'" id="turn-links-grey"><a href="index.html" class="menu-button-link">Home page</a></td>
+                        <td class="menu-button" onclick="location.href='wherebuy/wherebuy.html'" id="turn-links-grey"><a href="wherebuy/wherebuy.html" class="menu-button-link">Where to buy</a></td>
+                        <td class="menu-button" onclick="location.href='about-terraria/about.html'" id="turn-links-grey"><a href="about-terraria/about.html" class="menu-button-link">What Terraria is about</a></td>
+                        <td class="menu-button" onclick="location.href='bosses/bosses.html'" id="turn-links-grey"><a href="bosses/bosses.html" class="menu-button-link">Bosses</a></td>
+                        <td class="menu-button" onclick="location.href='https://terraria.org'" id="turn-links-grey"><a href="https://terraria.org" class="menu-button-link">Terraria website</a></td>
                     </tr>
             </table>
         </div>
         <div class="main-box">
             <h1>About Terraria</h1>
-            <p>Terraria is kind of similar to Minecraft in that it has blocks that you can mine and other similar mechanics. However, Terraria is a 2D game and so it has different gameplay to minecraft. Terraria has way more things to do that minecraft does. In Terraria there are tons more items and several different bosses. Minecraft, however, only has 2 bosses.</p>
+            <p>Terraria is kind of similar to <a href="http://minecraft.net" class="secret-link">Minecraft</a> in that it has blocks that you can mine and other similar mechanics. However, Terraria is a 2D game and so it has different gameplay to minecraft. Terraria has way more things to do that minecraft does. In Terraria there are tons more items and several different bosses. Minecraft, however, only has 2 bosses.</p>
             <h2 class="centered"><a href="#links">Links</a></h2>
         </div>
         <div class="links" id="links">
@@ -54,4 +55,5 @@
             </table>
         </div>
     </body>
+    <script src="js/main.js" type="text/javascript"></script>
 </html>
