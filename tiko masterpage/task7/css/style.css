@@ -107,7 +107,7 @@ div.bottom-info {
 .moonlord-back {
     position: absolute;
     left: 45%;
-    top: 0%;
+    top: 25%;
     height: auto;
     width: 50%;
 
@@ -115,28 +115,28 @@ div.bottom-info {
 .fishron-back {
     position: absolute;
     left: 45%;
-    top: 25%;
+    top: 50%;
     height: auto;
     width: 50%;
 }
 .plantera-back {
     position: absolute;
     left: 45%;
-    top: 50%;
+    top: 75%;
     height: auto;
     width: 50%;
 }
 .golem-back {
     position: absolute;
     left: 45%;
-    top: 75%;
+    top: 100%;
     height: auto;
     width: 50%;
 }
 .queen-bee-back {
     position: absolute;
     left: 45%;
-    top: 100%;
+    top: 125%;
     height: auto;
     width: 50%;
 }
