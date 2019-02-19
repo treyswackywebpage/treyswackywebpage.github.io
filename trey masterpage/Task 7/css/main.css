@@ -1,0 +1,39 @@
+/*
+Trey DeaBueno
+Task 7
+February 8, 2019
+*/
+body{
+    background: lightpink;
+}
+a:link{
+    color: purple;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: gray;
+}
+a:active{
+    color: green;
+}
+h1.header{
+    text-shadow: darkorange 1px -1px;
+    text-decoration: underline;
+    text-align: center;
+    border-style: none;
+
+}
+td.head{
+    background-color: transparent;
+    width: 0;
+    border-style: none;
+}
+td{
+    border-color: red;
+    background: lightgray;
+    width: 45%;
+    border-width: 5px;
+    border-style: dotted;
+}
