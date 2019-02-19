@@ -18,3 +18,7 @@ function untranslate() {
     var untranslate = "JS function.";
     document.getElementById("translate").innerHTML = untranslate;
 }
+function untranslate2() {
+    var untranslate = "JS function.";
+    document.getElementById("translate2").innerHTML = untranslate;
+}
