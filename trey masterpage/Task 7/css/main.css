@@ -5,6 +5,16 @@ February 8, 2019
 */
 body{
     background: lightpink;
+    color: red;
+}
+body.scrolling{
+    background-image: url("../images/programming.PNG");
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.notscrolling{
+    background-image: url("../images/code.jpg");
+    background-size: 100% 100%;
 }
 a:link{
     color: purple;
@@ -36,4 +46,7 @@ td{
     width: 45%;
     border-width: 5px;
     border-style: dotted;
+}
+li{
+    list-style: square;
 }
