@@ -15,25 +15,31 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-133786296-1');
-		</script>
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
     </head>
     <body>
         <form method="GET">
             <input type="text" id="noun1" placeholder="Noun">
-            <input type="text" id="pluralnoun1" placeholder="Plural noun">
-            <input type="text" id="pluralnoun2" placeholder="Plural noun">
-            <input type="text" id="verb1" placeholder="Verb">
-            <input type="text" id="adj1" placeholder="Adjective">
             <input type="text" id="noun2" placeholder="Noun">
+            <input type="text" id="noun3" placeholder="Noun">
+            <input type="text" id="pluralnoun1" placeholder="Plural noun">
+            <input type="text" id="pluralnoun3" placeholder="Plural noun">
+            <input type="text" id="verb1" placeholder="Verb">
+            <input type="text" id="verb2" placeholder="Verb">
+            <input type="text" id="infverb1" placeholder="Infinitive">
+            <input type="text" id="adj1" placeholder="Adjective">
+            <input type="text" id="adj2" placeholder="Adjective">
+            <input type="text" id="adj3" placeholder="Adjective">          
         </form>
         <button onclick="replaceText()">replace text</button>
         <p>   
-            The story takes place inside the <span id="Bnoun1">human body</span> where trillions of anthropomorphic <span id="Bpluralnoun1">cells</span> 
-            each do their job to keep the body healthy.
-            The <span id="Bpluralnoun2">seires</span> largely focuses on two such cells; 
-            a rookie red blood cell, AE3803, who often <span id="Bverb1">gets lost</span> during deliveries, and a <span id="Badj1">relentless</span> white blood cell, 
-            U-1146, who fights against any <span id="Bnoun2">germs</span> that invade the body.
+            The story takes place inside the <span id="Bnoun9">human body</span> where trillions of <span id="Badj3">anthropomorphic</span> <span id="Bpluralnoun1">cells</span> 
+            each <span id="Bverb2">do their job</span> <span id="Binfverb1">to keep</span> the <span id="Bnoun2">body</span> healthy.
+            The <span id="Bnoun3">seires</span> largely focuses on two such cells; 
+            a rookie red blood cell, AE3803, who often <span id="Bverb1">gets lost</span> during deliveries, and a <span id="Badj1">relentless</span> <span id="Badj2">white</span> blood cell, 
+            U-1146, who fights against any <span id="Bpluralnoun3">germs</span> that invade the body.
         </p>
     </body>
-    <script src="js/main.js" type="text/javascript"></script>
+    
 </html>
