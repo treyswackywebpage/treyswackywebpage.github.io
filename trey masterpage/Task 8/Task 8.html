@@ -2,7 +2,7 @@
 <!--
 Trey DeaBueno
 Task 8
-February 21, 2019
+February 22, 2019
 -->
 
 <html>
@@ -19,12 +19,20 @@ February 21, 2019
 
 		  gtag('config', 'UA-133786296-1');
 		</script>
+		<script src="js/javascript.js"></script>
+		<script>
+		function yeetThatText() {
+			var message = "Oh wow I just got yeeted!";
+			document.getElementById("textToYeet").innerHTML = message;
+		}
+		</script>
 	</head>
 	<body>
 
 		<center><table><tr><td class="head"><a href="../masterpage.html"><img src="../images/favicon.png" height="50" width="50"></a></td>
 		<td class="head"><h1>Trey's UwU Website Task 8</h1></td></table></center>
-
+		<p id="textToYeet">Click the button below to yeet me!</p>
+		<button onclick="yeetThatText()">Yeet the text!</button>
 
 	</body>
 </html>
