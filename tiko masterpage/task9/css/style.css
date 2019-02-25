@@ -50,3 +50,6 @@ body {
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
+.white {
+    color: white;
+}
