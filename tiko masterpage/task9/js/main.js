@@ -47,7 +47,7 @@ function changeColor() {
     }
     if (color2.checked)
     {
-        document.getElementById("color").style.color = "#138599";
+        document.getElementById("color").style.color = "#1385aa";
     }
     if (color3.checked)
     {
