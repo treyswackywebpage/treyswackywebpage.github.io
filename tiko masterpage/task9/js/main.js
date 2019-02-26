@@ -28,4 +28,13 @@ function replaceText() {
 
     var infverb1 = document.getElementById("infverb1").value;
     document.getElementById("Binfverb1").innerHTML = infverb1;
+
+    var verb3 = document.getElementById("verb3").value;
+    document.getElementById("Bverb3").innerHTML = verb3;
+
+    var adj4 = document.getElementById("adj4").value;
+    document.getElementById("Badj4").innerHTML = adj4;
+}
+function colorInvis() {
+    document.getElementById("")
 }

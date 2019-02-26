@@ -24,6 +24,7 @@
                 <tr>
                     <div class="menu-button" onclick="location.href='http://www.madlibs.com/'">
                         <span>Madlibs website</span>
+                        <iframe src="sounds/morse.wav"  allow="autoplay loop" id="audio" style="display: none;"></iframe>
                     </div>
                 </tr>
                 <tr>
@@ -43,7 +44,7 @@
                     <table>
                         <tr>
                             <td>
-                                <input type="text" id="noun1" placeholder="Noun">
+                                <input type="text" id="noun1" placeholder="Place">
                             </td>
                             <td>
                                 <input type="text" id="verb1" placeholder="Verb">
@@ -78,6 +79,12 @@
                             <td>
                                 <input type="text" id="pluralnoun1" placeholder="Plural noun">
                             </td>
+                            <td>
+                                <input type="text" id="verb3" placeholder="Verb">
+                            </td>
+                            <td>
+                                <input type="text" id="adj4" placeholder="Adj">
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -88,13 +95,22 @@
                 </form>
                 <button onclick="replaceText()">replace text</button>
             </div>
+            <div class="buttons">
+                <form>
+                    <input type="radio" name="color" checked><label>Invisible</label>
+                    <input type="radio" name="color"><label>Unreadable</label>
+                    <input type="radio" name="color"><label>White</label>
+                    <input type="radio" name="color"><label>Blue</label>
+                    <input type="radio" name="color"><label>Green</label>
+                </form>
+            </div>
             <div class="main-text-box">
-                <p>   
+                <p class="color" id="color">   
                     The story takes place inside the <span id="Bnoun9">human body</span> where trillions of <span id="Badj3">anthropomorphic</span> <span id="Bpluralnoun1">cells</span> 
                     each <span id="Bverb2">do their job</span> <span id="Binfverb1">to keep</span> the <span id="Bnoun2">body</span> healthy.
                     The <span id="Bnoun3">seires</span> largely focuses on two such cells; 
-                    a rookie red blood cell, AE3803, who often <span id="Bverb1">gets lost</span> during deliveries, and a <span id="Badj1">relentless</span> <span id="Badj2">white</span> blood cell, 
-                    U-1146, who fights against any <span id="Bpluralnoun3">germs</span> that invade the body.
+                    a <span id="Badj4">rookie</span> red blood cell, AE3803, who often <span id="Bverb1">gets lost</span> during deliveries, and a <span id="Badj1">relentless</span> <span id="Badj2">white</span> blood cell, 
+                    U-1146, who <span id="Bverb3">fights against</span> any <span id="Bpluralnoun3">germs</span> that invade the body.
                 </p>
             </div>
         </div>
