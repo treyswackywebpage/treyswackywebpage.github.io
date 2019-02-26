@@ -35,6 +35,30 @@ function replaceText() {
     var adj4 = document.getElementById("adj4").value;
     document.getElementById("Badj4").innerHTML = adj4;
 }
-function colorInvis() {
-    document.getElementById("")
+function changeColor() {
+    var color1 = document.getElementById("color1")
+    var color2 = document.getElementById("color2")
+    var color3 = document.getElementById("color3")
+    var color4 = document.getElementById("color4")
+    var color5 = document.getElementById("color5")
+    if (color1.checked)
+    {
+        document.getElementById("color").style.color = "#138599";
+    }
+    if (color2.checked)
+    {
+        document.getElementById("color").style.color = "#138599";
+    }
+    if (color3.checked)
+    {
+        document.getElementById("color").style.color = "white";
+    }
+    if (color4.checked)
+    {
+        document.getElementById("color").style.color = "blue";
+    }
+    if (color5.checked)
+    {
+        document.getElementById("color").style.color = "green";
+    }
 }
