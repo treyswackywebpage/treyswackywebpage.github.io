@@ -1,3 +1,9 @@
+/*
+Trey DeaBueno
+Task 8
+February 22, 2019
+*/
+
 function yeetThatText() {
     var message = "Oh wow I just got yeeted!";
     var otherMessage = "wow yeeted again";
