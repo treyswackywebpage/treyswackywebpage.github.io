@@ -65,5 +65,12 @@ td {
 }
 /*Contact page css*/
 .contact-back {
-    background-image: url(../images/screenshot1.png);
+    background-image: url("contact-back.png");
+    position: relative;
+    left: -8px;
+    height: 868px;
+    width: 1366px;
+}
+.contact-box {
+    background-color: gray;
 }
