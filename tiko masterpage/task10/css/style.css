@@ -63,3 +63,7 @@ td {
     z-index: 1;
     box-shadow: 0px 0px 3px 3px #0000007c;
 }
+/*Contact page css*/
+.contact-back {
+    background-image: url(../images/screenshot1.png);
+}
