@@ -72,5 +72,10 @@ td {
     width: 1366px;
 }
 .contact-box {
-    background-color: gray;
+    background-color: #0000007c;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
 }

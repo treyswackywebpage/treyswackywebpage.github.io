@@ -19,6 +19,8 @@ body {
 }
 .inside-margin {
     position: relative;
+    background-color: black;
+    color: white;
     left: 20%;
     width: 50%;
 }
