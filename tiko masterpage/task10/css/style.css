@@ -66,10 +66,6 @@ td {
 /*Contact page css*/
 .contact-back {
     background-image: url("contact-back.png");
-    position: relative;
-    left: -8px;
-    height: 868px;
-    width: 1366px;
 }
 .contact-box {
     background-color: #0000007c;
@@ -78,4 +74,12 @@ td {
     left: 10%;
     top: 25%;
     width: 80%;
+
+}
+h1.contact-box-h1 {
+    text-align: center;
+    font-size: 60px;
+}
+p.contact-box-p {} {
+    font-size: 20px;
 }
