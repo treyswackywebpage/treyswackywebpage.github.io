@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Trey DeaBueno
+Task 9
+March 5, 2019
+-->
+
+<html>
+	<head>
+		<title>Task 9 - Trey's Wacky Webpage</title>
+		<meta name="author" content="Trey">
+		<meta name="description" content="Task 9 is where I make the madlib game and become epic!">
+		<meta name="keywords" content="Task 9, task9, treyswackywebpage, tikoswackywebpage, Treys Wacky Webpage, Tikos Wacky Webpage, Trey's Wacky Webpage, Tiko's Wacky Webpage">
+		<meta name="language" content="english, en">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon" href="../images/favicon.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133786296-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-133786296-1');
+		</script>
+		<script src="js/javascript.js"></script>
+		<script>
+
+		</script>
+	</head>
+	<body>
+		<center><table><tr><td class="head"><a href="../masterpage.html"><img src="../images/favicon.png" height="50" width="50"></a></td>
+		<td class="head"><h1>Trey's UwU Website Task 9</h1></td></table></center>
+		<center><a href="../masterpage.html">Go back because we all know you want to.</a><br><br>
+		<form>
+			<input type="text" id="noun1" placeholder="Noun">
+			<input type="text" id="noun2" placeholder="Noun">
+			<input type="text" id="noun3" placeholder="Noun">
+			<input type="text" id="verb1" placeholder="Verb">
+			<input type="text" id="verb2" placeholder="Verb">
+			<input type="text" id="verb3" placeholder="Verb">
+			<input type="text" id="adj1" placeholder="Adjective">
+			<input type="text" id="adj2" placeholder="Adjective">
+			<input type="text" id="adj3" placeholder="Adjective">
+			<input type="button" value="Submit" onclick="changeText()">
+		</form>
+
+		<form>
+			<input type="radio" name="colors" id="hide" value="Hidden" onclick="changeColor()" checked>Hidden
+			<input type="radio" name="colors" id="red" onclick="changeColor()" value="Red">Red
+			<input type="radio" name="colors" id="blue" onclick="changeColor()" value="Blue">Blue
+			<input type="radio" name="colors" id="purple" onclick="changeColor()" value="Purple">Purple
+			<input type="radio" name="colors" id="yellow" onclick="changeColor()" value="Yellow">Yellow
+		</form>
+
+		<p hidden id="paragraph"><z id="changeNoun1">Minecraft</z> Hunger Games is a game where you <z id="changeVerb1">yeet</z> other players out of existence. <z id="changeNoun2">You</z> can <z id="changeVerb2">dab</z> on <z id="changeAdj1">lesser quality</z> people and you want to be the <z id="changeAdj2">epic</z> winner!
+			 You get the <z id="changeAdj3">diamond</z> cake when you win and this will allow you to <z id="changeVerb3">flex</z> on all the other players in the <z id="changeNoun3">game</z>!</p>
+
+	</body>
+</html>
