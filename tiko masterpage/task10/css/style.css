@@ -74,12 +74,15 @@ td {
     left: 10%;
     top: 25%;
     width: 80%;
-
+    padding-bottom: 60px;
 }
-h1.contact-box-h1 {
+.contact-box-h1 {
     text-align: center;
     font-size: 60px;
 }
-p.contact-box-p {} {
+.contact-box-p {} {
     font-size: 20px;
+}
+.centered {
+    text-align: center;
 }
