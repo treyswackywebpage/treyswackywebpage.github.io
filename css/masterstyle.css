@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 .topnav {
@@ -75,4 +76,7 @@ body {
 }
 a {
     color: white;
+}
+p{
+    text-align: center;
 }
