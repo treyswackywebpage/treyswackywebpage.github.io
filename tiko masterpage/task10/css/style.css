@@ -106,3 +106,27 @@ td {
 .downloads-box-p {
     font-size: 20px;
 }
+.downloads-button {
+    background-color: #ffffffa1;
+    border-left: solid;
+    border-width: 5px;
+    border-color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    color: black;
+}
+.downloads-button-header {
+    background-color: #ffffffa1;
+    font-size: 30px;
+    padding: 5px;
+    height: 100px;
+    color: black;
+}
+table.downloads {
+    padding: 10%;
+}
+.downloads-button-link {
+    text-decoration: none;
+    color: black;
+}
