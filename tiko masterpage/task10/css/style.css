@@ -80,9 +80,29 @@ td {
     text-align: center;
     font-size: 60px;
 }
-.contact-box-p {} {
+.contact-box-p {
     font-size: 20px;
 }
 .centered {
     text-align: center;
+}
+/*Downloads page css*/
+.downloads-back {
+    background-image: url("downloads-back.png");
+}
+.downloads-box {
+    background-color: #0000007c;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    padding-bottom: 60px;
+}
+.downloads-box-h1 {
+    text-align: center;
+    font-size: 60px;
+}
+.downloads-box-p {
+    font-size: 20px;
 }
