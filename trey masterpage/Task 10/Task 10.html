@@ -14,9 +14,12 @@ March 6, 2019
 		<meta name="language" content="english, en">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="../images/favicon.png">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133786296-1"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -30,22 +33,15 @@ March 6, 2019
 		</script>
 	</head>
 	<body>
-		<div class="topnav" id="myTopnav">
-		  <a href="#home" class="active">Home</a>
-		  <a href="#news">News</a>
-		  <a href="#contact">Contact</a>
-		  <div class="dropdown">
-		    <button class="dropbtn">Dropdown
-		      <i class="fa fa-caret-down"></i>
-		    </button>
-		    <div class="dropdown-content">
-		      <a href="#">Link 1</a>
-		      <a href="#">Link 2</a>
-		      <a href="#">Link 3</a>
-		    </div>
-		  </div>
-		  <a href="#about">About</a>
-		  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		<div id="navbar">
+			<a href="#" id="logo"><img id="logoimg" src="../images/favicon.png" height="35px" width="35px"> Task 10</a>
+			<div id="navbar-right" class="navbar-right">
+				<a id="active" href="#" style="font-size: 20px;">Home</a>
+				<a href="#contact">Contact</a>
+			    <a href="#about">About</a>
+
+	  		</div>
+
 		</div>
 	</body>
 </html>
