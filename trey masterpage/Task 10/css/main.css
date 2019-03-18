@@ -69,7 +69,7 @@ body {
   float: right;
 }
 
-#navbar-right .icon {
+#navbar .icon {
   display: none;
 }
 
@@ -92,5 +92,8 @@ body {
   }
   #navbar-right {
     float: none;
+  }
+  #navbar .icon{
+      display: block;
   }
 }

@@ -37,3 +37,12 @@ function scrollFunction() {
         document.getElementById("logoimg").style.height = "35px";
     }
 }
+
+function mobileBar() {
+  var x = document.getElementById("navbar-right");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
