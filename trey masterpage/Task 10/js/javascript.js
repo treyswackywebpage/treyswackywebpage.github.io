@@ -3,13 +3,16 @@ Trey DeaBueno
 Task 10
 March 6, 2019
 */
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+
+/// Nav Bar ///
 $(window).resize(function() {
     var targetWidth = 580;
     if ($(window).width() >= targetWidth) {
+        document.getElementById("navbar-right").style.display = "block";
         scrollFunction();
     } else {
         document.getElementById("active").style.height = "37px";
+        document.getElementById("navbar-right").style.display = "none";
     }
 });
 
@@ -36,4 +39,13 @@ function scrollFunction() {
         document.getElementById("logoimg").style.width = "35px";
         document.getElementById("logoimg").style.height = "35px";
     }
+}
+
+function mobileBar() {
+  var x = document.getElementById("navbar-right");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
