@@ -42,6 +42,12 @@ March 6, 2019
 			  'theme' : 'dark'
 	        });
 	      };
+
+		  function yeet(){
+			  grecaptcha.render('g-recaptcha', {
+				  'theme' : 'dark'
+			  });
+		  }
 	    </script>
 	</head>
 	<body>
@@ -64,7 +70,7 @@ March 6, 2019
 			<form action="?" method="POST">
 		      <div id="g-recaptcha"></div>
 		      <br/>
-		      <input type="submit" value="Submit">
+		      <input type="button" value="Submit" onclick="yeet()">
 		    </form>
 			<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
 	        async defer>
