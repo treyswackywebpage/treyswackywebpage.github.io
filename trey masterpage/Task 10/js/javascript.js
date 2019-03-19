@@ -49,9 +49,3 @@ function mobileBar() {
     x.style.display = "block";
   }
 }
-
-// Email
-
-function email() {
-    emailjs.send("gmail", "template_WaVz2flD", {"email":"teer@g","name":"ter","message":"gdsfg"});
-}
