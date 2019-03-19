@@ -20,6 +20,7 @@ March 6, 2019
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133786296-1"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -28,9 +29,20 @@ March 6, 2019
 		  gtag('config', 'UA-133786296-1');
 		</script>
 		<script src="js/javascript.js"></script>
-		<script>
-
+		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+		<script type="text/javascript">
+		   (function(){
+		      emailjs.init("user_TWX6geyNYU5vyhxaMUFSt");
+		   })();
 		</script>
+		<script type="text/javascript">
+	      var onloadCallback = function() {
+	        grecaptcha.render('g-recaptcha', {
+	          'sitekey' : '6LcUspgUAAAAAISdJvw9qcLWbHzzN688vhIvuSKM',
+			  'theme' : 'dark'
+	        });
+	      };
+	    </script>
 	</head>
 	<body>
 		<div id="navbar">
@@ -43,10 +55,20 @@ March 6, 2019
 				<a href="Contact.html">Contact</a>
 			    <a href="About.html">About</a>
 				<a href="../masterpage.html">Masterpage</a>
-
+				<a onclick="email()">Email</a>
 	  		</div>
 
 		</div>
 
+		<div id = "recaptcha">
+			<form action="?" method="POST">
+		      <div id="g-recaptcha"></div>
+		      <br/>
+		      <input type="submit" value="Submit">
+		    </form>
+			<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+	        async defer>
+	    	</script>
+		</div>
 	</body>
 </html>

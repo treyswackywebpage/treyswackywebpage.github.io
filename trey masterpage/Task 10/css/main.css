@@ -81,6 +81,11 @@ body {
   display: none;
 }
 
+#recaptcha {
+    position: relative;
+    top: 120px;
+}
+
 @media screen and (min-width: 581px) {
     #navbar a#active {
         height: 59px;

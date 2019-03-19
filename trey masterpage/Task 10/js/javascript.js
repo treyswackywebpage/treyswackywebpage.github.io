@@ -50,4 +50,8 @@ function mobileBar() {
   }
 }
 
-// Next
+// Email
+
+function email() {
+    emailjs.send("gmail", "template_WaVz2flD", {"email":"teer@g","name":"ter","message":"gdsfg"});
+}
