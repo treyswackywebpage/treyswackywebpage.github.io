@@ -17,14 +17,42 @@ body {
 }
 .big-header {
     font-size: 30px;
-    padding: 20%;
+    padding: 5%;
+    animation-name: grow;
+    animation-duration: .5s;
 }
-.big-navbar {
-    height: 7.5%;
-    
+.smol-header {
+    font-size: default;
+    padding-top: 5px;
+    padding-bottom: -5px;
+    animation-name: shrink;
+    animation-duration: .5s;
+}
+@keyframes shrink {
+    0% {
+        padding: 5%;
+        font-size: 30px;
+    }
+    100% {
+        font-size: default;
+        padding-top: 5px;
+        padding-bottom: -5px;
+    }
+}
+@keyframes grow {
+    0% {
+        padding: 5px;
+    }
+    100% {
+        padding: 5%;
+        font-size: 30px;
+    }
+}
+.clickable {
+    cursor: pointer;
 }
 table {
-    padding-left: 33.3%;
+    padding-left: 23.3%;
 }
 td {
     position: relative;
@@ -74,7 +102,7 @@ img {
 .main-page-break {
     background-color: white;
     height: 250px;
-    width: 100%
+    width: 100%;
     position: relative;
     z-index: 20;
     box-shadow: 0px 0px 3px 3px #0000007c;
