@@ -31,5 +31,5 @@ function sendEmail() {
 }
 function changeHeaderSize() {
     $("#navbar").toggleClass("big-header");
-    
+    $("#navbar").toggleClass("smol-header");
 }
