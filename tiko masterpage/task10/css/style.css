@@ -15,6 +15,14 @@ body {
     position: fixed;
     z-index: 40;
 }
+.big-header {
+    font-size: 30px;
+    padding: 20%;
+}
+.big-navbar {
+    height: 7.5%;
+    
+}
 table {
     padding-left: 33.3%;
 }

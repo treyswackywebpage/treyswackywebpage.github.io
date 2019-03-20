@@ -29,3 +29,7 @@ function sendEmail() {
         document.getElementById("password-needed").hidden = false;
     }
 }
+function changeHeaderSize () {
+    $("#navbar").toggleClass("big-header");
+    $("#navbar").toggleClass("big-navbar");    
+}
