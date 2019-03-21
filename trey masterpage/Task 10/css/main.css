@@ -117,4 +117,10 @@ body {
 
 #darkModeButton {
     background-color: transparent;
+    height: 5%;
+    width: 5%;
+    border: transparent;
+    text-align: justify;
+    font-size: 50px;
+    cursor: pointer;
 }
