@@ -42,10 +42,20 @@ function scrollFunction() {
 }
 
 function mobileBar() {
-  var x = document.getElementById("navbar-right");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var bar = document.getElementById("navbar-right");
+  if (bar.style.display === "block") {
+    bar.style.display = "none";
   } else {
-    x.style.display = "block";
+    bar.style.display = "block";
   }
+}
+
+
+// Dark Theme //
+
+function setDarkMode() {
+    document.cookie = "theme=dark;expires=Wed; 18 Dec 2023 12:00:00 UTC";
+}
+function setLightMode() {
+    document.cookie = "theme=light;expires=Wed; 18 Dec 2023 12:00:00 UTC";
 }
