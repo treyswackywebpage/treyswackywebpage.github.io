@@ -29,7 +29,7 @@ function sendEmail() {
         document.getElementById("password-needed").hidden = false;
     }
 }
-function changeHeaderSize () {
+function changeHeaderSize() {
     $("#navbar").toggleClass("big-header");
-    $("#navbar").toggleClass("big-navbar");    
+    $("#navbar").toggleClass("smol-header");
 }
