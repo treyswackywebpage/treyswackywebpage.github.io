@@ -15,6 +15,7 @@ body {
   overflow: auto;
   right: 0;
   left: 0;
+  z-index: 99;
 }
 
 .topnav a {
