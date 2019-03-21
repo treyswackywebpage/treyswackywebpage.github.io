@@ -52,6 +52,7 @@ body {
     cursor: pointer;
     background-color: #fff;
     color: black;
+    font-weight: 300;
 }
 table {
     padding-left: 23.3%;
@@ -63,7 +64,7 @@ td {
     margin-right: 10px;
     cursor: pointer;
 }
-img {    
+img {
     width: 100%;
     z-index: 0;
     box-shadow: 0px 0px 3px 3px #0000007c;
@@ -79,7 +80,7 @@ img {
     height: 50px;
     z-index: 5;
     box-shadow: 0px 0px 3px 3px #0000007c;
-    
+
 }
 .main-page-box {
     position: relative;
@@ -96,6 +97,10 @@ img {
     margin-left: 20px;
     font-size: 20px;
     color: white;
+}
+.main-page-box-h2 {
+  color: white;
+  margin-left: 20px;
 }
 .main-page-pictures {
     position: relative;
