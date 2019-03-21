@@ -11,14 +11,12 @@ html{
     color: white;
 }
 
-br{
-    padding: 255555px;
-}
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Nav Bar */
 
 #navbar {
   overflow: hidden;
@@ -105,4 +103,18 @@ body {
   #navbar .icon{
     display: block;
   }
+}
+
+
+/* Dark Mode */
+
+#darkmode {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+}
+
+#darkModeButton {
+    background-color: transparent;
 }
