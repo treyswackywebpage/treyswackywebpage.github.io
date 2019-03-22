@@ -30,22 +30,23 @@ March 6, 2019
 		</script>
 		<script src="js/javascript.js"></script>
 		<script>
-			function setTheme(){
-				var theme = function checkTheme(){
-					var name = "theme=";
-					var decodedCookie = decodeURIComponent(document.cookie);
-					var ca = decodedCookie.split(";");
-					for (var i = 0; i < ca.length; i++){
-						var c = ca[i];
-						while (c.charAt(0) == " "){
-							c = c.substring(1);
-						}
-						if (c.indexOf(name) == 0){
-							return c.substring(name.length, c.length);
-						}
+			function checkTheme(){
+				var name = "theme=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(";");
+				for (var i = 0; i < ca.length; i++){
+					var c = ca[i];
+					while (c.charAt(0) == " "){
+						c = c.substring(1);
 					}
-					return "";
-				};
+					if (c.indexOf(name) == 0){
+						return c.substring(name.length, c.length);
+					}
+				}
+				return "";
+			}
+			function setTheme(){
+				var theme = checkTheme();
 				if (theme == "dark"){
 					document.getElementById("html").style.background = "black";
 					document.getElementById("html").style.color = "white";
