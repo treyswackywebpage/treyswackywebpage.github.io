@@ -29,8 +29,12 @@ March 6, 2019
 		  gtag('config', 'UA-133786296-1');
 		</script>
 		<script src="js/javascript.js"></script>
-		<script>
-			function setTheme(){
+	</head>
+	<body>
+		<div id="darkmode">
+			<a onclick="setDarkMode()" id="darkModeButton" title="Set dark mode">&#127761;</a>
+			<a onclick="setLightMode()" id="lightModeButton" title="Set light mode">&#x2600;&#xFE0F;</a>
+			<script>
 				var theme = checkTheme();
 				if (theme == "dark"){
 					document.getElementById("html").style.background = "black";
@@ -46,7 +50,7 @@ March 6, 2019
 				}
 				else {
 					var d = new Date();
-  					d.setTime(d.getTime() + (365*24*60*60*1000));
+					d.setTime(d.getTime() + (365*24*60*60*1000));
 					var expires = "expires="+ d.toUTCString();
 					document.cookie = "theme=dark; " + expires + "; path=/;";
 					document.getElementById("html").style.background = "black";
@@ -54,13 +58,7 @@ March 6, 2019
 					document.getElementById("darkModeButton").style.display = "none";
 				    document.getElementById("lightModeButton").style.display = "block";
 				}
-			}
-		</script>
-	</head>
-	<body>
-		<div id="darkmode">
-			<a onclick="setDarkMode()" id="darkModeButton" title="Set dark mode">&#127761;</a>
-			<a onclick="setLightMode()" id="lightModeButton" title="Set light mode">&#x2600;&#xFE0F;</a>
+			</script>
 		</div>
 		<div id="navbar">
 			<a href="#" id="logo"><img id="logoimg" src="../images/favicon.png" height="35px" width="35px"> Task 10</a>
