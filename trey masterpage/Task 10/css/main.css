@@ -7,7 +7,6 @@ March 6, 2019
 
 html{
     scroll-behavior: smooth;
-    background: black;
     color: white;
     transition: 0.5s;
 }
@@ -122,7 +121,8 @@ body {
     text-align: justify;
     font-size: 50px;
     cursor: pointer;
-    display: none;
+    display: block;
+    transition: 0.2s;
 }
 
 #darkModeButton {
@@ -132,4 +132,5 @@ body {
     font-size: 50px;
     cursor: pointer;
     display: none;
+    transition: 0.2s;
 }
