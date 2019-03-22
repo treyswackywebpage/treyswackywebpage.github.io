@@ -67,22 +67,24 @@ function setLightMode() {
     var d = new Date();
     d.setTime(d.getTime() + (365*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    document.cookie = "theme=dark; " + expires + "; path=/;";
+    document.cookie = "theme=light; " + expires + "; path=/;";
     document.getElementById("html").style.background = "white";
     document.getElementById("html").style.color = "black";
     document.getElementById("darkModeButton").style.display = "block";
     document.getElementById("lightModeButton").style.display = "none";
 }
 function checkTheme(){
-    if (document.cookie.split(';').filter(function(item){
-        return item.indexOf('theme=light') >= 0
-    }).length){
-        return "light";
-    }
-    if (document.cookie.split(';').filter(function(item){
-        return item.indexOf('theme=dark') >= 0
-    }).length){
-        return "dark";
-    }
-    return "none";
+    var name = "theme=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
 }
