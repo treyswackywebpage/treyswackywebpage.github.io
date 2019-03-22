@@ -73,3 +73,16 @@ function setLightMode() {
     document.getElementById("darkModeButton").style.display = "block";
     document.getElementById("lightModeButton").style.display = "none";
 }
+function checkTheme(){
+    if (document.cookie.split(';').filter(function(item){
+        return item.indexOf('theme=light') >= 0
+    }).length){
+        return "light";
+    }
+    if (document.cookie.split(';').filter(function(item){
+        return item.indexOf('theme=dark') >= 0
+    }).length){
+        return "dark";
+    }
+    return "none";
+}

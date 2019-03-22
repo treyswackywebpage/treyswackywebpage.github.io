@@ -30,19 +30,6 @@ March 6, 2019
 		</script>
 		<script src="js/javascript.js"></script>
 		<script>
-			function checkTheme(){
-				if (document.cookie.split(';').filter(function(item){
-					return item.indexOf('theme=light') >= 0
-				}).length){
-					return "light";
-				}
-				if (document.cookie.split(';').filter(function(item){
-					return item.indexOf('theme=dark') >= 0
-				}).length){
-					return "dark";
-				}
-				return "none";
-			}
 			function setTheme(){
 				var theme = checkTheme();
 				if (theme == "dark"){
