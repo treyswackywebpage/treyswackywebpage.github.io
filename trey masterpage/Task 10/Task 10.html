@@ -5,7 +5,7 @@ Task 10
 March 6, 2019
 -->
 
-<html>
+<html id="html">
 	<head>
 		<title>Task 10 - Trey's Wacky Webpage</title>
 		<meta name="author" content="Trey">
@@ -29,36 +29,41 @@ March 6, 2019
 		  gtag('config', 'UA-133786296-1');
 		</script>
 		<script src="js/javascript.js"></script>
-		<script type="text/javascript">
-			function checkTheme(){
-				var name = "theme=";
-				var decodedCookie = decodeURIComponent(document.cookie);
-				var ca = decodedCookie.split(";");
-				for (var i = 0; i < ca.length; i++){
-					var c = ca[i];
-					while (c.charAt(0) == " "){
-						c = c.substring(1);
-					}
-					if (c.indexOf(name) == 0){
-						return c.substring(name.length, c.length);
-					}
-				}
-				return "";
-			}
+		<script>
 			function setTheme(){
-				var theme = checkTheme();
+				var theme = function checkTheme(){
+					var name = "theme=";
+					var decodedCookie = decodeURIComponent(document.cookie);
+					var ca = decodedCookie.split(";");
+					for (var i = 0; i < ca.length; i++){
+						var c = ca[i];
+						while (c.charAt(0) == " "){
+							c = c.substring(1);
+						}
+						if (c.indexOf(name) == 0){
+							return c.substring(name.length, c.length);
+						}
+					}
+					return "";
+				};
 				if (theme == "dark"){
-					document.html.style.background = "black";
-					document.html.style.color = "white";
+					document.getElementById("html").style.background = "black";
+					document.getElementById("html").style.color = "white";
+					document.getElementById("darkModeButton").style.display = "none";
+				    document.getElementById("lightModeButton").style.display = "block";
 				}
 				if (theme == "light"){
-					document.html.style.background = "white";
-					document.html.style.color = "black";
+					document.getElementById("html").style.background = "white";
+					document.getElementById("html").style.color = "black";
+					document.getElementById("darkModeButton").style.display = "block";
+				    document.getElementById("lightModeButton").style.display = "none";
 				}
 				if (theme == ""){
-					document.html.style.background = "black";
-					document.html.style.color = "white";
-					document.cookie = "theme=dark;expires=Wed; 18 Dec 2023 12:00:00 UTC";
+					document.getElementById("html").style.background = "black";
+					document.getElementById("html").style.color = "white";
+					document.getElementById("darkModeButton").style.display = "none";
+				    document.getElementById("lightModeButton").style.display = "block";
+					document.cookie = "theme=dark; expires=Wed, 18 Dec 2023 12:00:00 UTC";
 				}
 			}
 		</script>
@@ -73,15 +78,12 @@ March 6, 2019
 			<a href="javascript:void(0);" class="icon" onclick="mobileBar()">
 			    <i class="fa fa-bars"></i>
 			  </a>
-			<div id="navbar-right modeChange" class="navbar-right">
+			<div id="navbar-right" class="navbar-right">
 				<a id="active" href="#">Home</a>
 				<a href="Contact.html">Contact</a>
 			    <a href="About.html">About</a>
 				<a href="../masterpage.html">Masterpage</a>
 	  	</div>
-			<div id="modeChange">
-				<p>Sample Text</p>
-			</div>
 
 		</div>
 	</body>

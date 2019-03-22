@@ -9,6 +9,7 @@ html{
     scroll-behavior: smooth;
     background: black;
     color: white;
+    transition: 0.5s;
 }
 
 body {
@@ -121,6 +122,7 @@ body {
     text-align: justify;
     font-size: 50px;
     cursor: pointer;
+    display: none;
 }
 
 #darkModeButton {
@@ -129,4 +131,5 @@ body {
     text-align: justify;
     font-size: 50px;
     cursor: pointer;
+    display: none;
 }
