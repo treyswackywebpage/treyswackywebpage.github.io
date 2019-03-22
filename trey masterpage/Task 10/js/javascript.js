@@ -32,7 +32,7 @@ function scrollFunction() {
         document.getElementById("logoimg").style.width = "25px";
         document.getElementById("logoimg").style.height = "25px";
     } else {
-        document.getElementById("active").style.fontSize = "20px";
+        document.getElementById("active").style.fontSize = "19px";
         document.getElementById("active").style.height = "59px";
         document.getElementById("navbar").style.padding = "15px 10px";
         document.getElementById("logo").style.fontSize = "35px";
