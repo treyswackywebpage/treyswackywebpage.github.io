@@ -31,19 +31,17 @@ March 6, 2019
 		<script src="js/javascript.js"></script>
 		<script>
 			function checkTheme(){
-				var name = "theme=";
-				var decodedCookie = decodeURIComponent(document.cookie);
-				var ca = decodedCookie.split(";");
-				for (var i = 0; i < ca.length; i++){
-					var c = ca[i];
-					while (c.charAt(0) == " "){
-						c = c.substring(1);
-					}
-					if (c.indexOf(name) == 0){
-						return c.substring(name.length, c.length);
-					}
+				if (document.cookie.split(';').filter(function(item){
+					return item.indexOf('theme=light') >= 0
+				}).length){
+					return "light";
 				}
-				return "";
+				if (document.cookie.split(';').filter(function(item){
+					return item.indexOf('theme=dark') >= 0
+				}).length){
+					return "dark";
+				}
+				return "none";
 			}
 			function setTheme(){
 				var theme = checkTheme();
@@ -59,7 +57,7 @@ March 6, 2019
 					document.getElementById("darkModeButton").style.display = "block";
 				    document.getElementById("lightModeButton").style.display = "none";
 				}
-				if (theme == ""){
+				if (theme == "none"){
 					var d = new Date();
   					d.setTime(d.getTime() + (365*24*60*60*1000));
 					var expires = "expires="+ d.toUTCString();
