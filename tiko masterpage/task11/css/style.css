@@ -1,0 +1,14 @@
+body {
+  font-family: comfortaa;
+}
+.slideshow {
+  height: auto;
+  width: auto;
+  animation-name: slideshow;
+  animation-duration: .25s;
+}
+@keyframes slideshow {
+    0% {
+      
+    }
+}
