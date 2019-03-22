@@ -58,6 +58,7 @@ function setDarkMode() {
     d.setTime(d.getTime() + (365*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = "theme=dark; " + expires + "; path=/;";
+    document.getElementById("html").style.transition = "0.5s";
     document.getElementById("html").style.background = "black";
     document.getElementById("html").style.color = "white";
     document.getElementById("darkModeButton").style.display = "none";
@@ -68,6 +69,7 @@ function setLightMode() {
     d.setTime(d.getTime() + (365*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = "theme=light; " + expires + "; path=/;";
+    document.getElementById("html").style.transition = "0.5s";
     document.getElementById("html").style.background = "white";
     document.getElementById("html").style.color = "black";
     document.getElementById("darkModeButton").style.display = "block";

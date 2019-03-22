@@ -8,7 +8,6 @@ March 6, 2019
 html{
     scroll-behavior: smooth;
     color: white;
-    transition: 0.5s;
 }
 
 body {
