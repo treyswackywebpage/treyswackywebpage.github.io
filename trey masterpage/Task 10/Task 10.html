@@ -60,11 +60,14 @@ March 6, 2019
 				    document.getElementById("lightModeButton").style.display = "none";
 				}
 				if (theme == ""){
+					var d = new Date();
+  					d.setTime(d.getTime() + (365*24*60*60*1000));
+					var expires = "expires="+ d.toUTCString();
+					document.cookie = "theme=dark;" + expires + ";path=/";
 					document.getElementById("html").style.background = "black";
 					document.getElementById("html").style.color = "white";
 					document.getElementById("darkModeButton").style.display = "none";
 				    document.getElementById("lightModeButton").style.display = "block";
-					document.cookie = "theme=dark; expires=Wed, 18 Dec 2023 12:00:00 UTC";
 				}
 			}
 		</script>
