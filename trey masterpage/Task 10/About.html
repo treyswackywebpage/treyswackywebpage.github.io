@@ -5,7 +5,7 @@ Task 10
 March 18, 2019
 -->
 
-<html>
+<html id="html">
 	<head>
 		<title>Task 10 About - Trey's Wacky Webpage</title>
 		<meta name="author" content="Trey">
@@ -43,9 +43,36 @@ March 18, 2019
 				<a href="Contact.html">Contact</a>
 			    <a id="active" href="#">About</a>
 				<a href="../masterpage.html">Masterpage</a>
-
 	  		</div>
-
+		</div>
+		<div id="darkmode">
+			<a onclick="setDarkMode()" id="darkModeButton" title="Set dark mode">&#127761;</a>
+			<a onclick="setLightMode()" id="lightModeButton" title="Set light mode">&#x2600;&#xFE0F;</a>
+			<script>
+				var theme = checkTheme();
+				if (theme == "dark"){
+					document.getElementById("html").style.background = "black";
+					document.getElementById("html").style.color = "white";
+					document.getElementById("darkModeButton").style.display = "none";
+				    document.getElementById("lightModeButton").style.display = "block";
+				}
+				else if (theme == "light"){
+					document.getElementById("html").style.background = "white";
+					document.getElementById("html").style.color = "black";
+					document.getElementById("darkModeButton").style.display = "block";
+				    document.getElementById("lightModeButton").style.display = "none";
+				}
+				else {
+					var d = new Date();
+					d.setTime(d.getTime() + (365*24*60*60*1000));
+					var expires = "expires="+ d.toUTCString();
+					document.cookie = "theme=dark; " + expires + "; path=/;";
+					document.getElementById("html").style.background = "black";
+					document.getElementById("html").style.color = "white";
+					document.getElementById("darkModeButton").style.display = "none";
+				    document.getElementById("lightModeButton").style.display = "block";
+				}
+			</script>
 		</div>
 
 	</body>
