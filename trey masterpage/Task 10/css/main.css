@@ -141,3 +141,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
+#text {
+    padding-top: 85px;
+}

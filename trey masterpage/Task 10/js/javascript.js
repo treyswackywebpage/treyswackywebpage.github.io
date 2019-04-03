@@ -61,6 +61,8 @@ function setDarkMode() {
     document.getElementById("html").style.transition = "0.5s";
     document.getElementById("html").style.background = "black";
     document.getElementById("html").style.color = "white";
+    document.getElementById("darkImage").hidden = false;
+    document.getElementById("lightImage").hidden = true;
     document.getElementById("darkModeButton").style.display = "none";
     document.getElementById("lightModeButton").style.display = "block";
 }
@@ -72,6 +74,8 @@ function setLightMode() {
     document.getElementById("html").style.transition = "0.5s";
     document.getElementById("html").style.background = "white";
     document.getElementById("html").style.color = "black";
+    document.getElementById("darkImage").hidden = true;
+    document.getElementById("lightImage").hidden = false;
     document.getElementById("darkModeButton").style.display = "block";
     document.getElementById("lightModeButton").style.display = "none";
 }

@@ -72,5 +72,24 @@ March 6, 2019
 				}
 			</script>
 		</div>
+		<div id="text">
+			<center><h2>YouTube</h2>
+			<p>Yo guys whats up this is Trey and we're back with another video. My channel is based on being epic even though you have big dumb if you read this because my english is bad and i like to go on run-on sentences and ive kinda given up at this point but i still kinda need words here because if i dont then ill get zoinked by the teacher who is grading this awful website.</p>
+			<img src="images/like.png" alt="Like and subscribe" id="lightImage" hidden>
+			<img src="images/like2.png" alt="Like and subscribe" id="darkImage" hidden>
+			<script>
+				var theme = checkTheme();
+				if (theme == "dark") {
+					document.getElementById("darkImage").hidden = false;
+				    document.getElementById("lightImage").hidden = true;
+				} else if (theme == "light") {
+					document.getElementById("darkImage").hidden = true;
+				    document.getElementById("lightImage").hidden = false;
+				} else {
+					document.getElementById("darkImage").hidden = false;
+				    document.getElementById("lightImage").hidden = true;
+				}
+			</script>
+		</div>
 	</body>
 </html>
