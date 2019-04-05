@@ -29,9 +29,6 @@ March 18, 2019
 		</script>
 		<script src="js/javascript.js"></script>
 		<script>
-			var verifyCallback = function(response) {
-        		alert(response);
-      		};
 			var captcha1;
 			var captcha2;
 			var captcha3;
@@ -56,7 +53,6 @@ March 18, 2019
 				grecaptcha.render('captcha5', {
 					'sitekey' : '6LcUspgUAAAAAISdJvw9qcLWbHzzN688vhIvuSKM',
 					'theme' : 'dark',
-					'callback' : verifyCallback
 				});
 			};
 		</script>
@@ -111,6 +107,7 @@ March 18, 2019
 				<div id="captcha3"></div>
 				<div id="captcha4"></div>
 				<div id="captcha5"></div>
+				<input type="submit" value="Submit">
 			</form>
 		</div>
 		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
