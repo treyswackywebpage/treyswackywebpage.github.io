@@ -10,8 +10,8 @@ body {
   position: relative;
   bottom: 50px;
   width: 200px;
-  left: 50px;
-  background-color: #FFFFFF7c
+  left: -50px;
+  background-color: #FFFFFF7c;
 }
 .clickable {
   cursor: pointer;
