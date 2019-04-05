@@ -145,3 +145,7 @@ body {
 #text {
     padding-top: 85px;
 }
+
+#darkImage, #lightImage {
+    width: 100%;
+}
