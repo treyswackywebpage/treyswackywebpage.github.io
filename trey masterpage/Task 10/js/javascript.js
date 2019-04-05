@@ -94,3 +94,29 @@ function checkTheme(){
       }
       return "";
 }
+
+function sendEmail() {
+    if (!grecaptcha.getResponse(captcha1)) {
+        alert("Please finish the first captcha!");
+        return false;
+    }
+    if (!grecaptcha.getResponse(captcha2)) {
+        alert("Please finish the second captcha!");
+        return false;
+    }
+    if (!grecaptcha.getResponse(captcha3)) {
+        alert("Please finish the third captcha!");
+        return false;
+    }
+    if (!grecaptcha.getResponse(captcha4)) {
+        alert("Please finish the fourth captcha!");
+        return false;
+    }
+    if (!grecaptcha.getResponse(captcha5)) {
+        alert("Please finish the fifth captcha!");
+        return false;
+    }
+    alert("Successfully sent email!");
+    return false;
+
+}
