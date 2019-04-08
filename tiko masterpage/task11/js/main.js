@@ -40,3 +40,6 @@ function chooseAlbum(arg) {
   }
 
 }
+function select() {
+  document.getElementsByClassName("clickable").style
+}

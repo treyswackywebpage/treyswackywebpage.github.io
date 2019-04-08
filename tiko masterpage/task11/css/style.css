@@ -1,5 +1,5 @@
 body {
-  font-family: comfortaa;
+  background-color: rgb(136, 136, 136);
 }
 .thumbnail {
   height: 300px;
@@ -8,13 +8,19 @@ body {
 }
 .caption {
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
   width: 200px;
-  left: -50px;
+  left: 50px;
   background-color: #FFFFFF7c;
+}
+.white-space {
+  height: 200px;
 }
 .clickable {
   cursor: pointer;
+}
+.clickable:hover {
+  opacity: .7;
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
