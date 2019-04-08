@@ -71,8 +71,8 @@ March 18, 2019
 	  		</div>
 		</div>
 		<div id="darkmode">
-			<a onclick="setDarkMode()" id="darkModeButton" title="Set dark mode">&#127761;</a>
-			<a onclick="setLightMode()" id="lightModeButton" title="Set light mode">&#x2600;&#xFE0F;</a>
+			<a onclick="setDarkMode()" class="noselect" unselectable="on" id="darkModeButton" title="Set dark mode">&#127761;</a>
+			<a onclick="setLightMode()" class="noselect" unselectable="on" id="lightModeButton" title="Set light mode">&#x2600;&#xFE0F;</a>
 			<script>
 				var theme = checkTheme();
 				if (theme == "dark"){
@@ -100,15 +100,40 @@ March 18, 2019
 			</script>
 		</div>
 		<div id="text">
-			<center><p>So like you wanna contact me is that right? well good  for you you got the courage to get to this page unless you are dr. wilson in which case you are just here to grade my terrible work which still manages to actually send an email so like yeet but also not really because i want a good grade and this will get me no better than an f so like whoops and tiko just sneezed when i was writing this so like i added this in here so there you go reader are you happy is this what you wanted when you went on this website?</p></center>
+			<center><p>So like you wanna contact me is that right? well good for you you got the courage to get to this page unless you are dr. wilson in which case you are just here to grade my terrible work which still manages to actually send an email so like yeet but also not really because i want a good grade and this will get me no better than an f so like whoops and tiko just sneezed when i was writing this so like i added this in here so there you go reader are you happy is this what you wanted when you went on this website?</p></center>
+			<img src="images/feedback.jpg" alt="Contact Us" id="lightImage" hidden>
+			<img src="images/feedback2.jpg" alt="Contact Us" id="darkImage" hidden>
+			<script>
+				var theme = checkTheme();
+				if (theme == "dark") {
+					document.getElementById("darkImage").hidden = false;
+				    document.getElementById("lightImage").hidden = true;
+				} else if (theme == "light") {
+					document.getElementById("darkImage").hidden = true;
+				    document.getElementById("lightImage").hidden = false;
+				} else {
+					document.getElementById("darkImage").hidden = false;
+				    document.getElementById("lightImage").hidden = true;
+				}
+			</script>
+			<center>
 			<form action="javascript:sendEmail();" method="post">
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="Email" required>
+				<br><br>
+				<label>Message</label>
+				<br>
+				<textarea name="message" rows="8" cols="80" placeholder="Your Message" required></textarea>
+				<br><br>
 				<div id="captcha1"></div>
 				<div id="captcha2"></div>
 				<div id="captcha3"></div>
 				<div id="captcha4"></div>
 				<div id="captcha5"></div>
+				<br>
 				<input type="submit" value="Submit">
 			</form>
+			</center>
 		</div>
 		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer></script>
