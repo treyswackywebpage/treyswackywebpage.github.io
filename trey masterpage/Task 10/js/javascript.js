@@ -117,7 +117,7 @@ function sendEmail() {
         return false;
     }
     var form = $("form#contactForm");
-    form.submit(function(event)){
+    form.submit(function(event){
         event.preventDefault();
 
         emailjs.sendForm("gmail", "template_WaVz2flD", form[0]).then(function(){
