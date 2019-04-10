@@ -117,9 +117,13 @@ March 18, 2019
 				}
 			</script>
 			<center>
-			<form action="javascript:sendEmail();" method="post">
+			<form id="contactForm" action="javascript:sendEmail();" method="post">
 				<label for="email">Email</label>
-				<input type="email" name="email" placeholder="Email" required>
+				<input type="email" name="email" placeholder="Your Email" required>
+				<br><br>
+				<label>Name</label>
+				<br>
+				<input type="name" name="name" placeholder="Your Name" required>
 				<br><br>
 				<label>Message</label>
 				<br>
