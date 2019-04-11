@@ -33,6 +33,7 @@ March 18, 2019
 			var captcha2;
 			var captcha3;
 			var captcha4;
+			var captcha5;
 			var onloadCallback = function() {
 				captcha1 = grecaptcha.render('captcha1', {
 					'sitekey' : '6LcUspgUAAAAAISdJvw9qcLWbHzzN688vhIvuSKM',
@@ -50,11 +51,17 @@ March 18, 2019
 					'sitekey' : '6LcUspgUAAAAAISdJvw9qcLWbHzzN688vhIvuSKM',
 					'theme' : 'dark'
 				});
-				grecaptcha.render('captcha5', {
+				captcha5 = grecaptcha.render('captcha5', {
 					'sitekey' : '6LcUspgUAAAAAISdJvw9qcLWbHzzN688vhIvuSKM',
 					'theme' : 'dark'
 				});
 			};
+		</script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+		<script type="text/javascript">
+		   (function(){
+		      emailjs.init("user_TWX6geyNYU5vyhxaMUFSt");
+		   })();
 		</script>
 	</head>
 	<body>
@@ -117,9 +124,12 @@ March 18, 2019
 				}
 			</script>
 			<center>
-			<form action="javascript:sendEmail();" method="post">
+			<form id="contactForm" action="javascript:sendEmail();" method="post">
 				<label for="email">Email</label>
-				<input type="email" name="email" placeholder="Email" required>
+				<input type="email" name="email" placeholder="Your Email" required>
+				<br><br>
+				<label>Name</label>
+				<input type="name" name="name" placeholder="Your Name" required>
 				<br><br>
 				<label>Message</label>
 				<br>
@@ -131,11 +141,11 @@ March 18, 2019
 				<div id="captcha4"></div>
 				<div id="captcha5"></div>
 				<br>
-				<input type="submit" value="Submit">
+				<input id="submiot" type="submit" value="Submit">
 			</form>
 			</center>
 		</div>
-		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"
         async defer></script>
 	</body>
 </html>

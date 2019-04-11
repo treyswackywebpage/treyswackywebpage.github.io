@@ -116,8 +116,18 @@ function sendEmail() {
         alert("Please finish the fifth captcha!");
         return false;
     }
-    alert("Successfully sent email!");
-    location.reload();
-    return false;
+    $("#submit").hide();
+    var form = $("form#contactForm");
+    form.submit(function(event){
+        emailjs.sendForm("gmail", "template_WaVz2flD", form[0]).then(function(){
+            alert("Successfully sent email!");
+            location.reload();
+        }, function(err) {
+            alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            $("#submit").show();
+        });
+
+        return false;
+    });
 
 }
