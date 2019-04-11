@@ -1,5 +1,12 @@
 body {
   background-color: rgb(136, 136, 136);
+  background-image: url("../other images/glass.jpg");
+}
+h1 {
+  font-family: Comfortaa;
+}
+p {
+  font-family: Comfortaa;
 }
 .thumbnail {
   height: 300px;
