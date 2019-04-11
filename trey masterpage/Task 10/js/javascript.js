@@ -116,6 +116,7 @@ function sendEmail() {
         alert("Please finish the fifth captcha!");
         return false;
     }
+    $(".submit").remove();
     var form = $("form#contactForm");
     form.submit(function(event){
         emailjs.sendForm("gmail", "template_WaVz2flD", form[0]).then(function(){
