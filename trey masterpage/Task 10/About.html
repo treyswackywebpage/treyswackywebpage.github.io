@@ -74,6 +74,25 @@ March 18, 2019
 				}
 			</script>
 		</div>
+		<div id="text">
+			<center><h2>YouTube</h2>
+			<p>Welcome to my website where you can learn that you have giant hetero sapien. The YouTube channel is based on fortnite and roblox gameplays and you can feel really bad because you are watching my YouTube channel. Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 Trey All Rights Reserved. Registered <i class="fa fa-registered" aria-hidden="true"></i> 2019 Trey All Rights Reserved. Trademark <i class="fa fa-trademark" aria-hidden="true"></i> 2019 Trey All Rights Reserved. <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i> ⠠⠉⠕⠏⠽⠗⠊⠣⠞ ⠼⠃⠚⠁⠊ ⠠⠞⠗⠑⠽ ⠠⠁⠇⠇ ⠠⠗⠊⠣⠞⠎ ⠠⠗⠑⠎⠻⠧⠫⠲ ⠠⠗⠑⠛⠊⠎⠞⠻⠫ ⠼⠃⠚⠁⠊ ⠠⠞⠗⠑⠽ ⠠⠁⠇⠇ ⠠⠗⠊⠣⠞⠎ ⠠⠗⠑⠎⠻⠧⠫⠲ ⠠⠞⠗⠁⠙⠑⠍⠁⠗⠅ ⠼⠃⠚⠁⠊ ⠠⠞⠗⠑⠽ ⠠⠁⠇⠇ ⠠⠗⠊⠣⠞⠎ ⠠⠗⠑⠎⠻⠧⠫⠲</p>
+			<img src="images/youtube.png" alt="YouTube" id="lightImage" hidden>
+			<img src="images/youtube2.png" alt="YouTube" id="darkImage" hidden>
+			<script>
+				var theme = checkTheme();
+				if (theme == "dark") {
+					document.getElementById("darkImage").hidden = false;
+				    document.getElementById("lightImage").hidden = true;
+				} else if (theme == "light") {
+					document.getElementById("darkImage").hidden = true;
+				    document.getElementById("lightImage").hidden = false;
+				} else {
+					document.getElementById("darkImage").hidden = false;
+				    document.getElementById("lightImage").hidden = true;
+				}
+			</script>
+		</div>
 
 	</body>
 </html>
