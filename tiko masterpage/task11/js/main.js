@@ -40,6 +40,7 @@ function chooseAlbum(arg) {
   }
 
 }
-function select() {
-  document.getElementsByClassName("clickable").style
+function openMenu() {
+  document.getElementById("dropdown").style.top = "0px";
+  document.getElementById("dropdown").style.height = "auto";
 }

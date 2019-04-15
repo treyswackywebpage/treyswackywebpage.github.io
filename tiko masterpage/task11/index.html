@@ -10,7 +10,8 @@
       <title>Task 11 - Tiko's Wacky Webpage</title>
     <meta name="author" content="Tiko">
     <meta name="description" content="Task 11 presented by yours truly, Tiko">
-    <meta name="keywords" content="Task 11, task11, treyswackywebpage, tikoswackywebpage, Treys Wacky Webpage, Tikos Wacky Webpage">
+    <meta name="keywords" content="Task 11, task11, treyswackywebpage, tikoswackywebpage, Treys Wacky Webpage,
+     Tikos Wacky Webpage">
     <meta name="language" content="english, en">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -25,13 +26,9 @@
       </script>
     </head>
     <body>
-      <div class="dropdown">
-      </div>
-      <div>
-        <h1>My Beautiful Video game/Nature album</h1>
-      </div>
-        <center>
-          <img hidden src="duwang.jpg">
+      <center>
+        <img hidden src="duwang.jpg">
+        <div id="dropdown">
           <table>
               <tr>
                 <td>
@@ -59,7 +56,13 @@
               </tr>
 
           </table>
-        </center>
+          <p onclick="openMenu()">\/</p>
+        </div>
+      </center>
+
+      <div>
+        <h1>My Beautiful Video game/Nature album</h1>
+      </div>
       <div id="Album1" class="slideshow-container">
 
         <div class="mySlides fade">
@@ -158,7 +161,7 @@
             dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+
       }
       </script>
 
