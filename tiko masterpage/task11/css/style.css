@@ -6,15 +6,11 @@ h1 {
 }
 p {
   font-family: Comfortaa;
-}
-.thumbnail {
-  height: 300px;
-  width: 516px;
-  margin: 20px;
+  background-color: rgba(180, 180, 180, 1);
 }
 #dropdown {
   position: relative;
-  top: -800px;
+  top: -120px;
   height: 0px;
   transition: .5s;
   background-color: rgba(180, 180, 180, 1);
@@ -44,6 +40,7 @@ p {
 .clickable:hover {
   opacity: .7;
 }
+/* Everthing past this is not my code */
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}

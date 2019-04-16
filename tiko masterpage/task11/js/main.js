@@ -41,6 +41,19 @@ function chooseAlbum(arg) {
 
 }
 function openMenu() {
-  document.getElementById("dropdown").style.top = "0px";
-  document.getElementById("dropdown").style.height = "auto";
+  var dropdown = document.getElementById("dropdown");
+  var arrow = document.getElementById("arrow");
+  var arrowClass = arrow.className;
+  console.log(arrowClass);
+  if (arrowClass == "down")
+  {
+    dropdown.style.top = "0px";
+    arrow.innerHTML = "/\\";
+  }
+  else {
+    dropdown.style.top = "-120px";
+    arrow.innerHTML = "\\/"
+  }
+  $("#arrow").toggleClass("down");
+  $("#arrow").toggleClass("up");
 }

@@ -5,8 +5,8 @@
       <link href='css/style.css' type='text/css' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-      <link rel="shortcut icon" href="owo.neat.jfif"
-      <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+      <link rel="shortcut icon" href="owo.neat.jfif">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <title>Task 11 - Tiko's Wacky Webpage</title>
     <meta name="author" content="Tiko">
     <meta name="description" content="Task 11 presented by yours truly, Tiko">
@@ -32,34 +32,33 @@
           <table>
               <tr>
                 <td>
-
-                    <img onclick="chooseAlbum(1)" src="album1/img1.JPG" class="thumbnail clickable">
-                    <p class="caption">My Nature album</p>
-
+                    <p onclick="chooseAlbum(1)" class="clickable">My Nature album</p>
                 </td>
                 <td>
-
-                    <img onclick="chooseAlbum(2)" src="album2/img1.JPG" class="thumbnail clickable">
-                    <p class="caption">Other pictures of flowers</p>
-
+                    <p onclick="chooseAlbum(2)" class="clickable">Other pictures of flowers</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <img onclick="chooseAlbum(3)" src="album3/img1.JPG" class="thumbnail clickable">
-                  <p class="caption">Yet more flowers from my back yard</p>
+                  <p onclick="chooseAlbum(3)" class="clickable">Yet more flowers from my back yard</p>
                 </td>
                 <td>
-                  <img onclick="chooseAlbum(4)" src="album4/img1.JPG" class="thumbnail clickable">
-                  <p class="caption">Some pictures of bird that I found online</p>
+                  <p onclick="chooseAlbum(4)"class="clickable">Some pictures of bird that I found online</p>
                 </td>
               </tr>
 
           </table>
-          <p onclick="openMenu()">\/</p>
+          <p class="down" id="arrow" onclick="openMenu()">\/</p>
         </div>
       </center>
-
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <div>
         <h1>My Beautiful Video game/Nature album</h1>
       </div>
@@ -137,6 +136,7 @@
         </div>
 
       <script>
+      //this script is not my code
       var slideIndex = 1;
       showSlides(slideIndex);
 
