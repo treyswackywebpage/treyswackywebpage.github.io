@@ -107,7 +107,8 @@ March 18, 2019
 			</script>
 		</div>
 		<div id="text">
-			<center><p>So like you wanna contact me is that right? well good for you you got the courage to get to this page unless you are dr. wilson in which case you are just here to grade my terrible work which still manages to actually send an email so like yeet but also not really because i want a good grade and this will get me no better than an f so like whoops and tiko just sneezed when i was writing this so like i added this in here so there you go reader are you happy is this what you wanted when you went on this website?</p></center>
+			<center><h2>Contact</h2>
+			<center><p>So like you wanna contact me is that right? well good for you you got the courage to get to this page unless you are dr. wilson in which case you are just here to grade my terrible work which still manages to actually send an email so like yeet but also not really because i want a good grade and this will get me no better than an f so like whoops and tiko just sneezed when i was writing this so like i added this in here so there you go reader are you happy is this what you wanted when you went on this website?<br><br>To find the password in order to send an email, check behind the projector screen in Dr. Wilson's room.</p></center>
 			<img src="images/feedback.png" alt="Contact Us" id="lightImage" hidden>
 			<img src="images/feedback2.png" alt="Contact Us" id="darkImage" hidden>
 			<script>
@@ -129,11 +130,15 @@ March 18, 2019
 				<input type="email" name="email" placeholder="Your Email" required>
 				<br><br>
 				<label>Name</label>
-				<input type="name" name="name" placeholder="Your Name" required>
+				<input type="text" name="name" placeholder="Your Name" required>
 				<br><br>
 				<label>Message</label>
 				<br>
-				<textarea name="message" rows="8" cols="80" placeholder="Your Message" required></textarea>
+				<textarea name="message" rows="8" cols="80" placeholder="Your Message" style="width: 60%;" required></textarea>
+				<br><br>
+				<label>Password</label>
+				<br>
+				<input id="password" type="text" name="password" password="Egg1" placeholder="Password" required>
 				<br><br>
 				<div id="captcha1"></div>
 				<div id="captcha2"></div>
@@ -145,7 +150,6 @@ March 18, 2019
 			</form>
 			</center>
 		</div>
-		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"
-        async defer></script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback" async defer></script>
 	</body>
 </html>
