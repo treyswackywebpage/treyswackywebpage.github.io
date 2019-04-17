@@ -100,6 +100,7 @@ function sendEmail() {
         alert("Please type the correct password.");
         return false;
     }
+    document.getElementById("password").value = "";
     if (!grecaptcha.getResponse(captcha1)) {
         alert("Please finish the first captcha!");
         return false;
