@@ -96,6 +96,10 @@ function checkTheme(){
 }
 
 function sendEmail() {
+    if (document.getElementById("password").value !== "Egg1"){
+        alert("Please type the correct password.");
+        return false;
+    }
     if (!grecaptcha.getResponse(captcha1)) {
         alert("Please finish the first captcha!");
         return false;
