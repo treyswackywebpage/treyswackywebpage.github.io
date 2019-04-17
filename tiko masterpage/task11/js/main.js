@@ -51,9 +51,39 @@ function openMenu() {
     arrow.innerHTML = "/\\";
   }
   else {
-    dropdown.style.top = "-120px";
+    dropdown.style.top = "-220px";
     arrow.innerHTML = "\\/"
   }
   $("#arrow").toggleClass("down");
   $("#arrow").toggleClass("up");
+}
+
+//Ethan's code from here down
+document.onkeydown = function()	{
+	switch (window.event.keyCode) {
+		case 37:
+  		plusSlides(-1)
+  		break;
+		case 39:
+  		plusSlides(1)
+  		break;
+		case 40:
+  		openMenu()
+  		break;
+		case 38:
+  		openMenu()
+  		break;
+		case 49:
+  		chooseAlbum(1)
+  		break;
+		case 50:
+  		chooseAlbum(2)
+  		break;
+		case 51:
+  		chooseAlbum(3)
+  		break;
+    case 52:
+  		chooseAlbum(4)
+  		break;
+    }
 }

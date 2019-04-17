@@ -7,13 +7,21 @@ h1 {
 p {
   font-family: Comfortaa;
   background-color: rgba(180, 180, 180, 1);
+  font-size: 25px;
+}
+td {
+  padding: 10px;
 }
 #dropdown {
   position: relative;
-  top: -120px;
-  height: 0px;
+  top: -220px;
+  height: 230px;
   transition: .5s;
-  background-color: rgba(180, 180, 180, 1);
+  background-color: #333333;
+}
+.picture-text {
+  position: relative;
+  top: 30px;
 }
 .dropdown-button {
   position: relative;
