@@ -1,6 +1,5 @@
 body {
   background-color: rgb(136, 136, 136);
-  background-image: url("../other images/glass.jpg");
 }
 h1 {
   font-family: Comfortaa;
@@ -12,6 +11,22 @@ p {
   height: 300px;
   width: 516px;
   margin: 20px;
+}
+#dropdown {
+  position: relative;
+  top: -800px;
+  height: 0px;
+  transition: .5s;
+  background-color: rgba(180, 180, 180, 1);
+}
+.dropdown-button {
+  position: relative;
+  bottom: 10px;
+  height: auto;
+  text-align: center;
+  background-color: rgba(180, 180, 180, 1);
+  cursor: pointer;
+  transition: .5s;
 }
 .caption {
   position: relative;
@@ -39,6 +54,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  transition: .5s
 }
 
 /* Next & previous buttons */
