@@ -1,0 +1,161 @@
+body {
+    position: relative;
+    left: -8px;
+    top: -8px;
+    background: linear-gradient(-45deg, rgb(63, 63, 63), rgb(25, 25, 25));
+}
+main {
+    position: absolute;
+    left: 100px;
+    width: 40%;
+}
+.background {
+    position: absolute;
+    background-color: #222222;
+    z-index: 2;
+    height: 1000px;
+    width: 100%;
+    box-shadow: 0px -5px  25px 5px #000;
+}
+.image {
+    position: relative;
+    left: -100px;
+}
+a {
+    color: white;
+}
+p {
+    color: white;
+    font-family: Comfortaa;
+    font-weight: 100;
+    padding: 5px;
+}
+.options {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+.menu {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 18px;
+}
+h1 {
+    font-family: 'Comfortaa';
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(74, 183, 255);
+}
+.header {
+    height: 100px;
+    /*background-color: rgb(78, 160, 255);*/
+    background-image: url("header-back.png");
+    padding: 10px;
+    color: white;
+}
+.title {
+    color: white;
+}
+table {
+    text-align: center;
+    align-items: left;
+}
+.invis {
+    display: none;
+}
+.green {
+    color: rgb(0, 255, 0);
+}
+.side-box {
+    width: 200px;
+    height: 500px;
+    background-color: #616161;
+    position: absolute;
+    top: 35px;
+    z-index: 40;
+    box-shadow: 0px 0px  25px 5px #000;
+}
+.side-box-attach {
+    background-color: #afafaf;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 200px;
+    box-shadow: 0px 0px  25px 5px #000;
+    z-index: 41;
+}
+.side-box-top {
+    background-color: #afafaf;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+
+    z-index: 42;
+}
+#three-bars {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+/*.slidable {
+    position: relative;
+    left: -208;
+}*/
+.slide-out {
+    position: relative;
+    animation-name: slide-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-out {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+.slide-in {
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.button {
+    cursor: pointer;
+    text-align: center;
+}
+.menu-button {
+    cursor: pointer;
+    border-left-style: solid;
+    background-color: #444444;
+    border-left-color: #222222;
+    width: 40%;
+    align-self: auto;
+}
+.dp-downloads-button {
+    border-left-style: solid;
+    background-color: rgba(78, 161, 255, 0.418);
+    border-left-color: rgb(78, 160, 255);
+    width: 40%;
+    align-self: auto;
+}
+.nav-button {
+    cursor: pointer;
+}
+@keyframes slide-in {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -200px;
+    }
+}
+.youtube {
+    width: 280px;
+    height: auto;
+}

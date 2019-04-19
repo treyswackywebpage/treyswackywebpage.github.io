@@ -1,0 +1,32 @@
+body {
+	/* Old browsers */
+    background: #141E30;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #35577D, #141E30);
+    margin: 0;
+    padding: 0;
+}
+h1, {
+    color: #ffffff;
+    font-family: Georgia;
+}
+p {
+    color: AliceBlue;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: 500;
+}
+a {
+    color: #9b9b9b;
+}
+td {
+
+    color: aliceblue;
+    font-family: monospace;
+}
+h2 {
+	color: #ffffff;
+	font-family: Georgia;
+}
