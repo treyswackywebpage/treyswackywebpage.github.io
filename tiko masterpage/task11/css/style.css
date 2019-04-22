@@ -14,8 +14,8 @@ td {
 }
 #dropdown {
   position: relative;
-  top: -220px;
-  height: 230px;
+  top: -320px;
+  height: 340px;
   transition: .5s;
   background-color: #333333;
 }
@@ -40,7 +40,7 @@ td {
   background-color: #FFFFFF7c;
 }
 .white-space {
-  height: 200px;
+  height: 100px;
 }
 .clickable {
   cursor: pointer;

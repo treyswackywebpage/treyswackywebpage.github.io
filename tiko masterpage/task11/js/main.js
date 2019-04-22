@@ -50,7 +50,7 @@ function openMenu() {
     arrow.innerHTML = "/\\";
   }
   else {
-    dropdown.style.top = "-220px";
+    dropdown.style.top = "-320px";
     arrow.innerHTML = "\\/"
   }
   $("#arrow").toggleClass("down");
