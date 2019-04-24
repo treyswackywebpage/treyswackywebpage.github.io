@@ -72,7 +72,7 @@ function showSlides(n) {
 
 function setText(n) {
     var text = document.getElementById("slideshow" + albumNumber).getElementsByClassName("albumText");
-    abcdefghij
+    abcdefghijk
     text.value = document.getElementById("slideshow" + albumNumber).getElementsByClassName(slideIndex)[0].src;
 
 }
