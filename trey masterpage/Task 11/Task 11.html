@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--
+Trey DeaBueno
+Task 10
+March 6, 2019
+-->
+
+<html id="html">
+	<head>
+		<title>Task 11 - Trey's Wacky Webpage</title>
+		<meta name="author" content="Trey">
+		<meta name="description" content="Task 11 is where I make an album that you can yeet through!">
+		<meta name="keywords" content="Task 11, task11, treyswackywebpage, tikoswackywebpage, Treys Wacky Webpage, Tikos Wacky Webpage, Trey's Wacky Webpage, Tiko's Wacky Webpage">
+		<meta name="language" content="english, en">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="../images/favicon.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133786296-1"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-133786296-1');
+		</script>
+		<script src="js/javascript.js"></script>
+	</head>
+	<body>
+		<div id="navbar">
+			<a href="#" id="logo"><img id="logoimg" src="../images/favicon.png" height="35px" width="35px"> Task 11</a>
+			<a href="javascript:void(0);" class="icon" onclick="mobileBar()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			<div id="navbar-right" class="navbar-right">
+				<a class="albumOne active" onclick="setAlbum(1)">Games</a>
+				<a class="albumTwo" onclick="setAlbum(2)">Album 2</a>
+				<a class="albumThree" onclick="setAlbum(3)">Album 3</a>
+				<a class="albumFour" onclick="setAlbum(4)">Album 4</a>
+
+	  		</div>
+		</div>
+		<div id="text">
+
+			<div class="slideshow" id="slideshowOne" style="display: block;">
+				<center><h2>Games</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade" style="display: block;">
+						<div class="numbertext">1 / 4</div>
+					   <img src="images/albumone/1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/albumone/2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/albumone/3.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/albumone/4.jpg" style="width:100%">
+					</div>
+				</div>
+				<div class="albumText">Image</div>
+				<a class="prev" onclick="plusSlides(-1)" style="left: 0px;">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)" style="right: 0px;">&#10095;</a>
+				<br>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<div class="slideshow" id="slideshowTwo" style="display: none;">
+				<center><h2>Fortnite</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade" style="display: block;">
+						<div class="numbertext">1 / 4</div>
+					   <img src="images/albumtwo/1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/albumtwo/2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/albumtwo/3.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/albumtwo/4.jpg" style="width:100%">
+					</div>
+				</div>
+				<div class="albumText">Image</div>
+				<a class="prev" onclick="plusSlides(-1)" style="left: 0px;">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)" style="right: 0px;">&#10095;</a>
+				<br>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<div class="slideshow" id="slideshowThree" style="display: none;">
+				<center><h2>Games</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade" style="display: block;">
+						<div class="numbertext">1 / 4</div>
+					   <img src="images/albumthree/1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/albumthree/2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/albumthree/3.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/albumthree/4.jpg" style="width:100%">
+					</div>
+				</div>
+				<div class="albumText">Image</div>
+				<a class="prev" onclick="plusSlides(-1)" style="left: 0px;">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)" style="right: 0px;">&#10095;</a>
+				<br>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<div class="slideshow" id="slideshowFour" style="display: none;">
+				<center><h2>Games</h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade" style="display: block;">
+						<div class="numbertext">1 / 4</div>
+					   <img class="1"src="images/albumfour/1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 4</div>
+						<img src="images/albumfour/2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 4</div>
+						<img src="images/albumfour/3.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 4</div>
+						<img src="images/albumfour/4.jpg" style="width:100%">
+					</div>
+				</div>
+				<div class="albumText">Image</div>
+				<a class="prev" onclick="plusSlides(-1)" style="left: 0px;">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)" style="right: 0px;">&#10095;</a>
+				<br>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<script>
+				showSlides(slideIndex);
+			</script>
+		</div>
+	</body>
+</html>

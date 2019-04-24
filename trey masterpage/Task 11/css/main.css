@@ -1,0 +1,186 @@
+/*
+Trey DeaBueno
+Task 11
+April 18, 2019
+*/
+* {box-sizing: border-box;}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav Bar */
+
+#navbar {
+	overflow: hidden;
+	background-color: #333;
+	padding: 15px 10px;
+	transition: 0.4s;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+}
+
+#navbar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px;
+	display: block;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 25px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#navbar #logo {
+	font-size: 35px;
+	font-weight: bold;
+	transition: 0.4s;
+}
+
+#navbar #logoimg {
+	transition: 0.4s;
+}
+
+#navbar #logo:hover {
+	background-color: transparent;
+}
+
+#navbar a:hover {
+	background-color: #555;
+}
+
+#navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+	transition: 0.4s;
+	font-size: 19px;
+}
+
+#navbar a.active:hover {
+	background-color: #3e9441;
+}
+
+#navbar-right {
+	float: right;
+	transition: 0.4s;
+}
+
+#navbar .icon {
+	display: none;
+}
+
+#navbar {
+	padding: 6px 2px !important;
+}
+#navbar a {
+	float: none;
+	display: block;
+	text-align: center;
+	font-size: 17px;
+	padding: 6px;
+}
+#navbar-right {
+	float: none;
+	display: none;
+}
+#navbar .icon{
+	display: block;
+}
+
+#text {
+	padding-top: 85px;
+}
+
+/* Slideshow */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.text {
+	color: gray;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: inherit;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
