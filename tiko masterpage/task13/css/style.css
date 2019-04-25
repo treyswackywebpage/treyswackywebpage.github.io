@@ -16,13 +16,30 @@ td {
   width: 75%;
   margin-left: 12.5%;
   height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .top-main-box {
-  font-size: 30px;
+  position: center;
+  font-size: 27px;
   text-align: center;
   height: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 15px;
   padding-top: 20px;
   background-color: rgb(71, 71, 71);
   border-radius: 5px;
+}
+.button {
+  box-shadow: 0px 0px 3px 3px #00000051;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: .25s;
+}
+.button:hover {
+  background-color: #ffffff22;
+  transition: .25s;
 }
