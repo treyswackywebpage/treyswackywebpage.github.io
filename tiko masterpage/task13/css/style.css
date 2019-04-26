@@ -28,6 +28,7 @@ img {
 .top-main-box {
   position: center;
   position: fixed;
+  z-index: 40;
   font-size: 27px;
   text-align: center;
   height: auto;
@@ -52,7 +53,8 @@ img {
   transition: .25s;
 }
 .visual-break {
-  height: 200px;
+  position: relative;
+  height: auto;
   margin-left: -10px;
   margin-right: -10px;
   background-color: #555555;
