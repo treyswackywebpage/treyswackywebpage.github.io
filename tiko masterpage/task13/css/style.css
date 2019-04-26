@@ -6,6 +6,12 @@ td {
   padding-left: 5px;
   padding-right: 5px;
 }
+img {
+  height: 75%;
+  width: 75.5%;
+  margin-left: -10px;
+  position: fixed;
+}
 .main-box {
   text-align: left;
   position: relative;
@@ -21,6 +27,7 @@ td {
 }
 .top-main-box {
   position: center;
+  position: fixed;
   font-size: 27px;
   text-align: center;
   height: auto;
@@ -32,6 +39,7 @@ td {
   padding-top: 20px;
   background-color: rgb(71, 71, 71);
   border-radius: 5px;
+
 }
 .button {
   box-shadow: 0px 0px 3px 3px #00000051;
@@ -42,4 +50,15 @@ td {
 .button:hover {
   background-color: #ffffff22;
   transition: .25s;
+}
+.visual-break {
+  height: 200px;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: #555555;
+  border-radius: 5px;
+  opacity: .75;
+}
+.inside-visual-break {
+  color: #ffffff;
 }
