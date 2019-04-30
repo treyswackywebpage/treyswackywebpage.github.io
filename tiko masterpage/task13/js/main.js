@@ -7,16 +7,16 @@ function gotoWebsite(website) {
 
       break;
     case 2:
-      location.href='../index.html';
+      location.href='index.html';
       break;
     case 3:
-      location.href='../info/index.html';
+      location.href='info/index.html';
       break;
     case 4:
-      location.href='../merchandise/index.html';
+      location.href='merchandise/index.html';
       break;
     case 5:
-      location.href='../contact/index.html';
+      location.href='contact/index.html';
       break;
     default:
 
