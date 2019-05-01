@@ -1,0 +1,250 @@
+<html>
+<head>
+<!--Ethan Wong-->
+<!--Task 11-->
+<!--April 16, 2019-->
+
+<title>Slideshow</title>
+
+<link rel="stylesheet" href="style11.css">
+
+<script>
+var albumNum = 1;
+var imagenum = 1;
+var imagemax = 18;
+
+var imgDat = new Array();
+var imgCap = new Array();
+
+function writeAlbum1()
+{
+	imgDat[1] = "Album 1/1 Krassimir Avramov.jpg";
+	imgDat[2] = "Album 1/2 Jesus Tiamo.jpg";
+	imgDat[3] = "Album 1/3 Garfield's Nightmare.jpg";
+	imgDat[4] = "Album 1/4 And Satan Calls the Turns.jpg";
+	imgDat[5] = "Album 1/5 B V Radha.jpg";
+	imgDat[6] = "Album 1/6 Dog Hole Cave.jpg";
+	imgDat[7] = "Album 1/7 RYGAR.png";
+	imgDat[8] = "Album 1/8 Edward Savage.jpg";
+	imgDat[9] = "Album 1/9 Mafia vs Ninja.jpg";
+	imgDat[10] = "Album 1/10 Sleepy Man Banjo Boys.jpg";
+	imgDat[11] = "Album 1/11 Notoreas Galaxias.jpg";
+	imgDat[12] = "Album 1/12 The Greatest Horn in the World.jpg";
+	imgDat[13] = "Album 1/13 OzEmail Limited.jpg";
+	imgDat[14] = "Album 1/14 Paul Emmanuel Auguste Poulet-Malassis.jpg";
+	imgDat[15] = "Album 1/15 Piet Huysentruyt.JPG";
+	imgDat[16] = "Album 1/16 Thani Oruvan.jpg";
+	imgDat[17] = "Album 1/17 Terry Pheto.jpg";
+	imgDat[18] = "Album 1/18 The Clue of the Whistling Bagpipes.jpg";
+	
+	imgCap[1] = "1. Krassimir Avramov";
+	imgCap[2] = "2. Jesus Tiamo";
+	imgCap[3] = "3. Garfield's Nightmare";
+	imgCap[4] = "4. And Satan Calls the Turns";
+	imgCap[5] = "5. B V Radha";
+	imgCap[6] = "6. Dog Hole Cave";
+	imgCap[7] = "7. RYGAR";
+	imgCap[8] = "8. Edward Savage";
+	imgCap[9] = "9. Mafia vs Ninja";
+	imgCap[10] = "10. Sleepy Man Banjo Boys";
+	imgCap[11] = "11. Notoreas Galaxia";
+	imgCap[12] = "12. The Greatest Horn in the World";
+	imgCap[13] = "13. OzEmail Limited";
+	imgCap[14] = "14. Paul Emmanuel Auguste Poulet-Malassis";
+	imgCap[15] = "15. Piet Huysentruyt";
+	imgCap[16] = "16. Thani Oruvan";
+	imgCap[17] = "17. Terry Pheto";
+	imgCap[18] = "18. The Clue of the Whistling Bagpipes";
+}
+writeAlbum1();
+function writeAlbum2()
+{
+	imgDat[1] = "Album 2/1 Stock Relax.jpg";
+	imgDat[2] = "Album 2/2 Stock Feet.jpg";
+	imgDat[3] = "Album 2/3 Stock Gun.jpeg";
+	imgDat[4] = "Album 2/4 Stock Sausage.jpg";
+	imgDat[5] = "Album 2/5 Stock Nurse.jpg";
+	imgDat[6] = "Album 2/6 Stock Cool.jpg";
+	imgDat[7] = "Album 2/7 Stock Banana.jpg";
+	imgDat[8] = "Album 2/8 Stock Pencil.png";
+	imgDat[9] = "Album 2/9 Stock Melon.jpg";
+	imgDat[10] = "Album 2/10 Stock Shadow.jpg";
+	imgDat[11] = "Album 2/11 Stock Pizza.jpg";
+	imgDat[12] = "Album 2/12 Stock Santa.jpg";
+	imgDat[13] = "Album 2/13 Stock Gottem.jpg";
+	imgDat[14] = "Album 2/14 Stock Carrot.jpg";
+	imgDat[15] = "Album 2/15 Stock Web Programming.jpg";
+	imgDat[16] = "Album 2/16 Stock Jams.jpg";
+	imgDat[17] = "Album 2/17 Stock Blob.jfif";
+	imgDat[18] = "Album 2/18 Stock Prison.jfif";
+	
+	imgCap[1] = "1. Relaxing Grass";
+	imgCap[2] = "2. Feet Hands";
+	imgCap[3] = "3. Shooting Fish";
+	imgCap[4] = "4. Sausage Master";
+	imgCap[5] = "5. Cursed Hospital";
+	imgCap[6] = "6. Hip and Elderly";
+	imgCap[7] = "7. Banana Spike";
+	imgCap[8] = "8. Pencil Boy";
+	imgCap[9] = "9. Melon Helmet";
+	imgCap[10] = "10. Don't Trust Shadows";
+	imgCap[11] = "11. Pizza Sewers";
+	imgCap[12] = "12. Santa Alley";
+	imgCap[13] = "13. Oh Ok";
+	imgCap[14] = "14. Carrot Infection";
+	imgCap[15] = "15. Web Programming";
+	imgCap[16] = "16. Illegal Tunes";
+	imgCap[17] = "17. Despair";
+	imgCap[18] = "18. Prisoner";
+}
+function writeAlbum3()
+{
+	imgDat[1] = "Album 3/1 The Great Pyramid of Giza.jpg";
+	imgDat[2] = "Album 3/2 Hanging Gardens of Babylon.png";
+	imgDat[3] = "Album 3/3 Statue of Zeus at Olympia.jpg";
+	imgDat[4] = "Album 3/4 Temple of Artemis.jpg";
+	imgDat[5] = "Album 3/5 Mausoleum of Halicarnassus.jpg";
+	imgDat[6] = "Album 3/6 Colossus of Rhodes.jpg";
+	imgDat[7] = "Album 3/7 Lighthouse of Alexandria.jpg";
+	imgDat[8] = "Album 3/8 Tiko's House.jpg";
+	imgDat[9] = "Album 3/9 Classroom.jpg";
+	imgDat[10] = "Album 3/10 Come on boy.jpg";
+	
+	imgCap[1] = "1. The Great Pyramid of Giza";
+	imgCap[2] = "2. The Hanging Gardens of Babylon";
+	imgCap[3] = "3. The Statue of Zeus at Olympia";
+	imgCap[4] = "4. The Temple of Artemis";
+	imgCap[5] = "5. The Mausoleum of Halicarnassus";
+	imgCap[6] = "6. The Colossus of Rhodes";
+	imgCap[7] = "7. The Lighthouse of Alexandria";
+	imgCap[8] = "8. Tiko's House";
+	imgCap[9] = "9. Dr. Wilson's Web Programming Class";
+	imgCap[10] = "10. Come on boy";
+}
+
+document.onkeydown = function()	{
+	switch (window.event.keyCode) {
+		case 37:
+		slideleft()
+		break;
+		case 39:
+		slideright()
+		break;
+		case 40:
+		openAlbum()
+		break;
+		case 38:
+		closeAlbum()
+		break;
+		case 49:
+		album1()
+		break;
+		case 50:
+		album2()
+		break;
+		case 51:
+		album3()
+		break;
+	}
+}
+
+function openAlbum()
+{
+	document.getElementById("select").style.bottom = "750px";
+	document.getElementById("display").style.top = "140px";
+	document.getElementById("arrow").innerHTML = "/&#92";
+	document.getElementById("clicked").setAttribute("onclick","closeAlbum()");
+}
+function closeAlbum()
+{
+	document.getElementById("select").style.bottom = "890px";
+	document.getElementById("display").style.top = "0px";
+	document.getElementById("arrow").innerHTML = "&#92/";
+	document.getElementById("clicked").setAttribute("onclick","openAlbum()");
+}
+
+function album1()
+{
+	writeAlbum1();
+	document.getElementById("title").innerHTML = "Slideshow Album 1: Wikipedia"
+	imagenum = 1;
+	imagemax = 18;
+	document.getElementById("slideshow").src = imgDat[1];
+	document.getElementById("picCaption").innerHTML = imgCap[1];
+	closeAlbum()
+	albumNum = 1;
+}
+function album2()
+{
+	writeAlbum2();
+	document.getElementById("title").innerHTML = "Slideshow Album 2: Stock Images"
+	imagenum = 1;
+	imagemax = 18;
+	document.getElementById("slideshow").src = imgDat[1];
+	document.getElementById("picCaption").innerHTML = imgCap[1];
+	closeAlbum()
+	albumNum = 2;
+}
+function album3()
+{
+	writeAlbum3();
+	document.getElementById("title").innerHTML = "Slideshow Album 3: Wonders of the World"
+	imagenum = 1;
+	imagemax = 10;
+	document.getElementById("slideshow").src = imgDat[1];
+	document.getElementById("picCaption").innerHTML = imgCap[1];
+	closeAlbum()
+	albumNum = 3;
+}
+
+function slideright()
+{
+	if(imagenum == imagemax)
+	{
+		imagenum = 1;
+	}
+	else
+	{
+		imagenum++;
+	}
+	document.getElementById("slideshow").src = imgDat[imagenum];
+	document.getElementById("picCaption").innerHTML = imgCap[imagenum];
+}
+function slideleft()
+{
+	if(imagenum == 1)
+	{
+		imagenum = imagemax;
+	}
+	else
+	{
+		imagenum--;
+	}
+	document.getElementById("slideshow").src = imgDat[imagenum];
+	document.getElementById("picCaption").innerHTML = imgCap[imagenum];
+}
+</script>
+</head>
+
+<body>
+	<div id="select" class="expand">
+		<center>
+			<a href="../masterpage.html"><p>Return to Master Page</p></a>
+			<a href="javascript::void(0)" onclick="album1()"><p>Album 1: Wikipedia</p></a>
+			<a href="javascript::void(0)" onclick="album2()"><p>Album 2: Stock Images</p></a>
+			<a href="javascript::void(0)" onclick="album3()"><p>Album 3: Wonders of the World</p></a>
+			<a href="javascript::void(0)" id="clicked" onclick="openAlbum()"><p id="arrow">\/</p></a>
+		</center>
+	</div>
+	<div id="display" class="show">
+		<center>
+		<h1 id="title">Slideshow Album 1: Wikipedia</h1>
+		<hr><br><br>
+		<img id="slideshow" src="Album 1/1 Krassimir Avramov.jpg" style="height:600px;width:750px;transition:1s;">
+		<p id="picCaption" class="nodent">1. Krassimir Avramov</p>
+		</center>
+		<button id="arrRight" onclick="slideright()" style="position:absolute;right:220px;bottom:148px;height:600px;width:40px;cursor:pointer;"><h2>></h2></button>
+		<button id="arrLeft" onclick="slideleft()" style="position:absolute;left:220px;bottom:148px;height:600px;width:40px;cursor:pointer;"><h2><</h2></button>
+	</div>
+</body>
+</html>

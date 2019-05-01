@@ -1,0 +1,205 @@
+<html>
+<head>
+<!--Ethan Wong-->
+<!--Task 10-->
+<!--March 19, 2019-->
+
+<title>Plans To Have Dr. Wilson Accept My Website</title>
+
+<link rel="stylesheet" href="style10.css">
+
+<script>
+function opeBar()
+{
+document.getElementById("sidebar").style.paddingLeft = "5px";
+document.getElementById("sidebar").style.paddingRight = "5px";
+	document.getElementById("sidebar").style.width = "150px";
+	document.getElementById("sidebar2").style.width = "150px";
+  document.getElementById("main").style.marginLeft = "160px";
+  document.getElementById("main").style.marginRight = "160px";
+  document.getElementById("closeOpen").src = "closemenu.jpg";
+  document.getElementById("barBut").setAttribute("onclick","cloBar()");
+  document.getElementById("closeOpen").style.right = "155px";
+}
+function cloBar()
+{
+document.getElementById("sidebar").style.paddingLeft = "0px";
+document.getElementById("sidebar").style.paddingRight = "0px";
+document.getElementById("sidebar").style.width = "0px";
+	document.getElementById("sidebar2").style.width = "0px";
+  document.getElementById("main").style.marginLeft = "0px";
+  document.getElementById("main").style.marginRight = "0px";
+    document.getElementById("closeOpen").src = "openmenu.jpg";
+  document.getElementById("barBut").setAttribute("onclick","opeBar()");
+  document.getElementById("closeOpen").style.right = "5px";
+}
+function dropDown()
+{
+	document.getElementById("arrow").innerHTML = "↓";
+	document.getElementById("draftimage").style.height = "250px";
+	document.getElementById("drafttext").style.transform = "scaleY(1)";
+	document.getElementById("draftstatus").style.transform = "scaleY(1)";
+	document.getElementById("draft1").setAttribute("onclick","dropUp()");
+}
+function dropUp()
+{
+document.getElementById("arrow").innerHTML = "→";
+	document.getElementById("draftimage").style.height = "0px";
+	document.getElementById("drafttext").style.transform = "scaleY(0)";
+	document.getElementById("draftstatus").style.transform = "scaleY(0)";
+	document.getElementById("draft1").setAttribute("onclick","dropDown()");
+}
+function dropDown2()
+{
+	document.getElementById("arrow2").innerHTML = "↓";
+	document.getElementById("draftimage2").style.height = "250px";
+	document.getElementById("drafttext2").style.transform = "scaleY(1)";
+	document.getElementById("draftstatus2").style.transform = "scaleY(1)";
+	document.getElementById("draft2").setAttribute("onclick","dropUp2()");
+}
+function dropUp2()
+{
+document.getElementById("arrow2").innerHTML = "→";
+	document.getElementById("draftimage2").style.height = "0px";
+	document.getElementById("drafttext2").style.transform = "scaleY(0)";
+	document.getElementById("draftstatus2").style.transform = "scaleY(0)";
+	document.getElementById("draft2").setAttribute("onclick","dropDown2()");
+}
+function dropDown3()
+{
+	document.getElementById("arrow3").innerHTML = "↓";
+	document.getElementById("draftimage3").style.height = "250px";
+	document.getElementById("drafttext3").style.transform = "scaleY(1)";
+	document.getElementById("draftstatus3").style.transform = "scaleY(1)";
+	document.getElementById("draft3").setAttribute("onclick","dropUp3()");
+}
+function dropUp3()
+{
+document.getElementById("arrow3").innerHTML = "→";
+	document.getElementById("draftimage3").style.height = "0px";
+	document.getElementById("drafttext3").style.transform = "scaleY(0)";
+	document.getElementById("draftstatus3").style.transform = "scaleY(0)";
+	document.getElementById("draft3").setAttribute("onclick","dropDown3()");
+}
+var fs = 3;
+function changeFont()
+{
+	if(fs == 0)
+	{
+		document.getElementById("changeSize").style.fontSize = "8px";
+		document.getElementById("changeSize2").style.fontSize = "8px";
+		document.getElementById("drafttext").style.fontSize = "8px";
+		document.getElementById("drafttext2").style.fontSize = "8px";
+		document.getElementById("drafttext3").style.fontSize = "8px";
+	}
+	else if(fs == 1)
+	{
+		document.getElementById("changeSize").style.fontSize = "12px";
+		document.getElementById("changeSize2").style.fontSize = "12px";
+		document.getElementById("drafttext").style.fontSize = "12px";
+		document.getElementById("drafttext2").style.fontSize = "12px";
+		document.getElementById("drafttext3").style.fontSize = "12px";
+	}
+	else if(fs == 2)
+	{
+		document.getElementById("changeSize").style.fontSize = "16px";
+		document.getElementById("changeSize2").style.fontSize = "16px";
+		document.getElementById("drafttext").style.fontSize = "16px";
+		document.getElementById("drafttext2").style.fontSize = "16px";
+		document.getElementById("drafttext3").style.fontSize = "16px";
+	}
+	else if(fs == 3)
+	{
+		document.getElementById("changeSize").style.fontSize = "20px";
+		document.getElementById("changeSize2").style.fontSize = "20px";
+		document.getElementById("drafttext").style.fontSize = "20px";
+		document.getElementById("drafttext2").style.fontSize = "20px";
+		document.getElementById("drafttext3").style.fontSize = "20px";
+	}
+	else if(fs == 4)
+	{
+		document.getElementById("changeSize").style.fontSize = "24px";
+		document.getElementById("changeSize2").style.fontSize = "24px";
+		document.getElementById("drafttext").style.fontSize = "24px";
+		document.getElementById("drafttext2").style.fontSize = "24px";
+		document.getElementById("drafttext3").style.fontSize = "24px";
+	}
+	else if(fs == 5)
+	{
+		document.getElementById("changeSize").style.fontSize = "28px";
+		document.getElementById("changeSize2").style.fontSize = "28px";
+		document.getElementById("drafttext").style.fontSize = "28px";
+		document.getElementById("drafttext2").style.fontSize = "28px";
+		document.getElementById("drafttext3").style.fontSize = "28px";
+	}
+	else if(fs == 6)
+	{
+		document.getElementById("changeSize").style.fontSize = "32px";
+		document.getElementById("changeSize2").style.fontSize = "32px";
+		document.getElementById("drafttext").style.fontSize = "32px";
+		document.getElementById("drafttext2").style.fontSize = "32px";
+		document.getElementById("drafttext3").style.fontSize = "32px";
+	}
+}
+function subtractFont()
+{
+	if(fs > 0)
+	{
+		fs--;
+	}
+	changeFont();
+}
+function addFont()
+{
+	if(fs < 6)
+	{
+		fs++;
+	}
+	changeFont();
+}
+</script>
+</head>
+
+<body bgcolor="#f7f8f9">
+<div id="sidebar" class="sidebar">
+	<center>
+		<a href="../masterpage.html">Master Page</a><br>
+		<a href="Task 10.html">Home</a><br>
+		<a href="Contact/contact.html">Contact/Find Us</a><br>
+		<a href="Administrator/admin.html">Admin Only</a><br>
+	</center>
+</div>
+
+<div id="sidebar2" class="sidebar2">
+	<p>Change Font Size</p>
+	<a href="javascript:void(0)" id="minus" onclick="subtractFont()"><img src="-.png" style="width:60px;height:60px;padding-left:10px;"></a>
+	<a href="javascript:void(0)" id="plus" onclick="addFont()"><img src="+.png" style="width:60px;height:60px;padding-left:10px;"></a>
+</div>
+
+<div id="main" class="main">
+	<a href="javascript:void(0)" id="barBut" onclick="opeBar()"><img id="closeOpen" src="openmenu.jpg" style="height:75px;width:125px;position:fixed;bottom:5px;right:5px;transition:0.4s;z-index:50;"></a>
+	
+	<h1>Plans To Have Dr.Wilson Accept My Website</h1>
+	
+	<p id="changeSize" class="indent">Without writing any code, one must sketch a layout of each page one intends to have in one's set of pages. One must then show these to our great and mighty overseer Dr. Wilson for approval; then, get his blessing to indicate he approves.</p>
+	<p id="changeSize2" class="indent">The issue one faces is how to get such a being to approve of their website? The perfect plan to get an approval lies within this page.</p>
+	
+	<pre class="click" id="draft1" onclick="dropDown()"><arr id="arrow">→</arr> Draft 1             																						</pre>
+	<p class="droptext" id="drafttext">The first draft is an experiment to gauge Dr. Wilson's limit for acceptance. The sketched page is atrocious to mediocre at best to show the limits of Dr. Wilson's approval of bad web design.</p>
+	<img class="dropdown" id="draftimage" src="draft1.png" style="height:0px;width:420px;">
+	<p class="dropcoloraccept" id="draftstatus">Status: Approved</p>
+	
+	<pre class="click" id="draft2" onclick="dropDown2()"><arr id="arrow2">→</arr> Draft 2             																						</pre>
+	<p class="droptext" id="drafttext2">The second draft should have exist, but Dr. Wilson accepted the first draft for unknown reasons and this is probably what the second draft would have been.</p>
+	<img class="dropdown" id="draftimage2" src="draft2.png" style="height:0px;width:420px;">
+	<p class="dropcolorna" id="draftstatus2">Status: N/A</p>
+	
+	<pre class="click" id="draft3" onclick="dropDown3()"><arr id="arrow3">→</arr> Draft 3             																						</pre>
+	<p class="droptext" id="drafttext3">The third draft may have existed, but it takes effort to draw a webpage, so it's just a mostly blank page because I am lazy.</p>
+	<img class="dropdown" id="draftimage3" src="draft3.png" style="height:0px;width:420px;">
+	<p class="dropcolorna" id="draftstatus3">Status: N/A</p>
+</div>
+
+<iframe src="oof.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<!--Ethan Wong-->
+<!--Task 8-->
+<!--Feb 13, 2019-->
+<title>Great Task 8</title>
+
+<link rel="stylesheet" href="style8.css">
+
+<script>
+function changeText()
+{
+	var message = "Look! It changed!";
+	document.getElementById("exampleID").innerHTML = message;
+}
+function restoreText()
+{
+	var text1 = "The Great Depression was an era that happened when the United States of America was poor";
+	var text2 = "during The Great Depression";
+	document.getElementById("someText1").innerHTML = text1;
+	document.getElementById("someText2").innerHTML = text2;
+}
+function morphText()
+{
+	var text1 = "The Big Sad is a phenomenon that occurs in the high school stage of development";
+	var text2 = "near The Big Sad";
+	document.getElementById("someText1").innerHTML = text1;
+	document.getElementById("someText2").innerHTML = text2;
+}
+</script>
+</head>
+
+<body bgcolor="#f7f8f9">
+<div class="sidebar">
+	<a href="../masterpage.html">Master Page</a>
+</div>
+
+<div class="main">
+	<p class="nodent" id="exampleID">This is the original text....</p>
+	
+	<button onClick="changeText()">Change the text</button>
+	<a class="ronald" href="Task 8.html">Ronald</a>
+	<br>
+	
+	<p class="nodent"><sad id="someText1">The Great Depression was an era that happened when the United States of America was poor</sad>. It made the people <das id="someText2">during The Great Depression</das> lose money and happiness in their lives.</p>
+	<button onClick="morphText()">Change that text!</button>
+	<button onClick="restoreText()">Restore that text!</button>
+</div>
+</body>
+</html>
