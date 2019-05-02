@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.htm
+Disallow:
 Sitemap: https://treyswackywebpage.tk/sitemap.xml
