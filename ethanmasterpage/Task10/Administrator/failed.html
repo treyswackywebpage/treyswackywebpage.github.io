@@ -1,0 +1,57 @@
+<html>
+<head>
+<!--Ethan Wong-->
+<!--Task 10-->
+<!--March 19, 2019-->
+
+<title>Failure Page</title>
+
+<link rel="stylesheet" href="../style10.css">
+
+<script>
+	function angry()
+	{
+		document.getElementById("dankimage").setAttribute("onclick","warning()");
+		document.getElementById("dankimage").style.opacity = "1";
+		document.getElementById("warnimage").style.opacity = "0";
+	}
+	function warning()
+	{
+		document.getElementById("dankimage").setAttribute("onclick","angry()");
+		document.getElementById("dankimage").style.opacity = "0";
+		document.getElementById("warnimage").style.opacity = "1";
+	}
+	function zoomText()
+	{
+		if(document.getElementById("dankimage").style.opacity == "1")
+		{
+		document.getElementById("dankimage").style.opacity = "0.5";
+		}
+		if(document.getElementById("warnimage").style.opacity == "1")
+		{
+		document.getElementById("warnimage").style.opacity = "0.25";
+		}
+		document.getElementById("toEnhance").style.fontSize = "440000px";
+		document.getElementById("toEnhance2").style.fontSize = "5000px";
+		document.getElementById("dankimage").style.transition = "60s";
+		document.getElementById("warnimage").style.transition = "60s";
+		document.getElementById("warnimage").style.height = "50000px";
+		document.getElementById("warnimage").style.width = "60000px";
+		document.getElementById("dankimage").style.height = "47000px";
+		document.getElementById("dankimage").style.width = "56500px";
+
+	}
+</script>
+</head>
+
+<body bgcolor="#ffbf00">
+	<h1 class="enhance2" id="toEnhance">Failure</h1>
+		<center>
+	<img class="dankimg" id="dankimage" src="angryboi.jpg" onclick="angry()">
+	<img class="warnimg" id="warnimage" src="blutri.png" onclick="angry()">
+	</center>
+	<p id="toEnhance2" class="cent">You have exceeded the number of password attempts and have now been banned from reaching
+	the "Plans To Have Dr. Wilson Accept My Website" website. A repeal can be sent at <a href="https://treyswackywebpage.tk">treyswackywebpage.tk</a> to regain user privileges(or just use the back arrow).</p>
+	<img onclick="zoomText()" class="enhance" src="enhancer.png" style="width:150px;height:100px;position:fixed;bottom:5px;right:5px;">
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!--Ethan Wong-->
+<!--Task 7-->
+<!--Feb 11, 2019-->
+.default {
+	background-color:#eff0f2;
+}
+.backred	{
+	background-color:#990000;
+}
+
+h1	{
+	font-size:42px;
+	font-weight:bolder;
+	font-family:times;
+}
+h1:hover{
+	cursor:zoom-in;
+	font-family:"Comic Sans MS",cursive,sans-serif;
+	font-size:100px;
+	color:#ffe900;
+	background-color:#03e200;
+}
+p	{
+	text-indent:25px;
+	font-size:18px;
+	font-family:arial;
+	word-spacing:-2px;
+	letter-spacing:-1px;
+}
+ul 	{
+	list-style-type:square;
+}
+li 	{
+	font-size:16px;
+	font-family:arial;
+	letter-spacing:-1px;
+}
+b 	{
+	text-indent:10px;
+	font-size:25px;
+	font-family:arial;
+	word-spacing:0px;
+}
+
+table, th, td {
+  border: 3px solid black;
+  padding:2px;
+}
+
+.red:link{
+	color:#00e5ff;
+}
+.red:hover{
+	color:#ff00c7;
+}
+.red:visited{
+	color:#990000;
+}
+.secret:link {
+	text-decoration:none;
+	color:black;
+	text-indent:25px;
+	font-size:18px;
+	font-family:arial;
+	word-spacing:-2px;
+	letter-spacing:-1px;
+}
+.secret:visited {
+	color:black;
+}
+.secret:hover{
+	cursor:text;
+}
+.secret:active {
+	color:black;
+}
+
+.sidebar {
+	height:100%;
+	width:155px;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:#c7c8c9;
+	overflow-x:hidden;
+	padding-top:20px;
+}
+.sidebar a:link {
+	padding:6px 8px 6px 16px;
+	text-decoration:none;
+	text-align:left;
+	font-family:arial;
+	font-size:20px;
+	color:#5ba5ff;
+	display:block;
+}
+.sidebar a:visited {
+	padding:6px 8px 6px 16px;
+	text-decoration:none;
+	text-align:left;
+	font-family:arial;
+	font-size:20px;
+	color:#5ba5ff;
+	display:block;
+}
+.sidebar a:hover {
+	color:#f4f9ff;
+	font-family:"Comic Sans MS",cursive,san-serif;
+	font-size:18px;
+}
+.main {
+	margin-left:160px;
+	padding:0px 10px;
+}
+.mainbackfix{
+	background-attachment: fixed;
+	background-size:auto;
+	background-image: url("cirnobackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left:160px;
+	padding:0px 10px;
+}
+.mainbackscroll{
+	background-attachment: scroll;
+	background-image: url("cirnobackground.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+	margin-left:160px;
+	padding:0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top:15px;}
+	.sidebar a {font-size:18px;}
+}

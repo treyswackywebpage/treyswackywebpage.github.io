@@ -1,0 +1,190 @@
+<html>
+<head>
+<!--Ethan Wong-->
+<!--Task 10-->
+<!--March 19, 2019-->
+
+<title>Administrator Login</title>
+
+<link rel="stylesheet" href="../style10.css">
+
+<script>
+function opeBar()
+{
+document.getElementById("sidebar").style.paddingLeft = "5px";
+document.getElementById("sidebar").style.paddingRight = "5px";
+	document.getElementById("sidebar").style.width = "150px";
+	document.getElementById("sidebar2").style.width = "150px";
+  document.getElementById("main").style.marginLeft = "160px";
+  document.getElementById("main").style.marginRight = "160px";
+  document.getElementById("closeOpen").src = "../closemenu.jpg";
+  document.getElementById("barBut").setAttribute("onclick","cloBar()");
+  document.getElementById("closeOpen").style.right = "155px";
+}
+function cloBar()
+{
+document.getElementById("sidebar").style.paddingLeft = "0px";
+document.getElementById("sidebar").style.paddingRight = "0px";
+document.getElementById("sidebar").style.width = "0px";
+	document.getElementById("sidebar2").style.width = "0px";
+  document.getElementById("main").style.marginLeft = "0px";
+  document.getElementById("main").style.marginRight = "0px";
+    document.getElementById("closeOpen").src = "../openmenu.jpg";
+  document.getElementById("barBut").setAttribute("onclick","opeBar()");
+  document.getElementById("closeOpen").style.right = "5px";
+}
+
+var attempts = 3;
+function wordPass()
+{
+	var secure1 = "page1";
+	var secure2 = "page2";
+	var secure3 = "page3";
+	var secure4 = "page4";
+	var secure5 = "page5";
+	var secure6 = "page6";
+	var secure7 = "page7";
+	var secure8 = "page8";
+	var secure9 = "page9";
+	var secure10 = "page10";
+	var correct = "p455w0rd";
+	var input = document.getElementById("passInput").value;
+
+	if(attempts <= 1)
+	{
+		window.location.replace("failed.html");
+	}
+	else if(input == secure1)
+	{
+		location.href = "../../Task 1,2/Task 2.html";
+	}
+	else if(input == secure2)
+	{
+		location.href = "../../Task 3/Task 3.html";
+	}
+	else if(input == secure3)
+	{
+		location.href = "../../Task 3/Task P.html";
+	}
+	else if(input == secure4)
+	{
+		location.href = "../../Task 4/Task 4.html";
+	}
+	else if(input == secure5)
+	{
+		location.href = "../../Task 5/Task 5.html";
+	}
+	else if(input == secure6)
+	{
+		location.href = "../../Task 6/Task 6.html";
+	}
+	else if(input == secure7)
+	{
+		location.href = "../../Task 7/Task 7.html";
+	}
+	else if(input == secure8)
+	{
+		location.href = "../../Task 8/Task 8.html";
+	}
+	else if(input == secure9)
+	{
+		location.href = "../../Task 9/Task 9.html";
+	}
+	else if(input == secure10)
+	{
+			location.href = "../Task 10.html";
+	}
+	else if(input == correct)
+	{
+		location.href = "passed.html";
+	}
+	else if(input != correct)
+	{
+		attempts--;
+		if(attempts > 1)
+		{
+			document.getElementById("passText").innerHTML = "The password is incorrect. You have " + attempts + " attempts left.";
+		}
+		else
+		{
+			document.getElementById("passText").innerHTML = "The password is incorrect. You have " + attempts + " attempt left.";
+		}
+		document.getElementById("passInput").value = "";
+	}
+}
+var fs = 3;
+function changeFont()
+{
+	if(fs == 0)
+	{
+		document.getElementById("passText").style.fontSize = "8px";
+	}
+	else if(fs == 1)
+	{
+		document.getElementById("passText").style.fontSize = "12px";
+	}
+	else if(fs == 2)
+	{
+		document.getElementById("passText").style.fontSize = "16px";
+	}
+	else if(fs == 3)
+	{
+		document.getElementById("passText").style.fontSize = "20px";
+	}
+	else if(fs == 4)
+	{
+		document.getElementById("passText").style.fontSize = "24px";
+	}
+	else if(fs == 5)
+	{
+		document.getElementById("passText").style.fontSize = "28px";
+	}
+	else if(fs == 6)
+	{
+		document.getElementById("passText").style.fontSize = "32px";
+	}
+}
+function subtractFont()
+{
+	if(fs > 0)
+	{
+		fs--;
+	}
+	changeFont();
+}
+function addFont()
+{
+	if(fs < 6)
+	{
+		fs++;
+	}
+	changeFont();
+}
+</script>
+</head>
+
+<body bgcolor="#f7f8f9">
+<div id="sidebar" class="sidebar">
+	<center>
+		<a href="../../masterpage.html">Master Page</a><br>
+		<a href="../Task10.html">Home</a><br>
+		<a href="../Contact/contact.html">Contact/Find Us</a><br>
+		<a href="admin.html">Admin Only</a><br>
+	</center>
+</div>
+
+<div id="sidebar2" class="sidebar2">
+	<p>Change Font Size</p>
+	<a href="javascript:void(0)" id="minus" onclick="subtractFont()"><img src="../-.png" style="width:60px;height:60px;padding-left:10px;"></a>
+	<a href="javascript:void(0)" id="plus" onclick="addFont()"><img src="../+.png" style="width:60px;height:60px;padding-left:10px;"></a>
+</div>
+
+<div id="main" class="main">
+	<a href="javascript:void(0)" class="menubutton" id="barBut" onclick="opeBar()"><img id="closeOpen" src="../openmenu.jpg" style="height:75px;width:125px;position:fixed;bottom:5px;right:5px;transition:0.4s;"></a>
+	<h1>Administrator Login</h1>
+	<p class="centerhv" id="passText">Enter Password To Proceed.</p>
+	<input class="centerhv2" autocomplete="off" type="password" id="passInput" onkeydown="if(event.keyCode == 13) document.getElementById('passBut').click()" placeholder="Insert Password">
+	<center><div class="imgcent"><img src="enter.png" id="passBut" onclick="wordPass()" style="height:25px;width:150px;cursor:hand;"></div></center>
+</div>
+</body>
+</html>

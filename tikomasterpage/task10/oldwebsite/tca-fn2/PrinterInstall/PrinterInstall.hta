@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>TCA Printer Install</title>
+<HTA:APPLICATION 
+     APPLICATIONNAME="TCA Printers"
+     SCROLL="No"
+     SINGLEINSTANCE="yes"
+>
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Coda 1.6.4">
+
+<style type="text/css">
+body{text-align: center; overflow-y:auto; margin: 0; width: 100%; height: 100%;padding: 0;0px;background-color: #e9eef4;
+    font: 100.01% "Trebuchet MS",Verdana,Arial,sans-serif}
+h1,h2,h3,p{margin-left: 10px; margin-bottom: 0; margin-right: 10px; margin-top: 0;}
+h1{text-shadow: 2px 0px 2px #663333; text-align: center; font-size: 200%;color: #996666}
+h2{text-shadow: 1px 0px 2px #003366; text-align: center; font-size: 200%;color: #003366}
+h3{text-shadow: 2px 0px 2px #669933; text-align: center; font-size: 200%;color: #4B8A08}
+p{padding-bottom:1em}
+h2{padding-top: .3em}
+div#nifty{ margin: 0 10%;background: white}
+div#nifty2{ margin: 0 10%;background: white; margin-top: 22px}
+div#header_container {
+	padding: 0;
+	margin: 0;
+	border-top: 0px solid #001c33;
+	height: 131px;
+	background: #000 url(http://tca-fn2/PrinterInstall/images/tpbkgrd.png) top left repeat-x;
+	_background: #000 url(http://tca-fn2/PrinterInstall/images/tpbkgrd.png) top left repeat-x;
+	border-bottom: 0px solid #f1f5f8; }
+	
+	#header_inner {
+		width: 400px;
+		height: 180px;
+		padding: 0;
+		position: relative;
+		margin: 0 auto;
+		background: transparent url(http://tca-fn2/PrinterInstall/images/logotca2.png) top left no-repeat;
+		_background: transparent !important; }
+
+b.rtop, b.rbottom{display:block;background: #e9eef4}
+b.rtop b, b.rbottom b{display:block;height: 1px;
+    overflow: hidden; background: white}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
+.style4 {color: #0000CC}
+.style5 {color: #1C881B}
+.style7 {color: #996666}
+.style8 {color: #0000D3}
+.style9 {color: #FFFFFF}
+.style11 {color: #4B8A08}
+.auto-style1 {
+	margin-left: 10px;
+}
+.auto-style2 {
+	text-align: right;
+}
+</style>
+
+<!--Printer Install Subroutines for dropdown menus-->
+<script language="VBScript">
+Dim server, printer
+
+Sub TestSub
+        If OptionChooser.Value <> 0 Then
+            Msgbox "You selected Option " & OptionChooser.Value & "."
+        End If
+    End Sub
+
+Sub TestSub2
+        For Each objOption in OptionChooser.Options
+            If objOption.Selected Then
+		Server = objOption.InnerText
+		Msgbox Server
+            End If
+        Next
+    End Sub
+
+Sub AssignServer
+        If OptionChooser.Value = 1 Then
+		Server = "TCA-FN4"
+		ClearListbox
+		NorthPrinters
+	ElseIf OptionChooser.Value = 2 Then
+		Server = "TCA-PRINT-EAST"
+		ClearListbox
+		EastPrinters
+	ElseIf OptionChooser.Value = 3 Then
+		Server = "TCA-PRINT-CENT"
+		ClearListbox
+		CentralPrinters
+        End If
+    End Sub
+
+Sub AssignPrinter
+        printer = Printers.Value
+    End Sub
+
+
+Sub NorthPrinters
+       Set objFS   = CreateObject("Scripting.FileSystemObject")
+       Set objFile = objFS.OpenTextFile("\\tca-fn2\PrinterInstall\NorthPrinters.txt")
+       strPrinters = objFile.ReadAll
+       objFile.Close
+       arrPrinters = Split(strPrinters,vbNewLine)
+       For Each strNumber in arrPrinters
+          Set objOption = Document.createElement("OPTION")
+          objOption.Text = strNumber
+          objOption.Value = strNumber
+          Printers.Add(objOption)
+       Next
+    End Sub
+
+Sub EastPrinters
+       Set objFS   = CreateObject("Scripting.FileSystemObject")
+       Set objFile = objFS.OpenTextFile("\\tca-fn2\PrinterInstall\EastPrinters.txt")
+       strPrinters = objFile.ReadAll
+       objFile.Close
+       arrPrinters = Split(strPrinters,vbNewLine)
+       For Each strNumber in arrPrinters
+          Set objOption = Document.createElement("OPTION")
+          objOption.Text = strNumber
+          objOption.Value = strNumber
+          Printers.Add(objOption)
+       Next
+    End Sub
+
+Sub CentralPrinters
+       Set objFS   = CreateObject("Scripting.FileSystemObject")
+       Set objFile = objFS.OpenTextFile("\\tca-fn2\PrinterInstall\CentralPrinters.txt")
+       strPrinters = objFile.ReadAll
+       objFile.Close
+       arrPrinters = Split(strPrinters,vbNewLine)
+       For Each strNumber in arrPrinters
+          Set objOption = Document.createElement("OPTION")
+          objOption.Text = strNumber
+          objOption.Value = strNumber
+          Printers.Add(objOption)
+       Next
+    End Sub
+
+Sub ClearListbox
+    For Each objOption in Printers.Options
+       objOption.RemoveNode
+    Next
+End Sub
+
+Sub InstallMessage
+If InstallStatus.InnerText = "" Then
+	InstallStatus.InnerText = "Printer is Installing."
+Else
+	InstallStatus.InnerText = ""
+End IF
+End Sub	
+	
+	
+Sub sleepy
+    Set objShell = CreateObject("WScript.Shell")
+    strCmd = "%COMSPEC% /c"
+    objShell.Run strCmd,0,1
+End Sub 
+
+</script>
+<!--End Printer Install Subroutines for dropdown menus-->
+
+<!--Printer Install Function-->
+<script type="text/vbscript">
+function AddP(pName)
+If printer = "" OR printer = "Choose a Printer" THEN
+	msgbox "Please select a Campus and Printer."
+ELSE
+	a= msgbox ("Printer " & printer & " will be installed.",1,"Install Printer?")
+	IF a="1" then
+		InstallMessage
+		Sleepy
+		Set WshNetwork = CreateObject("Wscript.Network")
+		WshNetwork.AddWindowsPrinterConnection pName
+		InstallMessage
+		msgbox "Printer " & printer & " has been installed."
+	Else
+	End IF
+End IF
+End function
+</script>
+<!-- End Printer Install Function-->
+
+</head>
+<body>
+<!--Logo Header Container-->
+<div id="header_container">	
+<div id="header_inner"></div>
+</div>
+<!--Nifty1baloon-->
+<div id="nifty">
+<b class="rtop"><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+<h2>TCA Printer Install</h2>
+<!--GoogleSearch--><div><br/>
+<!--<form action="http://www.google.com/custom" method="get" style="margin-bottom: 8pt; margin-left: 75pt">
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+
+</tbody>
+</table>
+</form>-->
+<p>1. Choose a Campus:</p>
+<p>
+<select size="1" name="OptionChooser" onChange="AssignServer">
+    <option value="0">Choose Campus Below</option>
+    <option value="1">North</option>
+    <option value="2">East</option>
+    <option value="3">Central</option>
+</select>
+<p>2. Choose your printer:</p>
+<select name="Printers" onCHange="AssignPrinter">
+    </select>
+</br>
+</br>
+<a href='#' language="vbscript" onclick="AddP('\\' &Server& '\' &printer& '')"> <button>Click Here to Install the Printer </button>
+</p>
+</br>
+<span id="InstallStatus"></span>
+<!-- GoogleSearch(end) -->
+
+
+<ul class="style11">
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+</div>
+</body>
+</html>

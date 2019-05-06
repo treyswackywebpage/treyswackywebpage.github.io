@@ -1,0 +1,112 @@
+<html>
+<head>
+<!--Ethan Wong-->
+<!--Task 13-->
+<!--May 1, 2019-->
+
+<title>The Hub</title>
+
+<link rel="stylesheet" href="style12.css">
+
+<script>
+function openMenu()
+{
+	document.getElementById("bar").style.left = "80%";
+	document.getElementById("but").setAttribute("onclick","closeMenu()");
+}
+function closeMenu()
+{
+	document.getElementById("bar").style.left = "95%";
+	document.getElementById("but").setAttribute("onclick","openMenu()");
+}
+
+var zaWarudo;
+var dImg = new Array();
+dImg[0] = "Dance/mokoudd.gif";
+dImg[1] = "Dance/cirnodd.gif";
+dImg[2] = "Dance/reisendd.gif";
+dImg[3] = "Dance/eirindd.gif";
+dImg[4] = "Dance/meilingdd.gif";
+dImg[5] = "Dance/remiliadd.gif";
+dImg[6] = "Dance/flandredd.gif";
+var d = 0;
+var d2 = 0;
+function defaultdance()
+{
+	document.getElementById("fortnite").style.opacity = "1";
+	while(d == d2)
+	{
+		d = Math.floor(7*Math.random());
+	}
+	d2 = d; 
+	document.getElementById("fortnite").src = dImg[d];
+	clearTimeout(zaWarudo);
+	zaWarudo = setTimeout(function() {document.getElementById("fortnite").style.opacity = "0";}, 12250);
+}
+</script>
+</head>
+
+<body style="background-color:#13153d;">
+<div id="bar" class="menu">
+	<a id="but" class="button" href="javascript::void()" onclick="openMenu()"><b>≡</b></a>
+	<center>
+	<a class="link" href="../masterpage.html">Master Page</a><hr>
+	<a class="link" href="Task 12.html">Hub</a><hr>
+	<a class="link" href="Gallery/gallery.html">Gallery</a><hr>
+	<a class="link" href="Awards/awards.html">Awards</a><hr>
+	<a class="link" href="Finale/finale.html">Finale</a>
+	<a class="secret" href="Secret/Secret.html">.</a>
+	<img onclick="defaultdance()" src="rules.jpg" style="position:absolute;left:85;top:50;width:150px;height:60px;">
+	<img id="fortnite" src="" style="position:absolute;left:85;top:375;">
+	</center>
+</div>
+
+<div class="main">
+	<center>
+	<h1>The Official Webpage <ran id="rand"></ran></h1>
+	</center>
+	<p>You are about to enter the Official Webpage <ran id="rand2"></ran>, the world’s largest and most-visited <ran id="rand3"></ran>, drawing nearly about 0 trillion people each year. It is a <ran id="rand4"></ran> dedicated to education, with the primary mission to preserve and pass on our heritage to future generations.
+	<br><br>To help you make the most of your visit, while respecting the collections and other visitors, we invite you to discover what the Official Webpage <ran id="rand5"></ran> is all about and how you can help us preserve the collections it houses.
+	<br><br>Over the course of your visit, you will find a pictogram displaying the six main rules to follow in the <ran id="rand6"></ran>. By following these guidelines, you help to protect and enhance our heritage, and ensure the greatest possible comfort for all <ran id="rand7"></ran>-goers.
+	<br><br>Filming and photography are permitted in the permanent collection exhibition gallery. The use of flash and other lighting equipment, however, is not permitted. Filming and photography are not allowed in the temporary exhibition gallery.
+	<br><br>Please refrain from:
+	<br><br>-Smoking
+	<br><br>-Drinking
+	<br><br>-Eating
+	<br><br>-Raising your voice
+	<br><br>-Touching artworks
+	<br><br>-Running in the <ran id="rand8"></ran> exhibition rooms
+	<br><br>ARTICLE 37 of the Official Webpage <ran id="rand9"></ran> Visitor Regulations: "Visitors are bound to comply with the requests issued thereunto pursuant to the present regulations, by members of the visitor services and security staff of the Etablissement Public de l'Official Webpage <ran id="rand10"></ran>."
+	<br><br>Enjoy your visit!
+	</p>
+</div>
+</body>
+
+<footer>
+<script>
+var r = Math.floor(11*Math.random());
+var rText = new Array();
+rText[0] = "Gallery Show";
+rText[1] = "Award Show";
+rText[2] = "Museum";
+rText[3] = "Memorial";
+rText[4] = "Dumpster";
+rText[5] = "Collection";
+rText[6] = "Mainpage";
+rText[7] = "Landfill";
+rText[8] = "Cemetery";
+rText[9] = "Festival";
+rText[10] = "Bargain Bin";
+document.getElementById("rand").innerHTML = rText[r];
+document.getElementById("rand2").innerHTML = rText[r];
+document.getElementById("rand3").innerHTML = rText[r];
+document.getElementById("rand4").innerHTML = rText[r];
+document.getElementById("rand5").innerHTML = rText[r];
+document.getElementById("rand6").innerHTML = rText[r];
+document.getElementById("rand7").innerHTML = rText[r];
+document.getElementById("rand8").innerHTML = rText[r];
+document.getElementById("rand9").innerHTML = rText[r];
+document.getElementById("rand10").innerHTML = rText[r];
+</script>
+</footer>
+</html>
