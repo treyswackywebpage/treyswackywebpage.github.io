@@ -1,0 +1,353 @@
+<html class="htmlAward" id="htmlChange">
+<head>
+<!--Ethan Wong-->
+<!--Task 13-->
+<!--May 1, 2019-->
+
+<title>The Awards</title>
+
+<link rel="stylesheet" href="../style12.css">
+
+<script>
+function openMenu()
+{
+	document.getElementById("bar").style.left = "80%";
+	document.getElementById("but").setAttribute("onclick","closeMenu()");
+}
+function closeMenu()
+{
+	document.getElementById("bar").style.left = "95%";
+	document.getElementById("but").setAttribute("onclick","openMenu()");
+}
+
+var zaWarudo;
+var dImg = new Array();
+dImg[0] = "../Dance/mokoudd.gif";
+dImg[1] = "../Dance/cirnodd.gif";
+dImg[2] = "../Dance/reisendd.gif";
+dImg[3] = "../Dance/eirindd.gif";
+dImg[4] = "../Dance/meilingdd.gif";
+dImg[5] = "../Dance/remiliadd.gif";
+dImg[6] = "../Dance/flandredd.gif";
+var d = 0;
+var d2 = 0;
+function defaultdance()
+{
+	document.getElementById("fortnite").style.opacity = "1";
+	while(d == d2)
+	{
+		d = Math.floor(7*Math.random());
+	}
+	d2 = d;
+	document.getElementById("fortnite").src = dImg[d];
+	clearTimeout(zaWarudo);
+	zaWarudo = setTimeout(function() {document.getElementById("fortnite").style.opacity = "0";}, 12250);
+}
+
+var taskImg = new Array();
+taskImg[1] = "../Gallery/task1.png";
+taskImg[2] = "../Gallery/task2.png";
+taskImg[3] = "../Gallery/task3.png";
+taskImg[4] = "../Gallery/task4.png";
+taskImg[5] = "../Gallery/task5.png";
+taskImg[6] = "../Gallery/task6.png";
+taskImg[7] = "../Gallery/task7.png";
+taskImg[8] = "../Gallery/task8.png";
+taskImg[9] = "../Gallery/task9.png";
+taskImg[10] = "../Gallery/task10.png";
+taskImg[11] = "../Gallery/task11.png";
+taskImg[12] = "../Gallery/task12.png";
+taskImg[13] = "../Gallery/task13.png";
+var taskTex = new Array();
+taskTex[1] = "Task 1";
+taskTex[2] = "Task 2";
+taskTex[3] = "Task 3";
+taskTex[4] = "Task 4";
+taskTex[5] = "Task 5";
+taskTex[6] = "Task 6";
+taskTex[7] = "Task 7";
+taskTex[8] = "Task 8";
+taskTex[9] = "Task 9";
+taskTex[10] = "Task 10";
+taskTex[11] = "Task 11";
+taskTex[12] = "Task 12";
+taskTex[13] = "Task 13";
+function awardShow()
+{
+	document.getElementById("awardTable").style.opacity = "1";
+	document.getElementById("htmlChange").style.overflowX = "initial";
+
+	var epic = document.getElementById("epic").value;
+	if(epic != 0)
+	{
+		document.getElementById("epicImg").src = taskImg[epic];
+		document.getElementById("epicTex").innerHTML = "The Most Epic Webpage is " + taskTex[epic];
+	}
+	else
+	{
+		document.getElementById("epicH").style.display = "none";
+		document.getElementById("epicD").style.display = "none";
+	}
+
+	var amuse = document.getElementById("amuse").value;
+	if(amuse != 0)
+	{
+		document.getElementById("amuseImg").src = taskImg[amuse];
+		document.getElementById("amuseTex").innerHTML = "The Least Amusing Webpage is " + taskTex[amuse];
+	}
+	else
+	{
+		document.getElementById("amuseH").style.display = "none";
+		document.getElementById("amuseD").style.display = "none";
+	}
+
+	var conc = document.getElementById("conc").value;
+	if(conc != 0)
+	{
+		document.getElementById("concImg").src = taskImg[conc];
+		document.getElementById("concTex").innerHTML = "The Webpage with the Worst Concept is " + taskTex[conc];
+	}
+	else
+	{
+		document.getElementById("concH").style.display = "none";
+		document.getElementById("concD").style.display = "none";
+	}
+
+	var ugly = document.getElementById("ugly").value;
+	if(ugly != 0)
+	{
+		document.getElementById("uglyImg").src = taskImg[ugly];
+		document.getElementById("uglyTex").innerHTML = "The Ugliest is Webpage " + taskTex[ugly];
+	}
+	else
+	{
+		document.getElementById("uglyH").style.display = "none";
+		document.getElementById("uglyD").style.display = "none";
+	}
+
+	var ille = document.getElementById("ille").value;
+	if(ille != 0)
+	{
+		document.getElementById("illeImg").src = taskImg[ille];
+		document.getElementById("illeTex").innerHTML = "The Webpage Most Likely to be Illegal is " + taskTex[ille];
+	}
+	else
+	{
+		document.getElementById("illeH").style.display = "none";
+		document.getElementById("illeD").style.display = "none";
+	}
+
+	var ctas = document.getElementById("ctas").value;
+	var customAward = document.getElementById("cust").value;
+	if(ctas != 0 && customAward != "")
+	{
+			document.getElementById("ctasImg").src = taskImg[ctas];
+			document.getElementById("ctasTex").innerHTML = "The " + customAward + " Webpage is " + taskTex[ctas];
+	}
+	else
+	{
+		document.getElementById("ctasH").style.display = "none";
+		document.getElementById("ctasD").style.display = "none";
+	}
+
+	var worst = document.getElementById("worst").value;
+	if(worst != 0)
+	{
+		document.getElementById("worstImg").src = taskImg[worst];
+		document.getElementById("worstTex").innerHTML = "The Worst Webpage of All Time is " + taskTex[worst];
+	}
+	else
+	{
+		document.getElementById("worstH").style.display = "none";
+		document.getElementById("worstD").style.display = "none";
+	}
+
+	document.getElementById("choice").style.display = "none";
+	if(epic == 0 && amuse == 0 && conc == 0 && ugly == 0 && ille == 0 && ctas == 0 && worst == 0)
+	{
+		document.getElementById("awardTable").style.display = "none";
+		document.getElementById("noVote").innerHTML = "You did not vote for anything sir/maam! Click <a href='awards.html'>here</a> to reload the page and vote again.";
+		document.getElementById("noVote").style.opacity = "1";
+		document.getElementById("noVote").style.zIndex = "1";
+	}
+}
+</script>
+</head>
+
+<body style="background-color:#13153d;">
+<div id="bar" class="menu">
+	<a id="but" class="button" href="javascript::void()" onclick="openMenu()"><b>≡</b></a>
+	<center>
+	<a class="link" href="../../masterpage.html">Master Page</a><hr>
+	<a class="link" href="../Task12.html">Hub</a><hr>
+	<a class="link" href="../Gallery/gallery.html">Gallery</a><hr>
+	<a class="link" href="awards.html">Awards</a><hr>
+	<a class="link" href="../Finale/finale.html">Finale</a>
+	<a class="secret" href="../Secret/Secret.html">.</a>
+	<img onclick="defaultdance()" src="../rules.jpg" style="position:absolute;left:85;top:50;width:150px;height:60px;">
+	<img id="fortnite" src="" style="position:absolute;left:85;top:375;">
+	</center>
+</div>
+
+<div class="main">
+	<center>
+	<h1>The Official Awards</h1>
+	<p id="noVote" style="opacity:0;z-index:-1;"></p>
+	<form id="choice" method="post" action="#" name="award" awards>
+		<hr>
+
+		<pre>Most Epic</pre>
+		<select id="epic" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr>
+
+		<pre>Least Amusing</pre>
+		<select id="amuse" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr>
+
+		<pre>Worst Concept</pre>
+		<select id="conc" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr>
+
+		<pre>Ugliest Aesthetic</pre>
+		<select id="ugly" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr>
+
+		<pre>Most Likely to be Illegal</pre>
+		<select id="ille" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr><br>
+
+		<input id="cust" type="text" placeholder="Enter Custom Award" required awards>
+		<br><br>
+		<select id="ctas" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr>
+
+		<pre>Worst Webpage of All Time</pre>
+		<select id="worst" name="award" required awards>
+			<option selected="selected" value="0">Select Webpage</option>
+			<option value="1">Task 1</option>
+			<option value="2">Task 2</option>
+			<option value="3">Task 3</option>
+			<option value="4">Task 4</option>
+			<option value="5">Task 5</option>
+			<option value="6">Task 6</option>
+			<option value="7">Task 7</option>
+			<option value="8">Task 8</option>
+			<option value="9">Task 9</option>
+			<option value="10">Task 10</option>
+			<option value="11">Task 11</option>
+			<option value="12">Task 12</option>
+			<option value="13">Task 13</option>
+		</select><hr>
+
+		<br>
+		<input type="button" value="Vote" onclick="awardShow()">
+	</form>
+	</center>
+
+	<table id="awardTable" border="5" style="opacity:0;position:absolute;bottom:20px;z-index:-2;padding-right:60px;">
+		<tr>
+			<th id="epicH"><h2 id="epicTex"></h2></th>
+			<th id="amuseH"><h2 id="amuseTex"></h2></th>
+			<th id="concH"><h2 id="concTex"></h2></th>
+			<th id="uglyH"><h2 id="uglyTex"></h2></th>
+			<th id="illeH"><h2 id="illeTex"></h2></th>
+			<th id="ctasH"><h2 id="ctasTex"></h2></th>
+			<th id="worstH"><h2 id="worstTex"></h2></th>
+		</tr>
+		<tr>
+			<td id="epicD"><img src="" id="epicImg" style="height:700;width:700px;"></td>
+			<td id="amuseD"><img src="" id="amuseImg" style="height:700;width:700px;"></td>
+			<td id="concD"><img src="" id="concImg" style="height:700;width:700px;"></td>
+			<td id="uglyD"><img src="" id="uglyImg" style="height:700;width:700px;"></td>
+			<td id="illeD"><img src="" id="illeImg" style="height:700;width:700px;"></td>
+			<td id="ctasD"><img src="" id="ctasImg" style="height:700;width:700px;"></td>
+			<td id="worstD"><img src="" id="worstImg" style="height:700;width:700px;"></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
