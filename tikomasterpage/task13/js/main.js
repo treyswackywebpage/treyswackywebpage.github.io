@@ -22,3 +22,28 @@ function gotoWebsite(website) {
 
   }
 }
+function link(num) {
+  switch (num) {
+    case 1:
+      location.href='https://facebook.com/myppislarge.html'
+      break;
+    case 2:
+      location.href='https://twitter.com/myppislarge.html'
+      break;
+    case 3:
+      location.href='https://instagram.com/myppislarge.html'
+      break;
+    case 4:
+      location.href='https://pintrest.com/myppislarge.html'
+      break;
+    case 5:
+      location.href='https://snapchat.com/myppislarge.html'
+      break;
+    case 6:
+      location.href='https://github.com/myppislarge.html'
+      break;
+    default:
+      location.href='https://treyswackywebpage.tk'
+      break;
+  }
+}
