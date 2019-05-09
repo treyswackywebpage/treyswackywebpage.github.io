@@ -1,6 +1,7 @@
 body {
   font-family: Comfortaa;
-  background-image: url(background.jpg)
+  background-image: url(background.jpg);
+  background-attachment: fixed;
 }
 td {
   padding-left: 5px;
@@ -10,6 +11,30 @@ img {
   height: 75%;
   width: 75.5%;
   margin-left: -10px;
+}
+.picture-link {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+.graybox::before {
+  content: '';
+  background: url(background.jpg) 0 0 / cover fixed no-repeat;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  z-index: -1;
+}
+.graybox {
+  filter: blur(0px);
+  background-color: #0000007c;
+  width: 75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 12.5%;
+  border-radius: 5px;
+  height: 700px;
 }
 .main-box {
   text-align: left;
