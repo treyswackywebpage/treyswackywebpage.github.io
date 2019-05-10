@@ -16,6 +16,14 @@ p.textbox {
   background-color: #474747;
   border-radius: 5px;
   padding: 5px;
+  color: white;
+}
+.everthing-else {
+  background: #474747;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
 }
 .picture-box {
   padding: 10px;
