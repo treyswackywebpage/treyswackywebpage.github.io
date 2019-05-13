@@ -86,7 +86,7 @@ p.textbox {
   text-align: left;
   position: relative;
   top: -16px;
-  background-color: white;
+  /*background-color: white;*/
   box-shadow: 0px 0px 5px 3px #0000007c;
   border-radius: 5px;
   width: 75%;
@@ -100,9 +100,11 @@ p.textbox {
   position: fixed;
   z-index: 40;
   font-size: 27px;
+  color: white;
   text-align: center;
   height: auto;
   width: auto;
+  margin-left: 60px;
   padding-left: 5px;
   padding-bottom: 15px;
   padding-top: 20px;
@@ -122,7 +124,7 @@ p.textbox {
 }
 
 #next-to-cat {
-  position: relative;
+
   top: 50px;
   left: 600px;
 }

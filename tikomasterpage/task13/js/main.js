@@ -3,8 +3,7 @@ var website;
 function gotoWebsite(website) {
   switch (website) {
     case 1:
-      location.href='../../index.html';
-
+      location.href='../index.html';
       break;
     case 2:
       location.href='index.html';
@@ -17,6 +16,18 @@ function gotoWebsite(website) {
       break;
     case 5:
       location.href='contact/index.html';
+      break;
+    case 7:
+      location.href='../merchandise/index.html';
+      break;
+    case 8:
+      location.href='../contact/index.html';
+      break;
+    case 9:
+      location.href='../info/index.html';
+      break;
+    case 10:
+      location.href='../../index.html';
       break;
     default:
 
