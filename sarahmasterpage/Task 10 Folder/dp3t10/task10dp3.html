@@ -1,0 +1,59 @@
+<html>
+<head>
+<!--Sarah Greening-->
+<!--task 10-->
+<!--4/22/19-->
+<style>
+ul	{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #898689;
+	}
+li	{
+float: left;
+	}
+li a	{
+display:block;
+color:white;
+text-align:center;
+padding: 14px 16px;
+text-decoration:none;
+	}
+li a:hover 	{
+background-color: #4a484b;
+	}
+</style>
+</head>
+<script type="text/javascript">
+function checkPswd1() {
+	var confirmPassword =  "admin";
+	var password = document.getElementById("pswd").value;
+	if (password== "ughhh") {
+		window.location= "../dp4t10/task10dp4.html";
+	}
+	else    {
+	var message = "WRONG PLEASE RE-ENTER PASSWORD";
+	document.getElementById("origional").innerHTML = message;}
+}
+</script>
+<body>
+<ul>
+<li><a class="active" href="../task10mainpage.html"> Home</a></li>
+<li><a class="active" href="../dp1t10/task10dp1.html">Functions</a></li>
+<li><a class="active" href="../dp2t10/task10dp2.html"> CSS</a></li>
+<li><a class="active" href="../dp2t10/task10dp2.html">Java Script</a></li>
+<li><a class="active" href="../dp2t10/task10dp2.html"> Forms</a></li>
+<li><a class="active" href="task10dp3.html">Stuff</a></li>
+<li><a class="active" href="../../mainpage.html">Mainpage</a></li>
+</li>
+</ul>
+<p id="origional">Please enter your password:</p>
+<form>
+	<label for= "pswd">Password: </label>
+	<input type="password" id="pswd"><br>
+</form>
+<button onclick="checkPswd1()">Submit</button>
+</body>
+</html>

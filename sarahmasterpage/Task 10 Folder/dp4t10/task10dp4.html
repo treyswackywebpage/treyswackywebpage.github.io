@@ -1,0 +1,77 @@
+<html>
+<head>
+<!--Sarah Greening-->
+<!--Task 10-->
+<!--4/22/19-->
+<style>
+ul	{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #898689;
+	}
+li	{
+float: left;
+	}
+li a	{
+display:block;
+color:white;
+text-align:center;
+padding: 14px 16px;
+text-decoration:none;
+	}
+li a:hover 	{
+background-color: #4a484b;
+	}
+</style>
+<script>
+function clickCheckboxA()
+{
+	var checkbox1 = document.getElementById("checkbox1")
+	document.getElementById("dog").style.color = "black";
+	if (checkbox1.checked)
+	{
+		document.getElementById("dog").style.color = "Blue";
+	};
+}
+function clickCheckboxB()
+{
+	var checkbox2 = document.getElementById("checkbox2")
+	document.getElementById("dog").style.color="black";
+	if (checkbox2.checked)
+	{
+		document.getElementById("dog").style.color="Green";
+	};
+}
+function clickCheckboxC()
+{
+	var checkbox3 = document.getElementById("checkbox3")
+	document.getElementById("dog").style.color="black";
+	if (checkbox3.checked)
+	{
+		document.getElementById("dog").style.color="Red";
+	};
+}
+</script>
+</head>
+<body>
+<ul>
+<li><a class="active" href="../task10mainpage.html"> Home</a></li>
+<li><a class="active" href="../dp1t10/task10dp1.html">Functions</a></li>
+<li><a class="active" href="../dp2t10/task10dp2.html"> CSS</a></li>
+<li><a class="active" href="../dp2t10/task10dp2.html">Java Script</a></li>
+<li><a class="active" href="../dp2t10/task10dp2.html"> Forms</a></li>
+<li><a class="active" href="../dp3t10/task10dp3.html">Stuff</a></li>
+<li><a class="active" href="../../mainpage.html">Mainpage</a></li>
+</li>
+</ul>
+<h1 id="dog">Yayyyyy</h1>
+<input type="radio" name="change" id="checkbox1" onclick="clickCheckboxA()"> Change to Blue
+<br>
+<input type="radio" name="change" id="checkbox2" onclick="clickCheckboxB()"> Change to Green
+<br>
+<input type="radio" name="change" id="checkbox3" onclick="clickCheckboxC()"> Change to Red
+<br>
+</body>
+</html>

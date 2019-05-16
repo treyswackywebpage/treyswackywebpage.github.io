@@ -1,0 +1,49 @@
+<html>
+<head>
+<!--Sarah Greening-->
+<!--Task 8-->
+<!--18 March 2019-->
+<script>
+function changeText1()
+{
+	var message = "Lets go to Panera!";
+	document.getElementById("opinionofKaty").innerHTML = message;
+}
+function changeText2()
+{
+	var message = "Sure! I love Panera!";
+	document.getElementById("opofMolly").innerHTML = message;
+}
+function changeText3()
+{
+	var message="I don't care what do you want?";
+	document.getElementById("opinionofKaty").innerHTML=message;
+
+	var message="No I dont feel like Panera.";
+	document.getElementById("opofMolly").innerHTML=message;
+}
+</script>
+</head>
+<body>
+<h1>What Should Katy and Molly Eat?</h1>
+<p>Molly and Katy are very hungry. But they cannot decide where to eat.
+Can you give Katy an opinion?
+
+<bob id ="opinionofKaty">"I don't care what do you want?"</bob>
+<button onclick="changeText1()">Click to give Katy an Opinion</button><br>
+
+Yayyy you gave Katy an opinion!
+Sadly Molly is very disagreeable. <br>
+Can you make Molly agree to eat there?
+
+<bob id = "opofMolly">"No I dont feel like Panera."</bob>
+<button onclick="changeText2()">Click to make Molly agree to Panera</button>
+<br>
+Thank you so much! You helped them decide where to eat!
+<br>
+<button onclick="changeText3()">Click to Reset</button><br>
+</p>
+<img src="panerabreadlogo"height=300 width=500><br>
+<a href="../mainpage.html"> link to mainpage</a>
+</body>
+</html>

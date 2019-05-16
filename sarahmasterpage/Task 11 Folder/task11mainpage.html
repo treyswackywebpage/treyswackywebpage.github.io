@@ -1,0 +1,578 @@
+<html>
+<head>
+<!--Sarah Greening-->
+<!--task 11-->
+<!-- May 10, 2019-->
+<style>
+body	{
+	text-align:center;
+	background-color: #FBF4AA;
+	}
+h1	{
+	font-size: 60px;
+	}
+p	{
+	font-size: 40px;
+	}
+</style>
+<script>
+var album ="album1";
+var pictureNumber;
+var displayNumber;
+
+function albumChange()
+{
+var CHOSEN= document.getElementById("selection").value;
+	if (CHOSEN=="album1")
+		{
+		document.getElementById("picture").src = "cat album/cryingcat.jpg";
+		pictureNumber= 1;
+		displayNumber= 1;
+		document.getElementById("caption").innerHTML = "This is Crying Cat";
+		document.getElementById("bunny").innerHTML = "I really love these cat photos. They speak to me on a spirtual level and are my constant mood. I don't care if you dont love them as much as me because I really really like them :)";
+		}
+	if (CHOSEN=="album2")
+		{
+		document.getElementById("picture").src = "dog album/gooddog.jpg";
+		pictureNumber=11;
+		displayNumber=1;
+		document.getElementById("caption").innerHTML = "This is Good Dog";
+		document.getElementById("bunny").innerHTML = "Dogos are life. This album is dedicated completely to dogos and how cute and funny they are. If I could I would have put in my doggo in the album also.";
+		}
+	if (CHOSEN=="album3")
+		{
+		document.getElementById("picture").src = "shark album/whaleshark.jpg";
+		pictureNumber=21;
+		displayNumber =1;
+		document.getElementById("caption").innerHTML = "This is Whale Shark";
+		document.getElementById("bunny").innerHTML = "SHARKIRA SHARKIRA!!! I really love that vine of the shark dancing to a sharkira song so I put it inside this album and I have absolutely no regrets.";
+		}
+
+	document.getElementById("catzzz").value=displayNumber;
+
+
+}
+function Picture()
+{
+	var picture1 = document.getElementById("picture").value;
+	src= "cat album/cryingcat.jpg";
+}
+function Prev()
+{
+	if (pictureNumber==1){
+		document.getElementById ("picture").src = "cat album/radcat.jpg";
+		pictureNumber = pictureNumber + 9;
+		displayNumber = 10;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Rad Cat";
+		return;
+	}
+	if (pictureNumber==2){
+		document.getElementById ("picture").src = "cat album/cryingcat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =1;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Crying Cat";
+		return;
+	}
+	if (pictureNumber==3){
+		document.getElementById ("picture").src = "cat album/smugcat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =2;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Smug Cat";
+		return;
+	}
+	if (pictureNumber==4){
+		document.getElementById ("picture").src = "cat album/crazycat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =3;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Crazy Cat";
+		return;
+	}
+	if (pictureNumber==5){
+		document.getElementById ("picture").src = "cat album/2legcat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =4;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is 2 Legged Cat";
+		return;
+	}
+	if (pictureNumber==6){
+		document.getElementById ("picture").src = "cat album/seriouscat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =5;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Serious Cat";
+		return;
+	}
+	if (pictureNumber==7){
+		document.getElementById ("picture").src = "cat album/weirdfacecat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =6;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Weird Cat";
+		return;
+	}
+	if (pictureNumber==8){
+		document.getElementById ("picture").src = "cat album/hovercat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =7;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Hover Cat";
+		return;
+	}
+	if (pictureNumber==9){
+		document.getElementById ("picture").src = "cat album/surprizedcat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =8;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Surprized Cat";
+		return;
+	}
+	if (pictureNumber==10){
+		document.getElementById ("picture").src = "cat album/possesedcat.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =9;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Possesed Cat";
+		return;
+	}
+	if (pictureNumber==11){
+		document.getElementById ("picture").src = "dog album/worrieddog.jpg";
+		pictureNumber = pictureNumber + 9;
+		displayNumber =10;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Worried Dog";
+		return;
+	}
+	if (pictureNumber==12){
+		document.getElementById ("picture").src = "dog album/gooddog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =1;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Good Dog";
+		return;
+	}
+	if (pictureNumber==13){
+		document.getElementById ("picture").src = "dog album/annoyeddog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =2;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Annoyed Dog";
+		return;
+	}
+	if (pictureNumber==14){
+		document.getElementById ("picture").src = "dog album/blanketdog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =3;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Blanket Dog";
+		return;
+	}
+	if (pictureNumber==15){
+		document.getElementById ("picture").src = "dog album/drivingdog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =4;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Driving Dog";
+		return;
+	}
+	if (pictureNumber==16){
+		document.getElementById ("picture").src = "dog album/forgothowtodog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =5;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Forgot How to Dog";
+		return;
+	}
+	if (pictureNumber==17){
+		document.getElementById ("picture").src = "dog album/happydog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =6;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Happy Dog";
+		return;
+	}
+	if (pictureNumber==18){
+		document.getElementById ("picture").src = "dog album/idunnodog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =7;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is I Dunno Dog";
+		return;
+	}
+	if (pictureNumber==19){
+		document.getElementById ("picture").src = "dog album/laughingdog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =8;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Laughing Dog";
+		return;
+	}
+	if (pictureNumber==20){
+		document.getElementById ("picture").src = "dog album/worrieddog.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =9;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Worried Dog";
+		return;
+	}
+	if (pictureNumber==21){
+		document.getElementById ("picture").src = "shark album/greatshark.jpg";
+		pictureNumber = pictureNumber + 9;
+		displayNumber =10;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Great Shark"; 
+		return;
+	}
+	if (pictureNumber==22){
+		document.getElementById ("picture").src = "shark album/akwardshark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =1;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Akward Shark"; 
+		return;
+	}
+	if (pictureNumber==23){
+		document.getElementById ("picture").src = "shark album/manysharks.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =2;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Many Shark"; 
+		return;
+	}
+	if (pictureNumber==24){
+		document.getElementById ("picture").src = "shark album/sharkashark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =3;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Shark a Shark"; 
+		return;
+	}
+	if (pictureNumber==25){
+		document.getElementById ("picture").src = "shark album/sharkirashark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =4;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Sharkira Shark"; 
+		return;
+	}
+	if (pictureNumber==26){
+		document.getElementById ("picture").src = "shark album/stockshark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =5;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Stock Shark"; 
+		return;
+	}
+	if (pictureNumber==27){
+		document.getElementById ("picture").src = "shark album/tigershark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =6;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Tiger Shark"; 
+		return;
+	}
+	if (pictureNumber==28){
+		document.getElementById ("picture").src = "shark album/tigersshark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =7;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is tIger Shark"; 
+		return;
+	}
+	if (pictureNumber==29){
+		document.getElementById ("picture").src = "shark album/watershark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =8;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Water Shark"; 
+		return;
+	}
+	if (pictureNumber==30){
+		document.getElementById ("picture").src = "shark album/whaleshark.jpg";
+		pictureNumber = pictureNumber - 1;
+		displayNumber =9;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Whale Shark"; 
+		return;
+	}
+document.getElementById("catzzz").value=displayNumber;
+
+
+}
+var pictureNumber = 1;
+function Next()
+{
+	
+	if (pictureNumber==1){
+	
+		document.getElementById ("picture").src = "cat album/smugcat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =2;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Smug Cat";
+		return;
+	} 
+	if (pictureNumber==2){
+		document.getElementById ("picture").src = "cat album/crazycat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =3;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Crazy Cat";
+		return;
+	}
+	if (pictureNumber==3){
+		document.getElementById ("picture").src = "cat album/2legcat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =4;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Two Legged Cat";
+		return;
+	}
+	if (pictureNumber==4){
+		document.getElementById ("picture").src = "cat album/seriouscat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =5;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Serious Cat";
+		return;
+	}
+	if (pictureNumber==5){
+		document.getElementById ("picture").src = "cat album/weirdfacecat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =6;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Weird Face Cat";
+		return;
+	}
+	if (pictureNumber==6){
+		document.getElementById ("picture").src = "cat album/hovercat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =7;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Crying Cat";
+		return;
+	}
+	if (pictureNumber==7){
+		document.getElementById ("picture").src = "cat album/surprizedcat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =8;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Surprized";
+		return;
+	}
+	if (pictureNumber==8){
+		document.getElementById ("picture").src = "cat album/possesedcat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =9;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Posessed Cat";
+		return;
+	}
+	if (pictureNumber==9){
+		document.getElementById ("picture").src = "cat album/radcat.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =10;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Rad Cat";
+		return;
+	}
+	if (pictureNumber==10){
+		document.getElementById ("picture").src = "cat album/cryingcat.jpg";
+		pictureNumber = pictureNumber - 9;
+		displayNumber =1;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Crying Cat";
+		return;
+	}
+	if (pictureNumber==11){
+	
+		document.getElementById ("picture").src = "dog album/annoyeddog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =2;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Annoyed Dog";
+		return;
+	} 
+	if (pictureNumber==12){
+		document.getElementById ("picture").src = "dog album/blanketdog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =3;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Blanket Dog";
+		return;
+	}
+	if (pictureNumber==13){
+		document.getElementById ("picture").src = "dog album/drivingdog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =4;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Driving Dog";
+		return;
+	}
+	if (pictureNumber==14){
+		document.getElementById ("picture").src = "dog album/forgothowtodog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =5;
+	document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Forgot how to Dog";
+		return;
+	}
+	if (pictureNumber==15){
+		document.getElementById ("picture").src = "dog album/happydog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =6;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Happy Dog";
+		return;
+	}
+	if (pictureNumber==16){
+		document.getElementById ("picture").src = "dog album/idunnodog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =7;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is IDK Dog";
+		return;
+	}
+	if (pictureNumber==17){
+		document.getElementById ("picture").src = "dog album/laughingdog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =8;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Lauging Dog";
+		return;
+	}
+	if (pictureNumber==18){
+		document.getElementById ("picture").src = "dog album/smilingdog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =9;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Smiling Dog";
+		return;
+	}
+	if (pictureNumber==19){
+		document.getElementById ("picture").src = "dog album/worrieddog.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =10;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Worried Dog";
+		return;
+	}
+	if (pictureNumber==20){
+		document.getElementById ("picture").src = "dog album/gooddog.jpg";
+		pictureNumber = pictureNumber - 9;
+		displayNumber =1;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Good Dog";
+		return;
+	}
+	if (pictureNumber==21){
+		document.getElementById ("picture").src = "shark album/greatshark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =2;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Great Shark";
+		return;
+	}
+	if (pictureNumber==22){
+		document.getElementById ("picture").src = "shark album/akwardshark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =3;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Akward Shark";
+		return;
+	}
+	if (pictureNumber==23){
+		document.getElementById ("picture").src = "shark album/manysharks.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =4;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Many Shark";
+		return;
+	}
+	if (pictureNumber==24){
+		document.getElementById ("picture").src = "shark album/sharkashark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =5;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Shark A Shark";
+		return;
+	}
+	if (pictureNumber==25){
+		document.getElementById ("picture").src = "shark album/sharkirashark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =6;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Sharkira Shark";
+		return;
+	}
+	if (pictureNumber==26){
+		document.getElementById ("picture").src = "shark album/stockshark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =7;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Stock Shark";
+		return;
+	}
+	if (pictureNumber==27){
+		document.getElementById ("picture").src = "shark album/tigershark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =8;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Tiger Shark";
+		return;
+	}
+	if (pictureNumber==28){
+		document.getElementById ("picture").src = "shark album/tigersshark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =9;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is tIger Shark";
+		return;
+	}
+	if (pictureNumber==29){
+		document.getElementById ("picture").src = "shark album/watershark.jpg";
+		pictureNumber = pictureNumber + 1;
+		displayNumber =10;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Water Shark";
+		return;
+	}
+	if (pictureNumber==30){
+		document.getElementById ("picture").src = "shark album/whaleshark.jpg";
+		pictureNumber = pictureNumber - 9;
+		displayNumber =1;
+		document.getElementById("catzzz").value=displayNumber;
+		document.getElementById("caption").innerHTML = "This is Whale Shark";
+		return;
+	}
+document.getElementById("catzzz").value=displayNumber;
+}
+</script>
+</head>
+<body>
+<h1>Task 11</h1>
+<a href="../mainpage.html">Link to Mainpage</a>
+<br>
+<br>
+<form>
+<select name="selection" id="selection" onchange="albumChange()" name="album">
+<option id="album1a" value="album1">Album A</option>
+<option id="album1b" value="album2">Album B</option>
+<option id="album1c" value="album3">Album C</option>
+</select>
+</form>
+<input type= "text" id="catzzz"> 
+<br>
+<img id="picture" src= "cat album/cryingcat.jpg" height="400" width="450"><br><br>
+<button id="button" onclick="Prev()">Prev</button>
+<button id="button" onclick= "Next()">Next</button>
+<p id="caption">This is Crying Cat</p>
+<p id="bunny">I really love these cat photos. They speak to me on a spirtual level
+and are my constant mood. I dont care if you dont love them as much as me becasue
+I really really like them :)</p>
+</body>
+</html>

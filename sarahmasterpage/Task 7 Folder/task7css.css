@@ -1,0 +1,60 @@
+p	{
+padding-left: .5in;
+font-size: large;
+font-family: times new roman;
+text-color: black;
+	}
+h1	{
+text-align: center;
+	}
+body.fixed	{
+background-image: url("ombreyellow");
+background-attachment: fixed;
+	}
+td	{
+height: 300;
+width: 500;
+text-align: center;
+font-size: x-large;
+	}
+td.other	{
+height: 300;
+width: 500;
+text-align: left;
+font-size: x-large;
+	}
+h1.tada	{
+text-align: center;
+font-size: xx-large;
+text-decoration: underline;
+	}
+body.dp1s	{
+background-image: url("dp1/backgroundimage2.jpg");
+background-size: cover;
+backgound-attachment: scroll;
+	}
+body.dp2s	{
+background-image: url("dp2/backgroundimagedp2.jpg");
+background-size:cover;
+background-attachment: fixed;
+	}
+a:visited.red	{
+color:darkred;
+	}
+ul	{
+list-style-type: square;
+	}
+a:visited.gray	{
+color:gray;
+	}
+a:visited.purple, a:link.purple	{
+text-decoration: none;
+cursor: auto;
+color: black;
+	}
+h1:hover.pink	{
+text-decoration: underline;
+color: pink;
+cursor: pointer;
+	}
+

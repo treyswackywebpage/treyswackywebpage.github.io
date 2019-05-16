@@ -1,0 +1,33 @@
+h1.hi	{
+font-weight: bold;
+font-style: italic;
+text-align:center;
+	}
+h4.sup	{
+text-align:left;
+font-weight: bold;
+	}
+body	{
+background-color:#e3e7f7;
+font-family: courier new;
+	}
+p	{
+text-style: normal;
+text-weight: medium;
+text-indent: .5in;
+font-size: medium;
+text-align:left;
+	}
+p.blue	{
+text-algin:left;
+text-indent: 0in;
+	}
+table.pink	{
+background-color: #ede6f2;
+	}
+.green	{
+background-color: #cdecd6;
+	}
+.orange	{
+background-color: #a7b299;
+	}

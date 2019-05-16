@@ -1,0 +1,143 @@
+<html>
+<head>
+<!--Sarah Greening-->
+<!--Task 9-->
+<!--4/2/19-->
+<style test="text/css">
+body	{
+	background-color: #ece3f2;
+	}
+</style>
+<script>
+function writeStory1()
+{
+var noun1 = document.getElementById("noun1a").value;
+document.getElementById("noun1b").innerHTML= noun1;
+
+var noun2 = document.getElementById("noun2a").value;
+document.getElementById("noun2b").innerHTML= noun2;
+
+var adj1 = document.getElementById("adj1a").value;
+document.getElementById("adj1b").innerHTML= adj1;
+
+var adj2 = document.getElementById("adj2a").value;
+document.getElementById("adj2b").innerHTML= adj2;
+
+var verb1 = document.getElementById("verb1a").value;
+document.getElementById("verb1b").innerHTML= verb1;
+
+var verb2 = document.getElementById("verb2a").value;
+document.getElementById("verb2b").innerHTML= verb2;
+
+var adj1 = document.getElementById("adj1a").value;
+document.getElementById("adj1b").innerHTML= adj1;
+
+var adj2 = document.getElementById("adj2a").value;
+document.getElementById("adj2b").innerHTML= adj2;
+}
+function reset1()
+{
+document.getElementById("noun1b").innerHTML="Noun";
+
+document.getElementById("noun2b").innerHTML="Noun";
+
+document.getElementById("adj1b").innerHTML="Adjective";
+
+document.getElementById("adj2b").innerHTML="Adjective";
+
+document.getElementById("verb1b").innerHTML="Verb";
+
+document.getElementById("verb2b").innerHTML="Verb";
+}
+function clickCheckBoxa()
+{
+	var checkbox1 = document.getElementById("checkbox1")
+	document.getElementById("icecream").style.color = "black";
+	if (checkbox1.checked)
+	{
+		document.getElementById("icecream").style.color="Blue";
+	};
+}
+function clickCheckBoxb()
+{
+	var checkbox2 = document.getElementById("checkbox2")
+	document.getElementById("icecream").style.color = "black";
+	if (checkbox2.checked)
+	{
+		document.getElementById("icecream").style.color="Red";
+	};
+}
+function clickCheckBoxc()
+{
+	var checkbox3 = document.getElementById("checkbox3")
+	document.getElementById("icecream").style.color = "black";
+	if (checkbox3.checked)
+	{
+		document.getElementById("icecream").style.color="Green";
+	};
+}
+</script>
+</head>
+<body>
+<a href="../mainpage.html">Link to Mainpage</a>
+<table border= "2in">
+<tr>
+<th>NOUNS</th>
+<th>ADJECTIVES</th>
+<th>VERBS</th>
+</tr>
+<tr>
+<th>
+<form>
+<input type="text" name="noun" placeholder="noun" id="noun1a">
+</form>
+</th>
+<td>
+<form>
+<input type="text" name="adj1" placeholder="adjective" id="adj1a">
+</form>
+</td>
+<td>
+<form>
+<input type="text" name="verb1" placeholder="verb" id="verb1a">
+</form>
+</td>
+</tr>
+<tr>
+<th>
+<form>
+<input type="text" name="noun2" placeholder="second noun" id="noun2a">
+</form>
+</th>
+<td>
+<form>
+<input type="text" name="adj2" placeholder="ly adjective" id="adj2a">
+</form>
+</td>
+<td>
+<form>
+<input type="text" name="verb2" placeholder=" second verb" id="verb2a">
+</form>
+</td>
+</tr>
+</table>
+<br>
+<input type="radio" name="stuff" id="checkbox1" onclick="clickCheckBoxa()">Blue
+<br>
+<input type="radio" name="stuff" id="checkbox2" onclick="clickCheckBoxb()">Red
+<br>
+<input type="radio" name="stuff" id="checkbox3" onclick="clickCheckBoxc()">Green
+<br>
+<button onclick="writeStory1()">Make MADLIB</button>
+<button onclick="reset1()">Reset</button>
+<p id="icecream">
+Once Upon A Time there was a <abc id="noun1b">Noun</abc>.
+All it did all day was <abc id="verb1b">Verb</abc>
+but people always though it was <abc id="adj1b">Adjective</abc>.<br>
+The <abc id="noun2b"> this</abc> would always try
+ to <abc id="verb2b">Verb</abc>
+but people always thought 
+very <abc id="adj2b"> Adjective</abc> about him.
+</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+p.border	{
+font-size: 22;
+text-color: #245673;
+text-align: center;
+text-indent: 3em;
+font-variant: small-caps;
+	}
+p.other	{
+font-size: 22;
+text-color: #245673;
+text-align: center;
+text-indent: 3em;
+font-variant: small-caps;
+font-weight: normal;
+	}
+p.okey	{
+font-size:x-large;
+font-variant: small-caps;
+	}
+dokey	{
+font-size:medium;
+	}
+p	{
+font-size:x-large;
+text-color: #245673;
+text-align: left;
+text-indent: 3em;
+font-variant: small-caps;
+	}
+body	{
+border: 2px dashed black;
+background-color: #DDCDF8;
+padding: 10px;
+	}
+h2	{
+font-size: xx-large;
+text-align: center;
+text-decoration: underline;
+font-variant: small-caps;
+	}
+table.hello	{
+table-layout: fixed;
+border-collapse: separate;
+	}
+h1.biggg	{
+font-size: 40;
+font-variant: small-caps;
+text-decoration: underline;
+	}
