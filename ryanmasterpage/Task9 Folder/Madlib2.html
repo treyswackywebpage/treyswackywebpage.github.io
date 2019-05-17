@@ -1,0 +1,107 @@
+<html>
+<head>
+<!--Ryan Gannaway-->
+<!--Task 9-->
+<!--March 8, 2019-->
+<title>Madlib</title>
+<link rel="stylesheet" href="Madlib.css">
+<script>
+function story()
+{
+	var noun1=document.getElementById("noun1").value;
+	document.getElementById("pnoun1").innerHTML= noun1;
+
+	var noun2=document.getElementById("noun2").value;
+	document.getElementById("pnoun2").innerHTML= noun2;
+	
+	var verb1=document.getElementById("verb1").value;
+	document.getElementById("pverb1").innerHTML= verb1;
+
+	var verb2=document.getElementById("verb2").value;
+	document.getElementById("pverb2").innerHTML= verb2;
+
+	var adjective1=document.getElementById("adjective1").value;
+	document.getElementById("padjective1").innerHTML= adjective1;
+
+	var adjective2=document.getElementById("adjective2").value;
+	document.getElementById("padjective2").innerHTML= adjective2;
+}
+function changetoblue()
+{
+	var radioblue = document.getElementById("radioblue")
+	document.getElementById("mp").style.color = "#000000";
+	if (radioblue.checked)
+	{
+		document.getElementById("mp").style.color = "#0061ff";
+	};
+}
+function changetoblack()
+{
+	var radioblack = document.getElementById("radioblack")
+	document.getElementById("mp").style.color = "#000000";
+	if (radioblack.checked)
+	{
+		document.getElementById("mp").style.color = "#000000";
+	};
+}
+function changetored()
+{
+	var radiored = document.getElementById("radiored")
+	document.getElementById("mp").style.color = "#000000";
+	if (radiored.checked)
+	{
+		document.getElementById("mp").style.color = "#ff0000";
+	};
+}
+</script>
+</head>
+<body class="m">
+<h1>Madlib</h1><br>
+<table class="m" border="3">
+<tr>
+<th height="30" width="200"><h3>Input a Noun</h3></th>
+<th height="30" width="200"><h3>Input a Verb</h3></th>
+<th height="30" width="200"><h3>Input a Adjective</h3></th>
+</tr>
+<tr>
+<td height="50">
+<form><input type="text" placeholder="noun 1" id="noun1" required>
+</td>
+<td height="50">
+<input type="text" placeholder="verb 1" id="verb1" required>
+</td>
+<td height="50">
+<input type="text" placeholder="adjective 1" id="adjective1" required>
+</td>
+</tr>
+<tr>
+<td height="50">
+<input type="text" placeholder="noun 2" id="noun2" required>
+</td>
+<td height="50">
+<input type="text" placeholder="verb 2" id="verb2" required>
+</td>
+<td height="50">
+<input type="text" placeholder="adjective 2" id="adjective2" required></form>
+</td>
+</tr>
+</table><br>
+<button onclick="story()">Write Story</button><br><br><br>
+
+<table class="m" border="3">
+<tr>
+<td class="p" height="60" width="600">
+<input type="radio" name="color" onclick="changetoblack()" id = "radioblack" checked><def>Black</def><br>
+<input type="radio" name="color" onclick="changetoblue()" id = "radioblue"><def>Blue</def><br>
+<input type="radio" name="color" onclick="changetored()" id = "radiored"><def>Red</def><br>
+</td>
+<tr>
+<td class="p" height="200" width="600"><br>
+<def id = "mp">Once upon a time there was a <abc id="padjective1">adjective1</abc> <abc id="pnoun1"> noun1</abc> who <abc id="pverb1">verb1</abc>.
+<br>While <abc id="pverb2">verb2</abc>, he saw a <abc id="padjective2">adjective2</abc> 
+<abc id="pnoun2">noun2</abc>. </def></td>
+</tr>
+</table>
+<h3><a class="link" href="../Task3 Folder/Task Log.html">Task Log</a></h3>
+</body>
+</html>

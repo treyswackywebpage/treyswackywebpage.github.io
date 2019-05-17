@@ -1,0 +1,24 @@
+h1
+	{
+	font-family: Oswald, sans-serif;
+	color:#faff00;
+	text-align:center;
+	}
+body	
+	{
+	background:url("Space.jpg") no-repeat;
+ 	background-size: cover;
+	background-attachment: fixed;
+	}
+h3
+	{
+	font-family: Oswald, sans-serif;
+	color:#000000;
+	text-align:center;
+	}
+table.p
+	{
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#ffffff;
+	}

@@ -1,0 +1,40 @@
+h1	{
+	text-align:center;
+	color:#ffffff;
+	font-family:Hammersmith One, sans-serif;
+	}
+.white	
+	{
+	text-align:left;
+	color:#ffffff;
+	font-family:Hammersmith One, sans-serif;
+	}
+.green  {
+	font-family:Hammersmith One, sans-serif;
+	color:#06f902;
+	text-align:center;
+	}
+body.main
+	{
+	background-color:#093782;
+	}
+th	{
+	text-align:center;
+	
+	}
+table.main	
+	{
+	border-style:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	}
+p.main	{
+	text-align:center;
+	color:#ffffff;
+	font-family:Hammersmith One, sans-serif;
+	}
+h3.link	{
+	color:#06f902;
+	font-family:Hammersmith One, sans-serif;
+	text-align:center;
+	}

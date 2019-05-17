@@ -1,0 +1,47 @@
+<html>
+<head>
+<!--Ryan Gannaway-->
+<!--Task 10-->
+<!--April 4, 2019-->
+<title>Cheap Weapons</title>
+<link rel = "stylesheet" href = "CheapWeapons.css">
+<script>
+function password()
+	{
+	var userpassword = document.getElementById("userpassword").value;
+	if (userpassword == "12345")
+		{
+		document.getElementById("success").hidden = false;
+		document.getElementById("incorrect").hidden = true;
+		}
+	else
+		{
+		document.getElementById("incorrect").hidden = false;
+		document.getElementById("success").hidden = true;
+		}
+	}
+</script>
+</head>
+<body>
+<h1>Cheap Weapons</h1><br><br>
+<h2 class="nb">Payment Information</h2><br><br><br>
+<table class="sale"><tr>
+<th><h3>Credit Card Number</h3></th></tr>
+<tr>
+<th height="60" width="350"><form><input type="text" placeholder="1234 1234 1234 1234" required></form></th>
+</tr>
+</table><br><br>
+<table class="sale"><tr>
+<th><h3 class="password">Authentification Password</h3></th></tr>
+<tr>
+<th height="60" width="350"><form><input type="text" placeholder="password" id="userpassword"></form></th>
+</tr>
+</table><br><br><br><br>
+<table class="sale"><th><button class="main" type="submit" onclick="password()"><h2 class="nb">Submit info</h2></button></th></table>
+<br>
+<table class="sale"><th><form method="get" action="CheapWeapons.html">
+<button class="main" type="submit"><h2 class="nb">Go Back</h2></button></form></th></table><br><br>
+<table class="sale"><th><h3 class="message" id = "success" hidden>Purchase successful!</h3></th></table><br>
+<table class="sale"><th><h3 class="message" id = "incorrect" hidden>Password incorrect</h3></th></table>
+</body>
+</html>

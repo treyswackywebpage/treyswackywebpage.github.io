@@ -1,0 +1,83 @@
+h1	{
+	text-align:center;
+	color:#ff0000;
+	font-family: Comic Sans MS, sans-serif;
+	}
+body.m
+	{
+	background-color:#a7e2c6;
+	}
+body.r	
+	{
+	background:url("Reg Dinosaurs/J.jpg") no-repeat;
+ 	background-size: cover;
+	background-attachment: scroll;
+	}
+body.md	
+	{
+	background:url("Marine Dinosaurs/Ocean.jpg") no-repeat;
+ 	background-size: cover;
+	background-attachment: fixed;
+	}
+a:hover.link
+	{
+	cursor:text;
+	text-decoration:none;
+	color:#000000;
+	}
+a:visited.link
+	{
+	cursor:initial;
+	text-decoration:none;
+	color:#000000;
+	}
+a:link.link
+	{
+	cursor:initial;
+	text-decoration:none;
+	color:#000000;
+	}
+a:visited.list
+	{
+	color:#7e8591;	
+	}
+table.m	
+	{
+	border-style:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	}
+h3	{
+	text-align:center;
+	font-family: Comic Sans MS, sans-serif;
+	}
+h5	{
+	text-align:left;
+	color:#000000;
+	font-family: Comic Sans MS, sans-serif;
+	}
+.w	
+	{
+	margin-left:auto;
+	margin-right:auto;
+	background-color:ffffff;
+	border-style:hidden;
+	}
+.ml	{
+	padding-right:1.5in;
+	color:#000000;
+	text-align:left;
+	list-style-type:square;
+	}
+a:hover.mdino
+	{
+	font-family: Impact, sans-serif;
+	cursor:crosshair;
+	font-size:xx-large;
+	color:#ff0000;
+	}
+a:visited.mdv
+	{
+	color:#ff0000;
+	}
+	

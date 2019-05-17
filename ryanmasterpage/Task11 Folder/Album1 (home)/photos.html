@@ -1,0 +1,134 @@
+<html>
+<head>
+<!--Ryan Gannaway-->
+<!--Task 11-->
+<!--April 18, 2019-->
+<link rel ="stylesheet" href="photos.css">
+<title>Spaceship Pictures</title>
+<script>
+var pic = 0;
+var swspaceships = ["stardestroyer.jpg","xwing.jpg","falcon.jpg","awing.jpg","shuttle.jpg","tantive4.jpg","tiefighter.jpg","ywing.jpg","bwing.jpg",
+		  "deathstar.jpg"];
+var stspaceships = ["enterprise.jpg","cube.jpg","defiant.jpg","birdofprey.jpg","prometheus.jpg","protector.jpg","reliant.jpg","vengeance.jpg","voyager.jpg",
+		  "warbird.jpg"];
+var starwarstext = ["1. This is a star destroyer", "2.This is a x wing", "3.This is the Millenium Falcon","4. This is an a wing", "5.This is a shuttle",
+		    "6. This is the ship in A New Hope","7. This is a tie fighter","8. This is a y wing","9.This is a b wing","10. This is the death star"];
+var startrektext = ["1. This is the enterprise", "2.This is a borg cube", "3.This is the defiant","4. This is a klingon bird of prey", "5.This is the prometheus",
+		    "6. This is the protector","7. This is the reliant","8. This is the vengeance","9.This is the voyager","10. This is a warbird"]
+function grab()
+	{
+	var info = document.getElementById("spaceships").value;
+	document.getElementById("tbox").value = info;
+	}
+function move()
+	{
+	value = document.getElementById("tbox").value;
+		if (value == "star trek")
+		{
+		location.href = "../Album2/photos2.html"
+		}
+		if (value == "star wars")
+		{
+		location.href = "../Album1 (home)/photos.html"
+		}
+		if (value == "misc")
+		{
+		location.href = "../Album3/photos3.html"
+		}
+	}
+function rightclick()
+	{
+	pic = pic + 1;
+	if (pic == 10)
+	{
+		pic = 0;
+	}
+	if (
+	document.getElementById("ships").src = swspaceships[pic];
+	document.getElementById("swtext").innerHTML = starwarstext[pic];
+	}
+function leftclick()
+	{
+	pic = pic - 1;
+	if (pic == -1)
+	{
+		pic = 9;
+	}
+	document.getElementById("ships").src = swspaceships[pic];
+	document.getElementById("swtext").innerHTML = starwarstext[pic];
+	}
+</script>
+</head>
+<body>
+<h1>Spaceship Pictures</h1><br><br>
+<table>
+<tr>
+<th height="40" width="200" class="drop">
+<select name="spaceships" id = "spaceships" onchange = "grab(), move()">
+	<option selected = "star wars" value= "star wars">Star Wars Ships</option>
+	<option value = "star trek">Star Trek Ships</option>
+	<option value = "misc">Misc Ships</option>
+</select></th></tr>
+</table><br>
+<table class="pic"><tr>
+<th></th>
+<th><img src="stardestroyer.jpg" height="300" width="500" id = "ships"></th>
+<th></th></tr>
+<tr><td><button onclick = "leftclick()"> previous </button></td>
+<td class = "center" height = "60" width = "500"><tt id = "swtext">    1. This is a star destroyer    </tt></td>
+<td><button onclick = "rightclick()"> next </button></td></tr>
+<tr><td></td><td><tt>These ships are all from the original 3 Star Wars movies</tt></td><td></td></tr>
+</table>
+<input type = "text" id = "tbox" hidden>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

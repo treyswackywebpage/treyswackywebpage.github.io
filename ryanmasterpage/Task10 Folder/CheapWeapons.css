@@ -1,0 +1,84 @@
+h1	{
+	font-family: abril courier new, monospace;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	}
+body
+	{
+	background: url("metal.jpg") no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	}
+h2.nb	
+	{
+	font-family: abril courier new, monospace;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	}
+button.main
+	{
+	background-color:#082a60;
+	border: 2px solid #ffffff;
+	width: 200px;
+	height: 60px;
+	}
+button.main:hover
+	{
+	background-color:#082a60;
+	border: 2px solid #13eaf2;
+	cursor: pointer;
+	}
+.selected
+	{
+	background-color:#082a60;
+	border: 2px solid #13eaf2;
+	cursor: pointer;
+	width: 200px;
+	height: 60px;
+	}
+table.nb
+	{
+	margin-left:auto;
+	margin-right:auto;
+	}
+h3
+	{
+	font-family: abril courier new, monospace;
+	font-weight: normal;
+	text-align: center;
+	color: #ffffff;
+	}
+.password
+	{
+	color: #13eaf2;
+	}
+.message
+	{
+	color: #00ff00;
+	}
+td
+	{
+	margin-left:auto;
+	margin-right:auto;
+	border: 2px solid #ffffff;
+	}
+table.sale
+	{
+	margin-left:auto;
+	margin-right:auto;
+	border-style: hidden;
+	}	
+td.pic
+	{
+	background:url("rpg.jpg");
+ 	background-size: cover;
+	background-attachment: fixed;
+	}
+td.buy
+	{
+	border-style: hidden;
+	vertical-align: center;
+	padding-top: 10px;
+	}

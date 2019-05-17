@@ -1,0 +1,44 @@
+<html>
+<head>
+<!--Ryan Gannaway-->
+<!--Task 8-->
+<!--March 6, 2019-->
+<title>Planets</title>
+<link rel="stylesheet" href="Planets.css">
+<script>
+function answers()
+{
+	var message = "Mercury";
+	document.getElementById("splanets").innerHTML = message;
+	var message2 ="Pluto";
+	document.getElementById("pplanets").innerHTML = message2;
+}
+function reset()
+{
+	var reset = "_________";
+	document.getElementById("splanets").innerHTML = reset;
+	var reset2 ="_________";
+	document.getElementById("pplanets").innerHTML = reset;
+}
+</script>
+</head>
+<body>
+<h1>Planets</h1>
+<br><br>
+<table class="p" border="2">
+<tr>
+<th height="100" width="350"><h3>The closest planet to the sun is <p id = "splanets">_________</p></h3>
+</tr>
+</table><br><br>
+<table class="p" border="2">
+<th height="100" width="350"><h3>The furthest planet to the sun is <p id = "pplanets">_________</p></h3>
+</tr>
+</table><br><br>
+<table class="p" border="2">
+<th height="200" width="350"><button onclick="answers()">Find the answers</button><br><br>
+<button onclick="reset()">Take the quiz again</button></th>
+</table><br><br>
+<table class="p" border="2">
+<th height="100" width="350"><h3>To get back to the Task Log,<br> <a href="../Task3%20Folder/Task%20Log.html">Click here</a></h3>
+</body>
+</html>

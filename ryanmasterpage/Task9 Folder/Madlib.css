@@ -1,0 +1,49 @@
+table.m
+	{
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:collapse;
+	background-color:ffffff;
+	}
+h1	
+	{
+	font-family: Niramit, sans-serif;
+	text-align:center;
+	color:#1703c6;
+	}
+h3
+	{
+	font-weight:normal;
+	font-family: Niramit, sans-serif;
+	color:#1703c6;
+	}
+body.m
+	{
+	background-color:#cecece;
+	text-align:center;
+	}
+td
+	{
+	text-align:center;
+	vertical-align:middle;
+	}
+.p
+	{
+	text-align:left;
+	vertical-align:top;
+	padding-left:0.5in;
+	}
+def	{
+	font-family: Ruslan Display, sans-serif;
+	}
+abc	{
+	font-family: Ruslan Display, sans-serif;
+	font-size: 20px;
+	}
+.r	{
+	padding=0.5in;
+	font-family: Ruslan Display, sans-serif;
+	text-align:left;
+	font-size: 15px;
+	}
+	

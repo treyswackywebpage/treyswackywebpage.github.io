@@ -1,0 +1,30 @@
+h1	{
+	font-family: dosis, sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: #1129ff;
+	font-weight: normal;
+	}
+th.drop
+	{
+	border: 2px solid #13eaf2;
+	background-color: #5b5b5b;
+	width: 3000px;
+	height: 150px;
+	border-style: solid;
+	}
+table.pic
+	{
+	margin-left:auto;
+	margin-right:auto;
+	}
+tt
+	{
+	font-size: 20px;
+	color: #1129ff;
+	vertical-align: center;
+	}
+td
+	{
+	text-align: center;
+	}
