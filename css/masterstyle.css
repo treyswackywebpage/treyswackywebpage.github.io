@@ -53,12 +53,6 @@ body {
     color: white;
     font-variant: small-caps;
 }
-.inside-margin {
-    position: relative;
-
-    left: 20%;
-    width: 50%;
-}
 .menu-button {
     color: #fff;
     background-color: #000000;
