@@ -1,0 +1,53 @@
+body	{
+	background: url("MAROON.jpg") no-repeat fixed;
+	background-size: cover;
+	}
+
+h1	{
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+h2	{
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	}
+h2.white {
+	 color: #ffffff;
+	 text-align: center;
+	 vertical-align: middle;
+	 }
+
+h3	{
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+h3.white	{
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	}
+h3.blue{
+	 color: #2a78c1;
+	 text-align: center;
+	 vertical-align: middle;
+	 }
+h3.purple{
+	 color: #7f2ac1;
+	 text-align: center;
+	 vertical-align: middle;
+	 }
+
+table	{
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+a.link  {
+	color: #ffffff;
+	text-decoration: none;
+	}

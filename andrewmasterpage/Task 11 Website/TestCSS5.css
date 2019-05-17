@@ -1,0 +1,25 @@
+body	{
+	background: url("BACKGROUND.jpg") no-repeat fixed;
+	background-size: cover;
+	}
+
+h1.red  {
+	color: #e50b0b;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+table.blue {
+	   color: #0c56ce;
+	   margin-left: auto;
+	   margin-right: auto;
+	   }
+th	{
+	background-color: #ffffff;
+	font-family: Times New Roman;
+	}
+th.arrow{
+	background-color: #ffffff;
+	font-family: Times New Roman;
+	font-size: 3cm;
+	}

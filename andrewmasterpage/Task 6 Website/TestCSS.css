@@ -1,0 +1,38 @@
+h1.white{
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	}
+body	{
+	background-color: #0055ff;
+	font-family: Times New Roman;
+	}
+.red	{
+	color: #f42d13;
+	text-align: center;
+	vertical-align: middle;
+	}
+.teel	{
+	color: #02ffe5;
+	text-align: center;
+	vertical-align: middle;
+	}
+body.green{
+	  background-color: #238445;
+	  font-family: Times New Roman;
+	  }
+table	{
+	margin-left: auto;
+	margin-right: auto;
+	}
+table.blue{
+	  margin-left: auto;
+	  margin-right: auto;
+	  border-color: #4286f4;
+	  }
+
+h2.silver{
+	 color: #969696;
+	 text-align: center;
+	 vertical-align: middle;
+	 }

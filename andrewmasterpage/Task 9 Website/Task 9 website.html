@@ -1,0 +1,131 @@
+<html>
+<head>
+<!-- Andrew Sedgwick -->
+<!-- Task 9 -->
+<!-- April 25, 2019 -->
+<title>A Very Simple MADLIB Game</title>
+<script>
+function writeStory()
+{
+	var noun1 = document.getElementById("Noun1").value;
+	document.getElementById("bNoun1").innerHTML = noun1;
+	var verb1 = document.getElementById("Verb1").value;
+	document.getElementById("bVerb1").innerHTML = verb1;
+	var adjective1 = document.getElementById("Adjective1").value;
+	document.getElementById("bAdjective1").innerHTML = adjective1;
+
+	var noun2 = document.getElementById("Noun2").value;
+	document.getElementById("bNoun2").innerHTML = noun2;
+	var verb2 = document.getElementById("Verb2").value;
+	document.getElementById("bVerb2").innerHTML = verb2;
+	var adjective2 = document.getElementById("Adjective2").value;
+	document.getElementById("bAdjective2").innerHTML = adjective2;
+
+}
+
+function revert()
+{
+	var message = "(noun)";
+	document.getElementById("bNoun1").innerHTML = message;
+	var message2 = "(verb)";
+	document.getElementById("bVerb1").innerHTML = message2;
+	var message3 = "(adjective)";
+	document.getElementById("bAdjective1").innerHTML = message3;
+
+	var message4 = "(noun)";
+	document.getElementById("bNoun2").innerHTML = message4;
+	var message5 = "(verb)";
+	document.getElementById("bVerb2").innerHTML = message5;
+	var message6 = "(adjective)";
+	document.getElementById("bAdjective2").innerHTML = message6;
+}
+
+function clickCheckBox1()
+{
+	var checkbox1 = document.getElementById("Red")
+	document.getElementById("PARAGRAPH").style.color = "ffffff";
+	if (checkbox1.checked)
+	{
+		document.getElementById("PARAGRAPH").style.color = "#ba2c2c";
+	}
+}
+
+function clickCheckBox2()
+{
+	var checkbox2 = document.getElementById("Blue")
+	document.getElementById("PARAGRAPH").style.color = "#ffffff";
+	if (checkbox2.checked)
+	{
+		document.getElementById("PARAGRAPH").style.color = "#2a78c1";
+	}
+}
+
+function clickCheckBox3()
+{
+	var checkbox3 = document.getElementById("Purple")
+	document.getElementById("PARAGRAPH").style.color = "#ffffff";
+	if (checkbox3.checked)
+	{
+		document.getElementById("PARAGRAPH").style.color = "#7f2ac1";
+	}
+	
+}
+</script>
+<link rel = "stylesheet" href = "TestCSS4.css">
+</head>
+
+<body>
+<h1>A SUPER SIMPLE MADLIB GAME</h1>
+<br>
+
+<table border = "4">
+<tr>
+	<th><h2 class = white>Insert a NOUN</h2></th>
+	<th><h2 class = white>Insert a VERB</h2></th>
+	<th><h2 class = white>Insert an ADJECTIVE</h2></th>
+</tr>
+<tr>
+	<th><input type = "text" id = "Noun1" name = "txtnoun" placeholder = "noun 1" maxlength = "20" required></th>
+	<th><input type = "text" id = "Verb1" name = "txtverb" value = "verb 1" maxlength = "20" required></th>
+	<th><input type = "text" id = "Adjective1" name = "txtadjective" value = "adjective 1" maxlength = "20" required></th>
+</tr>
+<tr>
+	<th><input type = "text" id = "Noun2" name = "txtnoun2" value = "noun 2" maxlength = "20" required></th>
+	<th><input type = "text" id = "Verb2" name = "txtverb2" value = "verb 2" maxlength = "20" required></th>
+	<th><input type = "text" id = "Adjective2" name = "txtadjective2" value = "adjective 2" maxlength = "20" required></th>
+</tr>
+</table>
+
+<br>
+<table border = "4">
+<tr>
+<th><h2>CHOOSE A COLOR!</h2></th>
+</tr>
+<tr>
+<th><h3 class = white><input type = "radio" name = "rdoFontColor" value = "White" id = "White" onclick = "clickCheckBox1()" > White</h3></th>
+</tr>
+<tr>
+<th><h3 class = blue><input type = "radio" name = "rdoFontColor" value = "Blue" id = "Blue" onclick = "clickCheckBox2()" > Blue</h3></th>
+</tr>
+<tr>
+<th><h3 class = purple><input type = "radio" name = "rdoFontColor" value = "Purple" id = "Purple" onclick = "clickCheckBox3()" > Purple</h3></th>
+</tr>
+</table>
+<br>
+
+<table border = "4">
+<tr>
+<th><h3><p id = "PARAGRAPH">There was once a... <abc id = "bNoun1">(noun)</abc> that will <abc id = "bVerb1">(verb)</abc> a shark on a <abc id = "bAdjective1">(adjective)</abc> planet. Also, there was once a <abc id = "bNoun2">(noun)</abc> who will <abc id = "bVerb2">(verb)</abc> in a <abc id = "bAdjective2">(adjective)</abc> cave in a magical place. Suddenly, they both randomly ran away and went to an abandoned planet and lived happily ever after...</p></h3></th>
+</tr>
+</table>
+
+	<h1><button onclick="writeStory()">Change the Text</button></h1>
+	<br>
+	<h1><button onclick="revert()">Revert</button></h1>
+<br>
+
+<h2><a class = "link" href = "../Task Log.html"> Task Log</a></h2>
+<br>
+
+</body>
+</html>

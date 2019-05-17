@@ -1,0 +1,36 @@
+<html>
+<head>
+<!-- Andrew Sedgwick -->
+<!-- Task Log -->
+<!-- April 4, 2019 -->
+<title>Spongebob Squarepants</title>
+<script>
+function changeText()
+{
+	var message = "sea.";
+	document.getElementById("exampleID").innerHTML = message;
+	var message2 = "rock.";
+	document.getElementById("exampleID2").innerHTML = message2;
+}
+function revert()
+{
+	var message = "ground.";
+	document.getElementById("exampleID").innerHTML = message;
+	var message2 = "boulder.";
+	document.getElementById("exampleID2").innerHTML = message2;
+}
+</script>
+<link rel = "stylesheet" href = "TestCSS3.css">
+</head>
+
+<body class = "b">
+<h1>SPONGEBOB SQUAREPANTS CHARACTERS</h1>
+<br>
+<p>Spongebob Squarepants is a yellow sponge who lives in a pineapple under the <abc id = "exampleID">ground.</abc> Patrick is a pink starfish who lives under a <abc id = "exampleID2">boulder.</abc> Squidward is just a squid that lives inside an Easter Island Head.</p>
+	<h1><button onclick="changeText()">Change the Text</button></h1>
+	<br>
+	<h1><button onclick="revert()">Revert</button></h1>
+<br>
+<h2><a href = "../Task Log.html"> Task Log</a></h2>
+</body>
+</html>

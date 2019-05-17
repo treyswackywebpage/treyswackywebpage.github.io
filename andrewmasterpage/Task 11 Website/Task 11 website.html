@@ -1,0 +1,296 @@
+<html>
+<head>
+<!-- Andrew Sedgwick -->
+<!-- Task 11 -->
+<!-- May 17, 2019 -->
+<link rel = "stylesheet" href = "TestCSS5.css">
+<title>Pokemon Photo Album</title>
+<script>
+var newpicture;
+var pictureselect = 1;
+var newtext;
+var textselect = 1;
+function nextpicture(newpicture)
+{
+	if (newpicture == 1)
+	{
+		pictureselect = pictureselect+1;
+		if (pictureselect == 21)
+		{
+			pictureselect = 1;
+		}
+	}
+	else
+	{
+		pictureselect = pictureselect-1;
+		if (pictureselect == 0)
+		{
+			pictureselect = 20;
+		}
+	}
+	var message = "PIKACHU.jpg";
+	switch(pictureselect)
+	{
+		case 1:
+		document.getElementById("a1picture1").hidden = false;
+		document.getElementById("a1picture2").hidden = true;
+		document.getElementById("a1picture10").hidden = true;
+		break;
+		case 2:
+		document.getElementById("a1picture2").hidden = false;
+		document.getElementById("a1picture1").hidden = true;
+		document.getElementById("a1picture3").hidden = true;
+		break;
+		case 3:
+		document.getElementById("a1picture3").hidden = false;
+		document.getElementById("a1picture2").hidden = true;
+		document.getElementById("a1picture4").hidden = true;
+		break;
+		case 4:
+		document.getElementById("a1picture4").hidden = false;
+		document.getElementById("a1picture3").hidden = true;
+		document.getElementById("a1picture5").hidden = true;
+		break;
+		case 5:
+		document.getElementById("a1picture5").hidden = false;
+		document.getElementById("a1picture4").hidden = true;
+		document.getElementById("a1picture6").hidden = true;
+		break;
+		case 6:
+		document.getElementById("a1picture6").hidden = false;
+		document.getElementById("a1picture5").hidden = true;
+		document.getElementById("a1picture7").hidden = true;
+		break;
+		case 7:
+		document.getElementById("a1picture7").hidden = false;
+		document.getElementById("a1picture6").hidden = true;
+		document.getElementById("a1picture8").hidden = true;
+		break;
+		case 8:
+		document.getElementById("a1picture8").hidden = false;
+		document.getElementById("a1picture7").hidden = true;
+		document.getElementById("a1picture9").hidden = true;
+		break;
+		case 9:
+		document.getElementById("a1picture9").hidden = false;
+		document.getElementById("a1picture8").hidden = true;
+		document.getElementById("a1picture10").hidden = true;
+		break;
+		case 10:
+		document.getElementById("a1picture10").hidden = false;
+		document.getElementById("a1picture9").hidden = true;
+		document.getElementById("a1picture1").hidden = true;
+		break;
+		case 11:
+		document.getElementById("a2picture1").hidden = false;
+		document.getElementById("a2picture2").hidden = true;
+		document.getElementById("a2picture10").hidden = true;
+		break;
+		case 12:
+		document.getElementById("a2picture2").hidden = false;
+		document.getElementById("a2picture1").hidden = true;
+		document.getElementById("a2picture3").hidden = true;
+		break;
+		case 13:
+		document.getElementById("a2picture3").hidden = false;
+		document.getElementById("a2picture2").hidden = true;
+		document.getElementById("a2picture4").hidden = true;
+		break;
+		case 14:
+		document.getElementById("a2picture4").hidden = false;
+		document.getElementById("a2picture3").hidden = true;
+		document.getElementById("a2picture5").hidden = true;
+		break;
+		case 15:
+		document.getElementById("a2picture5").hidden = false;
+		document.getElementById("a2picture4").hidden = true;
+		document.getElementById("a2picture6").hidden = true;
+		break;
+		case 16:
+		document.getElementById("a2picture6").hidden = false;
+		document.getElementById("a2picture5").hidden = true;
+		document.getElementById("a2picture7").hidden = true;
+		break;
+		case 17:
+		document.getElementById("a2picture7").hidden = false;
+		document.getElementById("a2picture6").hidden = true;
+		document.getElementById("a2picture8").hidden = true;
+		break;
+		case 18:
+		document.getElementById("a2picture8").hidden = false;
+		document.getElementById("a2picture7").hidden = true;
+		document.getElementById("a2picture9").hidden = true;
+		break;
+		case 19:
+		document.getElementById("a2picture9").hidden = false;
+		document.getElementById("a2picture8").hidden = true;
+		document.getElementById("a2picture10").hidden = true;
+		break;
+		case 20:
+		document.getElementById("a2picture10").hidden = false;
+		document.getElementById("a2picture9").hidden = true;
+		document.getElementById("a2picture1").hidden = true;
+		break;
+	}
+}
+function nextpokemon(newtext)
+{
+	if (newtext === 1)
+	{
+	textselect = textselect+1;
+	if (textselect === 11)
+	{
+	textselect = 1;
+	}
+	}
+	else
+	{
+	textselect = textselect-1;
+	if (textselect === 0)
+	{
+	textselect = 10;
+	}
+	}
+	switch(textselect)
+	{
+		case 1:
+		document.getElementById("a1text1").hidden = false;
+		document.getElementById("a1text2").hidden = true;
+		document.getElementById("a1text10").hidden = true;
+		break;
+		case 2:
+		document.getElementById("a1text2").hidden = false;
+		document.getElementById("a1text1").hidden = true;
+		document.getElementById("a1text3").hidden = true;
+		break;
+		case 3:
+		document.getElementById("a1text3").hidden = false;
+		document.getElementById("a1text2").hidden = true;
+		document.getElementById("a1text4").hidden = true;
+		break;
+		case 4:
+		document.getElementById("a1text4").hidden = false;
+		document.getElementById("a1text3").hidden = true;
+		document.getElementById("a1text5").hidden = true;
+		break;
+		case 5:
+		document.getElementById("a1text5").hidden = false;
+		document.getElementById("a1text4").hidden = true;
+		document.getElementById("a1text6").hidden = true;
+		break;
+		case 6:
+		document.getElementById("a1text6").hidden = false;
+		document.getElementById("a1text5").hidden = true;
+		document.getElementById("a1text7").hidden = true;
+		break;
+		case 7:
+		document.getElementById("a1text7").hidden = false;
+		document.getElementById("a1text6").hidden = true;
+		document.getElementById("a1text8").hidden = true;
+		break;
+		case 8:
+		document.getElementById("a1text8").hidden = false;
+		document.getElementById("a1text7").hidden = true;
+		document.getElementById("a1text9").hidden = true;
+		break;
+		case 9:
+		document.getElementById("a1text9").hidden = false;
+		document.getElementById("a1text8").hidden = true;
+		document.getElementById("a1text10").hidden = true;
+		break;
+		case 10:
+		document.getElementById("a1text10").hidden = false;
+		document.getElementById("a1text9").hidden = true;
+		document.getElementById("a1text1").hidden = true;
+		break;
+		case 11:
+		document.getElementById("a2text1").hidden = false;
+		document.getElementById("a2text2").hidden = true;
+		document.getElementById("a2text10").hidden = true;
+		break;
+		case 12:
+		document.getElementById("a2text2").hidden = false;
+		document.getElementById("a2text1").hidden = true;
+		document.getElementById("a2text3").hidden = true;
+		break;
+		case 13:
+		document.getElementById("a2text3").hidden = false;
+		document.getElementById("a2text2").hidden = true;
+		document.getElementById("a2text4").hidden = true;
+		break;
+		case 14:
+		document.getElementById("a2text4").hidden = false;
+		document.getElementById("a2text3").hidden = true;
+		document.getElementById("a2text5").hidden = true;
+		break;
+		case 15:
+		document.getElementById("a2text5").hidden = false;
+		document.getElementById("a2text4").hidden = true;
+		document.getElementById("a2text6").hidden = true;
+		break;
+		case 16:
+		document.getElementById("a1text6").hidden = false;
+		document.getElementById("a1text5").hidden = true;
+		document.getElementById("a1text7").hidden = true;
+		break;
+		case 17:
+		document.getElementById("a2text7").hidden = false;
+		document.getElementById("a2text6").hidden = true;
+		document.getElementById("a2text8").hidden = true;
+		break;
+		case 18:
+		document.getElementById("a2text8").hidden = false;
+		document.getElementById("a2text7").hidden = true;
+		document.getElementById("a2text9").hidden = true;
+		break;
+		case 19:
+		document.getElementById("a2text9").hidden = false;
+		document.getElementById("a2text8").hidden = true;
+		document.getElementById("a2text10").hidden = true;
+		break;
+		case 20:
+		document.getElementById("a2text10").hidden = false;
+		document.getElementById("a2text9").hidden = true;
+		document.getElementById("a2text1").hidden = true;
+		break;
+	}
+}
+function differentalbum()
+{
+	var albumselection = document.getElementById("different").value;
+	if (albumselection=="legendaries")
+	{
+	
+	}
+}
+</script>
+</head>
+<h1 class = "red">Pokemon Photo Album</h1>
+<br>
+<br>
+<table class = "blue" height = "100" width = "400" border = "3">
+<th height = "300" width = "200"><h1>Select a Type</h1>
+<select name = "typesofpokemon">
+<option onchange = "differentalbum()" value = "Starters" id = "different">Choose</option>
+	<option value = "legendaries" selected>Legendaries</option>
+	<option value = "starters">Starters</option>
+	<option value = "regular">Regular</option>
+</th>
+</select>
+</tr>
+</table>
+<br>
+<table class = "blue" border = "2">
+<tr>
+<th class = "arrow"><button onclick = "nextpicture(7), nextpokemon(0)"><</button></th>
+<th><img id = "a1picture1" src = "PIKACHU.jpg" height = "400" width = "400"><img hidden id = "a1picture2" src = "BULBASAUR.jpg" height = "400" width = "400"><img hidden id = "a1picture3" src = "SQUIRTLE.jpg" height = "400" width = "400"><img hidden id = "a1picture4" src = "CHARMANDER.jpg" height = "400" width = "400"><img hidden id = "a1picture5" src = "CHIKORITA.jpg" height = "400" width = "400"><img hidden id = "a1picture6" src = "CYNDAQUIL.jpg" height = "400" width = "400"><img hidden id = "a1picture7" src = "TOTODILE.jpg" height = "400" width = "400"><img hidden id = "a1picture8" src = "TREECKO.jpg" height = "400" width = "400"><img hidden id = "a1picture9" src = "TORCHIC.jpg" height = "400" width = "400"><img hidden id = "a1picture10" src = "MUDKIP.jpg" height = "400" width = "400"></th>
+<th class = "arrow"><button onclick="nextpicture(1), nextpokemon(1)">></button></th>
+</tr>
+<tr>
+<th></th>
+<th><h1 id = "a1text1"> 1/10 Pikachu</h1><h1 hidden id = "a1text2"> 2/10 Bulbasaur</h1><h1 hidden id = "a1text3"> 3/10 Squirtle</h1><h1 hidden id = "a1text4"> 4/10 Charmander</h1><h1 hidden id = "a1text5"> 5/10 Chikorita</h1><h1 hidden id = "a1text6"> 6/10 Cyndaquil</h1><h1 hidden id = "a1text7"> 7/10 Totodile</h1><h1 hidden id = "a1text8"> 8/10 Treecko</h1><h1 hidden id = "a1text9"> 9/10 Torchic</h1><h1 hidden id = "a1text10"> 10/10 Mudkip</h1><h1 hidden id = "a2text1"> 1/10 </h1></th>
+<th></th>
+</tr>
+</table>
+
+</html>

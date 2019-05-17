@@ -1,0 +1,68 @@
+body	{
+	background-color: #50a9e5;
+	font-family: Times New Roman;
+	}
+body.w	{
+	background: url("WATER.jpg") no-repeat;
+	background-size: cover;
+	}
+body.s	{
+	background: url("SCHOOLOFSHARKS.jpg") no-repeat fixed;
+	background-size: cover;
+	}
+
+table	{
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+h1.white{
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	}
+h1.pink	 {
+	 color: #ff89e1;
+	 text-align: center;
+	 vertical-align: middle;
+	 }
+h2.black{
+	color: 000000;
+	text-align: center;
+	vertical-align: middle;
+	}
+h3.purple{
+	 color: #d0a7e5;
+	 text-align: center;
+	 vertical-align: middle;
+	 }
+h3.white {
+	 color: #ffffff;
+	 text-align: center;
+	 vertical-align: middle;
+	 }
+
+a:link.link{
+	   color: #000000;
+	   cursor: text;
+	   text-decoration: none;
+	   }
+a:visited.link{
+	      cursor: text;
+	      color: #000000;
+	      }
+a:visited	{
+	        cursor: default;
+	        color: #990033;
+	        }
+a:visited.gray	{
+	        cursor: default;
+	        color: #5c5c5c;
+	        }
+a:hover.non-link{
+	    	cursor: crosshair;
+	   	font-size: xx-large;
+		}
+ul.circle	{
+		list-style-type: circle;
+		}
